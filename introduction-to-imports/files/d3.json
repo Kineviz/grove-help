@@ -1,0 +1,647 @@
+{
+  "name": "d3",
+  "children": [
+    {
+      "name": "d3-array",
+      "children": [
+        {
+          "name": "threshold",
+          "children": [
+            {"name": "freedmanDiaconis", "value": 361},
+            {"name": "scott", "value": 180},
+            {"name": "sturges", "value": 96}
+          ]
+        },
+        {"name": "array", "value": 90},
+        {"name": "ascending", "value": 86},
+        {"name": "bisect", "value": 238},
+        {"name": "bisector", "value": 786},
+        {"name": "constant", "value": 72},
+        {"name": "descending", "value": 86},
+        {"name": "deviation", "value": 135},
+        {"name": "extent", "value": 553},
+        {"name": "histogram", "value": 1876},
+        {"name": "identity", "value": 43},
+        {"name": "max", "value": 451},
+        {"name": "mean", "value": 362},
+        {"name": "median", "value": 452},
+        {"name": "merge", "value": 339},
+        {"name": "min", "value": 451},
+        {"name": "number", "value": 63},
+        {"name": "pairs", "value": 182},
+        {"name": "permute", "value": 161},
+        {"name": "quantile", "value": 416},
+        {"name": "range", "value": 344},
+        {"name": "scan", "value": 357},
+        {"name": "shuffle", "value": 285},
+        {"name": "sum", "value": 295},
+        {"name": "ticks", "value": 672},
+        {"name": "transpose", "value": 356},
+        {"name": "variance", "value": 540},
+        {"name": "zip", "value": 99}
+      ]
+    },
+    {
+      "name": "d3-axis",
+      "children": [
+        {"name": "array", "value": 42},
+        {"name": "axis", "value": 5239},
+        {"name": "identity", "value": 43}
+      ]
+    },
+    {
+      "name": "d3-brush",
+      "children": [
+        {"name": "brush", "value": 15778},
+        {"name": "constant", "value": 72},
+        {"name": "event", "value": 127},
+        {"name": "noevent", "value": 202}
+      ]
+    },
+    {
+      "name": "d3-chord",
+      "children": [
+        {"name": "array", "value": 42},
+        {"name": "chord", "value": 3178},
+        {"name": "constant", "value": 72},
+        {"name": "math", "value": 159},
+        {"name": "ribbon", "value": 2340}
+      ]
+    },
+    {
+      "name": "d3-collection",
+      "children": [
+        {"name": "entries", "value": 137},
+        {"name": "keys", "value": 104},
+        {"name": "map", "value": 1988},
+        {"name": "nest", "value": 2021},
+        {"name": "set", "value": 800},
+        {"name": "values", "value": 115}
+      ]
+    },
+    {
+      "name": "d3-color",
+      "children": [
+        {"name": "color", "value": 9276},
+        {"name": "cubehelix", "value": 1855},
+        {"name": "define", "value": 340},
+        {"name": "lab", "value": 3167},
+        {"name": "math", "value": 72}
+      ]
+    },
+    {
+      "name": "d3-dispatch",
+      "children": [
+        {"name": "dispatch", "value": 2729}
+      ]
+    },
+    {
+      "name": "d3-drag",
+      "children": [
+        {"name": "constant", "value": 72},
+        {"name": "drag", "value": 4297},
+        {"name": "event", "value": 430},
+        {"name": "nodrag", "value": 857},
+        {"name": "noevent", "value": 202}
+      ]
+    },
+    {
+      "name": "d3-dsv",
+      "children": [
+        {"name": "csv", "value": 199},
+        {"name": "dsv", "value": 3582},
+        {"name": "tsv", "value": 200}
+      ]
+    },
+    {
+      "name": "d3-ease",
+      "children": [
+        {"name": "back", "value": 653},
+        {"name": "bounce", "value": 521},
+        {"name": "circle", "value": 261},
+        {"name": "cubic", "value": 210},
+        {"name": "elastic", "value": 1309},
+        {"name": "exp", "value": 251},
+        {"name": "linear", "value": 43},
+        {"name": "poly", "value": 596},
+        {"name": "quad", "value": 192},
+        {"name": "sin", "value": 236}
+      ]
+    },
+    {
+      "name": "d3-force",
+      "children": [
+        {"name": "center", "value": 654},
+        {"name": "collide", "value": 2447},
+        {"name": "constant", "value": 72},
+        {"name": "jiggle", "value": 69},
+        {"name": "link", "value": 3213},
+        {"name": "manyBody", "value": 3181},
+        {"name": "simulation", "value": 3444},
+        {"name": "x", "value": 1030},
+        {"name": "y", "value": 1030}
+      ]
+    },
+    {
+      "name": "d3-format",
+      "children": [
+        {"name": "defaultLocale", "value": 361},
+        {"name": "exponent", "value": 134},
+        {"name": "formatDecimal", "value": 656},
+        {"name": "formatDefault", "value": 368},
+        {"name": "formatGroup", "value": 475},
+        {"name": "formatPrefixAuto", "value": 611},
+        {"name": "formatRounded", "value": 458},
+        {"name": "formatSpecifier", "value": 1589},
+        {"name": "formatTypes", "value": 846},
+        {"name": "locale", "value": 5247},
+        {"name": "precisionFixed", "value": 119},
+        {"name": "precisionPrefix", "value": 190},
+        {"name": "precisionRound", "value": 186}
+      ]
+    },
+    {
+      "name": "d3-geo",
+      "children": [
+        {
+          "name": "clip",
+          "children": [
+            {"name": "antimeridian", "value": 2897},
+            {"name": "buffer", "value": 470},
+            {"name": "circle", "value": 5956},
+            {"name": "extent", "value": 5527},
+            {"name": "index", "value": 3813},
+            {"name": "line", "value": 1099},
+            {"name": "polygon", "value": 2802}
+          ]
+        },
+        {
+          "name": "path",
+          "children": [
+            {"name": "area", "value": 945},
+            {"name": "bounds", "value": 485},
+            {"name": "centroid", "value": 2033},
+            {"name": "context", "value": 914},
+            {"name": "index", "value": 1690},
+            {"name": "string", "value": 1149}
+          ]
+        },
+        {
+          "name": "projection",
+          "children": [
+            {"name": "albers", "value": 235},
+            {"name": "albersUsa", "value": 3986},
+            {"name": "azimuthal", "value": 502},
+            {"name": "azimuthalEqualArea", "value": 447},
+            {"name": "azimuthalEquidistant", "value": 443},
+            {"name": "conic", "value": 402},
+            {"name": "conicConformal", "value": 1017},
+            {"name": "conicEqualArea", "value": 871},
+            {"name": "conicEquidistant", "value": 771},
+            {"name": "cylindricalEqualArea", "value": 314},
+            {"name": "equirectangular", "value": 253},
+            {"name": "fit", "value": 910},
+            {"name": "gnomonic", "value": 387},
+            {"name": "identity", "value": 1922},
+            {"name": "index", "value": 3752},
+            {"name": "mercator", "value": 1119},
+            {"name": "orthographic", "value": 376},
+            {"name": "resample", "value": 3275},
+            {"name": "stereographic", "value": 436},
+            {"name": "transverseMercator", "value": 762}
+          ]
+        },
+        {"name": "adder", "value": 906},
+        {"name": "area", "value": 1958},
+        {"name": "bounds", "value": 5361},
+        {"name": "cartesian", "value": 929},
+        {"name": "centroid", "value": 3816},
+        {"name": "circle", "value": 2373},
+        {"name": "compose", "value": 250},
+        {"name": "constant", "value": 72},
+        {"name": "distance", "value": 229},
+        {"name": "graticule", "value": 3034},
+        {"name": "identity", "value": 43},
+        {"name": "interpolate", "value": 911},
+        {"name": "length", "value": 1309},
+        {"name": "math", "value": 880},
+        {"name": "noop", "value": 34},
+        {"name": "pointEqual", "value": 139},
+        {"name": "polygonContains", "value": 2491},
+        {"name": "rotation", "value": 2509},
+        {"name": "stream", "value": 2305},
+        {"name": "transform", "value": 701}
+      ]
+    },
+    {
+      "name": "d3-hierarchy",
+      "children": [
+        {
+          "name": "hierarchy",
+          "children": [
+            {"name": "ancestors", "value": 138},
+            {"name": "descendants", "value": 121},
+            {"name": "each", "value": 381},
+            {"name": "eachAfter", "value": 353},
+            {"name": "eachBefore", "value": 282},
+            {"name": "index", "value": 1819},
+            {"name": "leaves", "value": 164},
+            {"name": "links", "value": 246},
+            {"name": "path", "value": 606},
+            {"name": "sort", "value": 151},
+            {"name": "sum", "value": 264}
+          ]
+        },
+        {
+          "name": "pack",
+          "children": [
+            {"name": "enclose", "value": 2452},
+            {"name": "index", "value": 1917},
+            {"name": "shuffle", "value": 389},
+            {"name": "siblings", "value": 3497}
+          ]
+        },
+        {
+          "name": "treemap",
+          "children": [
+            {"name": "binary", "value": 1184},
+            {"name": "dice", "value": 309},
+            {"name": "index", "value": 2810},
+            {"name": "resquarify", "value": 1029},
+            {"name": "round", "value": 166},
+            {"name": "slice", "value": 309},
+            {"name": "sliceDice", "value": 170},
+            {"name": "squarify", "value": 1868}
+          ]
+        },
+        {"name": "accessors", "value": 166},
+        {"name": "cluster", "value": 2093},
+        {"name": "constant", "value": 120},
+        {"name": "partition", "value": 1266},
+        {"name": "stratify", "value": 1934},
+        {"name": "tree", "value": 7060}
+      ]
+    },
+    {
+      "name": "d3-interpolate",
+      "children": [
+        {
+          "name": "transform",
+          "children": [
+            {"name": "decompose", "value": 672},
+            {"name": "index", "value": 2064},
+            {"name": "parse", "value": 980}
+          ]
+        },
+        {"name": "array", "value": 372},
+        {"name": "basis", "value": 600},
+        {"name": "basisClosed", "value": 360},
+        {"name": "color", "value": 697},
+        {"name": "constant", "value": 72},
+        {"name": "cubehelix", "value": 760},
+        {"name": "date", "value": 134},
+        {"name": "hcl", "value": 547},
+        {"name": "hsl", "value": 547},
+        {"name": "lab", "value": 447},
+        {"name": "number", "value": 100},
+        {"name": "object", "value": 390},
+        {"name": "quantize", "value": 163},
+        {"name": "rgb", "value": 1277},
+        {"name": "round", "value": 112},
+        {"name": "string", "value": 1758},
+        {"name": "value", "value": 598},
+        {"name": "zoom", "value": 1387}
+      ]
+    },
+    {
+      "name": "d3-path",
+      "children": [
+        {"name": "path", "value": 4089}
+      ]
+    },
+    {
+      "name": "d3-polygon",
+      "children": [
+        {"name": "area", "value": 243},
+        {"name": "centroid", "value": 346},
+        {"name": "contains", "value": 411},
+        {"name": "cross", "value": 402},
+        {"name": "hull", "value": 1710},
+        {"name": "length", "value": 375}
+      ]
+    },
+    {
+      "name": "d3-quadtree",
+      "children": [
+        {"name": "add", "value": 2441},
+        {"name": "cover", "value": 1667},
+        {"name": "data", "value": 170},
+        {"name": "extent", "value": 206},
+        {"name": "find", "value": 1696},
+        {"name": "quad", "value": 134},
+        {"name": "quadtree", "value": 2077},
+        {"name": "remove", "value": 1898},
+        {"name": "root", "value": 51},
+        {"name": "size", "value": 155},
+        {"name": "visit", "value": 695},
+        {"name": "visitAfter", "value": 773},
+        {"name": "x", "value": 138},
+        {"name": "y", "value": 138}
+      ]
+    },
+    {
+      "name": "d3-queue",
+      "children": [
+        {"name": "array", "value": 29},
+        {"name": "queue", "value": 2870}
+      ]
+    },
+    {
+      "name": "d3-random",
+      "children": [
+        {"name": "bates", "value": 168},
+        {"name": "exponential", "value": 113},
+        {"name": "irwinHall", "value": 137},
+        {"name": "logNormal", "value": 178},
+        {"name": "normal", "value": 503},
+        {"name": "uniform", "value": 236}
+      ]
+    },
+    {
+      "name": "d3-request",
+      "children": [
+        {"name": "csv", "value": 101},
+        {"name": "dsv", "value": 517},
+        {"name": "html", "value": 157},
+        {"name": "json", "value": 127},
+        {"name": "request", "value": 4593},
+        {"name": "text", "value": 109},
+        {"name": "tsv", "value": 118},
+        {"name": "type", "value": 370},
+        {"name": "xml", "value": 174}
+      ]
+    },
+    {
+      "name": "d3-scale",
+      "children": [
+        {"name": "array", "value": 90},
+        {"name": "band", "value": 2637},
+        {"name": "category10", "value": 119},
+        {"name": "category20", "value": 179},
+        {"name": "category20b", "value": 179},
+        {"name": "category20c", "value": 179},
+        {"name": "colors", "value": 101},
+        {"name": "constant", "value": 72},
+        {"name": "continuous", "value": 3328},
+        {"name": "cubehelix", "value": 188},
+        {"name": "identity", "value": 463},
+        {"name": "linear", "value": 1206},
+        {"name": "log", "value": 3273},
+        {"name": "nice", "value": 340},
+        {"name": "number", "value": 44},
+        {"name": "ordinal", "value": 1116},
+        {"name": "pow", "value": 1000},
+        {"name": "quantile", "value": 1280},
+        {"name": "quantize", "value": 1066},
+        {"name": "rainbow", "value": 536},
+        {"name": "sequential", "value": 717},
+        {"name": "threshold", "value": 802},
+        {"name": "tickFormat", "value": 1203},
+        {"name": "time", "value": 4565},
+        {"name": "utcTime", "value": 379},
+        {"name": "viridis", "value": 6471}
+      ]
+    },
+    {
+      "name": "d3-selection",
+      "children": [
+        {
+          "name": "selection",
+          "children": [
+            {"name": "append", "value": 235},
+            {"name": "attr", "value": 1460},
+            {"name": "call", "value": 134},
+            {"name": "classed", "value": 1740},
+            {"name": "data", "value": 3597},
+            {"name": "datum", "value": 132},
+            {"name": "dispatch", "value": 869},
+            {"name": "each", "value": 289},
+            {"name": "empty", "value": 53},
+            {"name": "enter", "value": 792},
+            {"name": "exit", "value": 176},
+            {"name": "filter", "value": 546},
+            {"name": "html", "value": 520},
+            {"name": "index", "value": 2216},
+            {"name": "insert", "value": 468},
+            {"name": "lower", "value": 171},
+            {"name": "merge", "value": 575},
+            {"name": "node", "value": 258},
+            {"name": "nodes", "value": 140},
+            {"name": "on", "value": 3119},
+            {"name": "order", "value": 367},
+            {"name": "property", "value": 617},
+            {"name": "raise", "value": 138},
+            {"name": "remove", "value": 153},
+            {"name": "select", "value": 653},
+            {"name": "selectAll", "value": 550},
+            {"name": "size", "value": 98},
+            {"name": "sort", "value": 681},
+            {"name": "sparse", "value": 71},
+            {"name": "style", "value": 889},
+            {"name": "text", "value": 528}
+          ]
+        },
+        {"name": "constant", "value": 72},
+        {"name": "creator", "value": 662},
+        {"name": "local", "value": 536},
+        {"name": "matcher", "value": 533},
+        {"name": "mouse", "value": 224},
+        {"name": "namespace", "value": 303},
+        {"name": "namespaces", "value": 254},
+        {"name": "point", "value": 448},
+        {"name": "select", "value": 259},
+        {"name": "selectAll", "value": 282},
+        {"name": "selector", "value": 152},
+        {"name": "selectorAll", "value": 171},
+        {"name": "sourceEvent", "value": 175},
+        {"name": "touch", "value": 407},
+        {"name": "touches", "value": 323},
+        {"name": "window", "value": 218}
+      ]
+    },
+    {
+      "name": "d3-shape",
+      "children": [
+        {
+          "name": "curve",
+          "children": [
+            {"name": "basis", "value": 1436},
+            {"name": "basisClosed", "value": 1530},
+            {"name": "basisOpen", "value": 1069},
+            {"name": "bundle", "value": 1081},
+            {"name": "cardinal", "value": 1633},
+            {"name": "cardinalClosed", "value": 1605},
+            {"name": "cardinalOpen", "value": 1288},
+            {"name": "catmullRom", "value": 2637},
+            {"name": "catmullRomClosed", "value": 2083},
+            {"name": "catmullRomOpen", "value": 1760},
+            {"name": "linear", "value": 738},
+            {"name": "linearClosed", "value": 514},
+            {"name": "monotone", "value": 3203},
+            {"name": "natural", "value": 1761},
+            {"name": "radial", "value": 655},
+            {"name": "step", "value": 1367}
+          ]
+        },
+        {
+          "name": "offset",
+          "children": [
+            {"name": "expand", "value": 319},
+            {"name": "none", "value": 310},
+            {"name": "silhouette", "value": 314},
+            {"name": "wiggle", "value": 740}
+          ]
+        },
+        {
+          "name": "order",
+          "children": [
+            {"name": "ascending", "value": 305},
+            {"name": "descending", "value": 112},
+            {"name": "insideOut", "value": 545},
+            {"name": "none", "value": 120},
+            {"name": "reverse", "value": 97}
+          ]
+        },
+        {
+          "name": "symbol",
+          "children": [
+            {"name": "circle", "value": 186},
+            {"name": "cross", "value": 476},
+            {"name": "diamond", "value": 307},
+            {"name": "square", "value": 137},
+            {"name": "star", "value": 609},
+            {"name": "triangle", "value": 255},
+            {"name": "wye", "value": 733}
+          ]
+        },
+        {"name": "arc", "value": 8831},
+        {"name": "area", "value": 2917},
+        {"name": "array", "value": 42},
+        {"name": "constant", "value": 81},
+        {"name": "descending", "value": 86},
+        {"name": "identity", "value": 43},
+        {"name": "line", "value": 1516},
+        {"name": "math", "value": 106},
+        {"name": "noop", "value": 29},
+        {"name": "pie", "value": 2336},
+        {"name": "point", "value": 81},
+        {"name": "radialArea", "value": 934},
+        {"name": "radialLine", "value": 396},
+        {"name": "stack", "value": 1432},
+        {"name": "symbol", "value": 1160}
+      ]
+    },
+    {
+      "name": "d3-time-format",
+      "children": [
+        {"name": "defaultLocale", "value": 867},
+        {"name": "isoFormat", "value": 284},
+        {"name": "isoParse", "value": 319},
+        {"name": "locale", "value": 13876}
+      ]
+    },
+    {
+      "name": "d3-time",
+      "children": [
+        {"name": "day", "value": 462},
+        {"name": "duration", "value": 164},
+        {"name": "hour", "value": 569},
+        {"name": "interval", "value": 1845},
+        {"name": "millisecond", "value": 668},
+        {"name": "minute", "value": 437},
+        {"name": "month", "value": 414},
+        {"name": "second", "value": 440},
+        {"name": "utcDay", "value": 397},
+        {"name": "utcHour", "value": 399},
+        {"name": "utcMinute", "value": 412},
+        {"name": "utcMonth", "value": 453},
+        {"name": "utcWeek", "value": 979},
+        {"name": "utcYear", "value": 808},
+        {"name": "week", "value": 963},
+        {"name": "year", "value": 754}
+      ]
+    },
+    {
+      "name": "d3-timer",
+      "children": [
+        {"name": "interval", "value": 400},
+        {"name": "timeout", "value": 250},
+        {"name": "timer", "value": 2771}
+      ]
+    },
+    {
+      "name": "d3-transition",
+      "children": [
+        {
+          "name": "selection",
+          "children": [
+            {"name": "index", "value": 245},
+            {"name": "interrupt", "value": 138},
+            {"name": "transition", "value": 1090}
+          ]
+        },
+        {
+          "name": "transition",
+          "children": [
+            {"name": "attr", "value": 2473},
+            {"name": "attrTween", "value": 904},
+            {"name": "delay", "value": 510},
+            {"name": "duration", "value": 528},
+            {"name": "ease", "value": 348},
+            {"name": "filter", "value": 574},
+            {"name": "index", "value": 1892},
+            {"name": "interpolate", "value": 340},
+            {"name": "merge", "value": 653},
+            {"name": "on", "value": 853},
+            {"name": "remove", "value": 284},
+            {"name": "schedule", "value": 4792},
+            {"name": "select", "value": 826},
+            {"name": "selectAll", "value": 883},
+            {"name": "selection", "value": 174},
+            {"name": "style", "value": 2119},
+            {"name": "styleTween", "value": 607},
+            {"name": "text", "value": 473},
+            {"name": "transition", "value": 691},
+            {"name": "tween", "value": 2026}
+          ]
+        },
+        {"name": "active", "value": 484},
+        {"name": "interrupt", "value": 665}
+      ]
+    },
+    {
+      "name": "d3-voronoi",
+      "children": [
+        {"name": "Beach", "value": 4381},
+        {"name": "Cell", "value": 4087},
+        {"name": "Circle", "value": 1632},
+        {"name": "constant", "value": 72},
+        {"name": "Diagram", "value": 3415},
+        {"name": "Edge", "value": 3634},
+        {"name": "point", "value": 81},
+        {"name": "RedBlackTree", "value": 5302},
+        {"name": "voronoi", "value": 1420}
+      ]
+    },
+    {
+      "name": "d3-zoom",
+      "children": [
+        {"name": "constant", "value": 72},
+        {"name": "event", "value": 137},
+        {"name": "noevent", "value": 202},
+        {"name": "transform", "value": 1336},
+        {"name": "zoom", "value": 12133}
+      ]
+    }
+  ]
+}
