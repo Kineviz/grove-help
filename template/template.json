@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Google Sheets Starter",
+        "description": "Load a Google Sheet into a notebook and start visualizing it with Plot.",
+        "fileKey": "template/googleSheetsStarter/googleSheetsStarter"
+    },
+    {
+        "title": "Input + Chart",
+        "description": "Connect a slider to a chart.",
+        "fileKey": "template/inputChart/inputChart"
+    }
+]
