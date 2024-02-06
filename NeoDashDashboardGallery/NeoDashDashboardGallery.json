@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Bill Of Materials",
+        "description": "This dashboard shows how to model a BOM in Neo4j and query the BOM as a graph.",
+        "fileKey": "NeoDashDashboardGallery/BillOfMaterials",
+        "files": []
+    },
+    {
+        "title": "Citation Graph",
+        "description": "A dashboard built on top of the DBLP Citation Network, showing how to visualize the results of algorithms with an embedded Bloom iFrame.",
+        "fileKey": "NeoDashDashboardGallery/CitationGraph",
+        "files": []
+    },
+    {
+        "title": "Dad Jokes",
+        "description": "A collection of dad jokes from twitter, analyzed and reconciled using Google's NLP API.",
+        "fileKey": "NeoDashDashboardGallery/DadJokesDashboard",
+        "files": []
+    },
+    {
+        "title": "Domain Names",
+        "description": "A dashboard containing information about the owners, providers and status of domains in New Caledonia, dataset kindly provided by OPT Nouvelle Caledonie (https://github.com/opt-nc).",
+        "fileKey": "NeoDashDashboardGallery/DomainNames",
+        "files": []
+    },
+    {
+        "title": "Financial Intelligence",
+        "description": "A demo dashboard created on the US Financial Crimes Enforcement Network.",
+        "fileKey": "NeoDashDashboardGallery/FinancialIntelligence",
+        "files": []
+    },
+    {
+        "title": "Graph Assessment",
+        "description": "A demo by the Neo4j Customer Success team - a tool to measure and improve graph maturity in an organization.",
+        "fileKey": "NeoDashDashboardGallery/GraphAssessment",
+        "files": []
+    },
+    {
+        "title": "Interactive Rail Planner",
+        "description": "Explore the EU rail network as a graph, and try out route planning using Dijkstra's algorithm.",
+        "fileKey": "NeoDashDashboardGallery/InteractiveRoutePlanner",
+        "files": []
+    },
+    {
+        "title": "Movies Dashboard",
+        "description": "A basic dashboard built on top of the Neo4j movie database, as used in the Neo4j graph academy.",
+        "fileKey": "NeoDashDashboardGallery/MoviesDashboard",
+        "files": []
+    },
+    {
+        "title": "Recommendations Dashboard",
+        "description": "An extension of the movies dashboard with more complex Cypher and customized visualizations.",
+        "fileKey": "NeoDashDashboardGallery/RecommendationsDashboard",
+        "files": []
+    },
+    {
+        "title": "Twitter Dashboard",
+        "description": "A dashboard that contains the network of the Neo4j Twitter community.",
+        "fileKey": "NeoDashDashboardGallery/TwitterDashboard",
+        "files": []
+    },
+    {
+        "title": "WineRatings",
+        "description": "An interactive dashboard showing wines from around the world, including their ratings and price information.",
+        "fileKey": "NeoDashDashboardGallery/WineRatings",
+        "files": []
+    }
+]
