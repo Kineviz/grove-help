@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Google Sheets Starter",
+        "description": "Load a Google Sheet into a notebook and start visualizing it with Plot.",
+        "fileKey": "template/googleSheetsStarter/googleSheetsStarter",
+        "files": []
+    },
+    {
+        "title": "Input + Chart",
+        "description": "Connect a slider to a chart.",
+        "fileKey": "template/inputChart/inputChart",
+        "files": [
+            {
+                "fileKey": "template/inputChart/files/penguins.csv",
+                "name": "penguins.csv",
+                "type": "text/csv"
+            }
+        ]
+    }
+]
