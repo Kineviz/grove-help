@@ -1,0 +1,53 @@
+{
+  "theme": "eclipse",
+  "readOnlyChecked": false,
+  "drawerType": {
+    "None": {
+      "index": 0,
+      "w": 355.5
+    },
+    "Folder": {
+      "index": 1,
+      "w": 313
+    },
+    "Help": {
+      "index": 2,
+      "w": 752
+    },
+    "Settings": {
+      "index": 3,
+      "w": 619
+    },
+    "Panels": {
+      "index": 4,
+      "w": 716
+    },
+    "FileAttachments": {
+      "index": 5,
+      "w": 487
+    },
+    "ImportModules": {
+      "index": 5,
+      "w": 481.66666666666674
+    },
+    "FindAndReplace": {
+      "index": 7,
+      "w": 423
+    }
+  },
+  "published": [],
+  "extension": true,
+  "widthScale": 100,
+  "heightScale": 94.47619047619048,
+  "lineNumbers": false,
+  "vimEnabled": false,
+  "darkMode": true,
+  "autoFormat": false,
+  "mask": false,
+  "autoSave": false,
+  "autoSaveInSecond": 10,
+  "notice_mode": "info",
+  "usersSharePermission": {},
+  "databases": [],
+  "secrets": []
+}
