@@ -8,7 +8,7 @@
     },
     "Folder": {
       "index": 1,
-      "w": 403
+      "w": 529
     },
     "Help": {
       "index": 2,
@@ -16,7 +16,7 @@
     },
     "Settings": {
       "index": 3,
-      "w": 619
+      "w": 585
     },
     "Panels": {
       "index": 4,
@@ -38,13 +38,13 @@
   "published": [],
   "extension": true,
   "widthScale": 100,
-  "heightScale": 94.47619047619048,
+  "heightScale": 91.59420289855072,
   "lineNumbers": false,
   "vimEnabled": false,
   "darkMode": true,
   "autoFormat": false,
   "mask": false,
-  "autoSave": false,
+  "autoSave": true,
   "autoSaveInSecond": 10,
   "notice_mode": "info",
   "usersSharePermission": {},
