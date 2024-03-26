@@ -8,7 +8,7 @@
     },
     "Folder": {
       "index": 1,
-      "w": 529
+      "w": 400
     },
     "Help": {
       "index": 2,
@@ -16,11 +16,11 @@
     },
     "Settings": {
       "index": 3,
-      "w": 585
+      "w": 447
     },
     "Panels": {
       "index": 4,
-      "w": 716
+      "w": 386
     },
     "FileAttachments": {
       "index": 5,
@@ -32,22 +32,50 @@
     },
     "FindAndReplace": {
       "index": 7,
-      "w": 488
+      "w": 306
     }
   },
   "published": [],
   "extension": true,
-  "widthScale": 100,
-  "heightScale": 91.59420289855072,
-  "lineNumbers": false,
+  "widthScale": 50.3125,
+  "heightScale": 51.04761904761905,
+  "lineNumbers": true,
   "vimEnabled": false,
   "darkMode": true,
   "autoFormat": false,
   "mask": false,
+  "imageQuality": 0.07,
   "autoSave": true,
   "autoSaveInSecond": 10,
   "notice_mode": "info",
   "usersSharePermission": {},
-  "databases": [],
+  "databases": [
+    {
+      "name": "my",
+      "type": "Mysql",
+      "connectionHostedBy": "Grove",
+      "host": "127.0.0.1",
+      "port": 3306,
+      "user": "root",
+      "password": "root",
+      "database": "test",
+      "sslTls": false,
+      "file": ""
+    },
+    {
+      "name": "movies",
+      "type": "Neo4j",
+      "connectionHostedBy": "Grove",
+      "protocal": "neo4j",
+      "host": "demo.neo4jlabs.com",
+      "port": 7687,
+      "user": "movies",
+      "password": "movies",
+      "database": "movies",
+      "sslTls": false,
+      "file": "",
+      "secret": "eyJuYW1lIjoibW92aWVzIiwib3JpZ2luIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwIiwidHlwZSI6Im5lbzRqIiwiaG9zdCI6ImRlbW8ubmVvNGpsYWJzLmNvbSIsInBvcnQiOjc2ODcsInNzbCI6ImRpc2FibGVkIiwic2VjcmV0IjoiZDcwYWY2OGYtMjY5MC00ZGIyLTlhNzYtZTJlZDNjMjQzMDE5In0="
+    }
+  ],
   "secrets": []
 }
