@@ -8,15 +8,15 @@
     },
     "Folder": {
       "index": 1,
-      "w": 410
+      "w": 382
     },
     "Help": {
       "index": 2,
-      "w": 752
+      "w": 383
     },
     "Settings": {
       "index": 3,
-      "w": 447
+      "w": 397
     },
     "Panels": {
       "index": 4,
@@ -32,21 +32,22 @@
     },
     "FindAndReplace": {
       "index": 7,
-      "w": 306
+      "w": 376
     }
   },
   "published": [],
   "extension": true,
-  "widthScale": 50.3125,
-  "heightScale": 51.04761904761905,
+  "widthScale": 100,
+  "heightScale": 94.47619047619048,
   "lineNumbers": true,
   "vimEnabled": false,
   "darkMode": true,
   "autoFormat": false,
   "mask": false,
   "imageQuality": 0.07,
+  "jsPdfFont": "",
   "autoSave": true,
-  "autoSaveInSecond": 10,
+  "autoSaveInSecond": 35,
   "notice_mode": "info",
   "usersSharePermission": {},
   "databases": [
