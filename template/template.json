@@ -31,7 +31,7 @@
   },
   {
     "title": "SQL + Chart",
-    "description": "Connect a SQLite database to a chart..",
+    "description": "Connect a SQLite database to a chart.",
     "fileKey": "template/sql-chart/sql-chart",
     "files": [
       {
@@ -54,32 +54,20 @@
     ]
   },
   {
-    "title": "SQL + Chart",
-    "description": "Connect a SQLite database to a chart..",
-    "fileKey": "template/sql-chart/sql-chart",
+    "title": "Plot: Histogram",
+    "description": "Visualize a quantitative distribution from a CSV dataset using Plot.",
+    "fileKey": "template/plot-histogram/plot-histogram",
     "files": [
       {
-        "fileKey": "template/sql-chart/files/chinook.db",
-        "name": "chinook.db",
-        "type": "text/db"
-      }
-    ]
-  },
-  {
-    "title": "Plot Scatterplot",
-    "description": "Visualize a correlation from a CSV dataset using Plot.",
-    "fileKey": "template/plot-scatterplot/plot-scatterplot",
-    "files": [
-      {
-        "fileKey": "template/plot-scatterplot/files/penguins.csv",
+        "fileKey": "template/plot-histogram/files/penguins.csv",
         "name": "penguins.csv",
         "type": "text/csv"
       }
     ]
   },
-   {
-    "title": "Plot-us-map",
-    "description": "Plot-us-map",
+  {
+    "title": "Plot U.S. Map",
+    "description": "Plot U.S. Map",
     "fileKey": "template/plot-us-map/plot-us-map",
     "files": [
       {
@@ -175,18 +163,6 @@
     ]
   },
   {
-    "title": "Plot: Histogram",
-    "description": "Visualize a quantitative distribution from a CSV dataset using Plot.",
-    "fileKey": "template/plot-histogram/plot-histogram",
-    "files": [
-      {
-        "fileKey": "template/plot-histogram/files/penguins.csv",
-        "name": "penguins.csv",
-        "type": "text/csv"
-      }
-    ]
-  },
-  {
     "title": "Plot World Map",
     "description": "Plot World Map",
     "fileKey": "template/plot-world-map/plot-world-map",
@@ -238,5 +214,58 @@
         "type": "text/db"
       }
     ]
+  },
+  {
+    "title": "Interactive-svg",
+    "description": "Interactive-svg",
+    "fileKey": "template/interactive-svg/interactive-svg",
+    "files": []
+  },
+  {
+    "title": "Simple-html-canvas",
+    "description": "Simple-html-canvas",
+    "fileKey": "template/simple-html-canvas/simple-html-canvas",
+    "files": []
+  },
+  {
+    "title": "Interactive-html-canvas",
+    "description": "Interactive-html-canvas",
+    "fileKey": "template/interactive-html-canvas/interactive-html-canvas",
+    "files": []
+  },
+  {
+    "title": "Processing-p5-js",
+    "description": "Processing-p5-js",
+    "fileKey": "template/processing-p5-js/processing-p5-js",
+    "files": [
+      {
+        "fileKey": "template/processing-p5-js/p5",
+        "name": "p5",
+        "type": "text/plain"
+      },
+      {
+        "fileKey": "template/processing-p5-js/copiable",
+        "name": "copiable",
+        "type": "text/plain"
+      }
+    ]
+  },
+  {
+    "title": "Webgl-shader",
+    "description": "Webgl-shader",
+    "fileKey": "template/webgl-shader/webgl-shader",
+    "files": [
+      {
+        "fileKey": "template/webgl-shader/shader",
+        "name": "shader",
+        "type": "text/plain"
+      }
+    ]
+  },
+  {
+    "title": "Three-js",
+    "description": "Three-js",
+    "fileKey": "template/three-js/three-js",
+    "files": []
   }
 ]
