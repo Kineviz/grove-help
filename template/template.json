@@ -77,6 +77,103 @@
       }
     ]
   },
+   {
+    "title": "Plot-us-map",
+    "description": "Plot-us-map",
+    "fileKey": "template/plot-us-map/plot-us-map",
+    "files": [
+      {
+        "fileKey": "template/plot-us-map/files/counties-albers-10m.json",
+        "name": "counties-albers-10m.json",
+        "type": "text/json"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/us-places.csv",
+        "name": "us-places.csv",
+        "type": "text/csv"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/cityExample.png",
+        "name": "cityExample.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/countyACSExample@1.png",
+        "name": "countyACSExample@1.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/countyExample.png",
+        "name": "countyExample.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/countyPopulationExample@1.png",
+        "name": "countyPopulationExample@1.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/cumulativeCovidExample@1.png",
+        "name": "cumulativeCovidExample@1.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/demographicsData2018.csv",
+        "name": "demographicsData2018.csv",
+        "type": "text/csv"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/demographicsDataApi2014.csv",
+        "name": "demographicsDataApi2014.csv",
+        "type": "text/csv"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/demographicsDataApi2016.csv",
+        "name": "demographicsDataApi2016.csv",
+        "type": "text/csv"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/demographicsKeys.json",
+        "name": "demographicsKeys.json",
+        "type": "text/json"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/nationExample.png",
+        "name": "nationExample.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/ne_10m_populated_places.csv",
+        "name": "ne_10m_populated_places.csv",
+        "type": "text/csv"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/populationData.csv",
+        "name": "populationData.csv",
+        "type": "text/csv"
+      },
+      {
+        "fileKey": "template/plot-us-map/files/stateExample.png",
+        "name": "stateExample.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/plot-us-map/US-geographic-data",
+        "name": "US-geographic-data",
+        "type": "text/plain"
+      },
+      {
+        "fileKey": "template/plot-us-map/US-coronavirus-daily-cases-map",
+        "name": "US-coronavirus-daily-cases-map",
+        "type": "text/plain"
+      },
+      {
+        "fileKey": "template/plot-us-map/scrubber",
+        "name": "scrubber",
+        "type": "text/plain"
+      }
+    ]
+  },
   {
     "title": "Plot: Histogram",
     "description": "Visualize a quantitative distribution from a CSV dataset using Plot.",

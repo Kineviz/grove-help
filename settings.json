@@ -1,5 +1,5 @@
 {
-  "theme": "eclipse",
+  "theme": "darcula",
   "readOnlyChecked": false,
   "drawerType": {
     "None": {
@@ -8,7 +8,7 @@
     },
     "Folder": {
       "index": 1,
-      "w": 382
+      "w": 362
     },
     "Help": {
       "index": 2,
@@ -24,7 +24,7 @@
     },
     "FileAttachments": {
       "index": 5,
-      "w": 487
+      "w": 379
     },
     "ImportModules": {
       "index": 5,
@@ -47,7 +47,7 @@
   "imageQuality": 0.07,
   "jsPdfFont": "",
   "autoSave": true,
-  "autoSaveInSecond": 35,
+  "autoSaveInSecond": 22,
   "notice_mode": "info",
   "usersSharePermission": {},
   "databases": [
