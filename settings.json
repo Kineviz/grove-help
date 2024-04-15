@@ -8,15 +8,15 @@
     },
     "Folder": {
       "index": 1,
-      "w": 362
+      "w": 385
     },
     "Help": {
       "index": 2,
-      "w": 383
+      "w": 375
     },
     "Settings": {
       "index": 3,
-      "w": 397
+      "w": 377
     },
     "Panels": {
       "index": 4,
@@ -28,7 +28,7 @@
     },
     "ImportModules": {
       "index": 5,
-      "w": 481.66666666666674
+      "w": 350.66666666666674
     },
     "FindAndReplace": {
       "index": 7,
@@ -78,5 +78,11 @@
       "secret": "eyJuYW1lIjoibW92aWVzIiwib3JpZ2luIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwIiwidHlwZSI6Im5lbzRqIiwiaG9zdCI6ImRlbW8ubmVvNGpsYWJzLmNvbSIsInBvcnQiOjc2ODcsInNzbCI6ImRpc2FibGVkIiwic2VjcmV0IjoiZDcwYWY2OGYtMjY5MC00ZGIyLTlhNzYtZTJlZDNjMjQzMDE5In0="
     }
   ],
-  "secrets": []
+  "secrets": [
+    {
+      "name": "test",
+      "value": "abc",
+      "createTime": 1713072788969
+    }
+  ]
 }
