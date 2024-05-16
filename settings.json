@@ -1,5 +1,5 @@
 {
-  "theme": "darcula",
+  "theme": "blackboard",
   "readOnlyChecked": false,
   "drawerType": {
     "None": {
@@ -8,19 +8,19 @@
     },
     "Folder": {
       "index": 1,
-      "w": 368
+      "w": 364
     },
     "Help": {
       "index": 2,
-      "w": 375
+      "w": 491
     },
     "Settings": {
       "index": 3,
-      "w": 382
+      "w": 401
     },
     "Panels": {
       "index": 4,
-      "w": 398
+      "w": 732
     },
     "FileAttachments": {
       "index": 5,
@@ -32,13 +32,13 @@
     },
     "FindAndReplace": {
       "index": 7,
-      "w": 374
+      "w": 320
     }
   },
   "published": [],
   "extension": true,
-  "widthScale": 100,
-  "heightScale": 94.47619047619048,
+  "widthScale": 80,
+  "heightScale": 75.61904761904762,
   "lineNumbers": true,
   "vimEnabled": false,
   "darkMode": true,
