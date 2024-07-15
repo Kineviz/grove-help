@@ -1,5 +1,7 @@
 {
-  "theme": "blackboard",
+  "theme": "3024-night",
+  "lightTheme": "eclipse",
+  "darkTheme": "3024-night",
   "readOnlyChecked": false,
   "drawerType": {
     "None": {
@@ -8,7 +10,7 @@
     },
     "Folder": {
       "index": 1,
-      "w": 372
+      "w": 351
     },
     "Help": {
       "index": 2,
@@ -16,7 +18,7 @@
     },
     "Settings": {
       "index": 3,
-      "w": 401
+      "w": 371
     },
     "Panels": {
       "index": 4,
@@ -32,7 +34,7 @@
     },
     "FindAndReplace": {
       "index": 7,
-      "w": 320
+      "w": 367
     }
   },
   "published": [],
