@@ -10,11 +10,11 @@
     },
     "Folder": {
       "index": 1,
-      "w": 400
+      "w": 381
     },
     "Help": {
       "index": 2,
-      "w": 386
+      "w": 419
     },
     "Settings": {
       "index": 3,
@@ -22,7 +22,7 @@
     },
     "Panels": {
       "index": 4,
-      "w": 732
+      "w": 391
     },
     "FileAttachments": {
       "index": 5,
@@ -34,7 +34,7 @@
     },
     "FindAndReplace": {
       "index": 7,
-      "w": 367
+      "w": 378
     }
   },
   "published": [],
@@ -49,7 +49,7 @@
   "mask": false,
   "imageQuality": 1,
   "jsPdfFont": "",
-  "autoSave": true,
+  "autoSave": false,
   "autoSaveInSecond": 22,
   "notice_mode": "info",
   "usersSharePermission": {},
