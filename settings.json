@@ -49,7 +49,7 @@
   "mask": false,
   "imageQuality": 1,
   "jsPdfFont": "",
-  "autoSave": false,
+  "autoSave": true,
   "autoSaveInSecond": 22,
   "notice_mode": "info",
   "usersSharePermission": {},
