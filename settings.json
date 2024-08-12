@@ -22,7 +22,7 @@
     },
     "Panels": {
       "index": 4,
-      "w": 391
+      "w": 905
     },
     "FileAttachments": {
       "index": 5,
@@ -34,13 +34,13 @@
     },
     "FindAndReplace": {
       "index": 7,
-      "w": 378
+      "w": 947
     }
   },
   "published": [],
   "extension": true,
-  "widthScale": 100,
-  "heightScale": 94.47619047619048,
+  "widthScale": 64.375,
+  "heightScale": 71.42857142857143,
   "lineNumbers": true,
   "vimEnabled": false,
   "autoClosePairs": true,
