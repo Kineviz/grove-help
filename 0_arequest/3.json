@@ -1,0 +1,24 @@
+{
+  mode:"readOnly",
+  taginfos:[
+  {
+    "uploadUri": "https://grove-help.graphxr.com/",
+    "fileKey": "user-manual/user-manual",
+    "name": "user-manual",
+    "type": "text/plain",
+    "projectId": "site",
+    "userId": "siteUser",
+    "version": 0,
+    "selectedVersion": 0
+  },
+  {
+    "uploadUri": "https://grove-help.graphxr.com/",
+    "fileKey": "NeoDashDashboardGallery/BillOfMaterials",
+    "name": "BillOfMaterials",
+    "type": "text/plain",
+    "projectId": "site",
+    "userId": "siteUser",
+    "version": 0,
+    "selectedVersion": 0
+  }
+]}
