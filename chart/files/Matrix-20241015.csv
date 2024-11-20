@@ -1,0 +1,89 @@
+series,x,y
+hot dog,AD,729
+hot dog,AE,469
+hot dog,AF,158
+hot dog,AG,360
+hot dog,AI,549
+hot dog,AL,316
+hot dog,AO,53
+hot dog,AQ,491
+burger,AD,301
+burger,AE,807
+burger,AF,143
+burger,AG,287
+burger,AI,765
+burger,AL,732
+burger,AO,90
+burger,AQ,107
+sandwich,AD,181
+sandwich,AE,55
+sandwich,AF,2
+sandwich,AG,487
+sandwich,AI,644
+sandwich,AL,104
+sandwich,AO,253
+sandwich,AQ,94
+kebab,AD,695
+kebab,AE,6
+kebab,AF,583
+kebab,AG,409
+kebab,AI,783
+kebab,AL,887
+kebab,AO,783
+kebab,AQ,156
+fries,AD,942
+fries,AE,488
+fries,AF,23
+fries,AG,293
+fries,AI,184
+fries,AL,632
+fries,AO,516
+fries,AQ,509
+donut,AD,919
+donut,AE,194
+donut,AF,947
+donut,AG,992
+donut,AI,858
+donut,AL,862
+donut,AO,488
+donut,AQ,531
+junk,AD,337
+junk,AE,776
+junk,AF,198
+junk,AG,183
+junk,AI,927
+junk,AL,341
+junk,AO,463
+junk,AQ,109
+sushi,AD,706
+sushi,AE,569
+sushi,AF,730
+sushi,AG,778
+sushi,AI,369
+sushi,AL,544
+sushi,AO,880
+sushi,AQ,303
+ramen,AD,394
+ramen,AE,673
+ramen,AF,8
+ramen,AG,173
+ramen,AI,730
+ramen,AL,233
+ramen,AO,547
+ramen,AQ,117
+curry,AD,846
+curry,AE,592
+curry,AF,951
+curry,AG,576
+curry,AI,752
+curry,AL,889
+curry,AO,454
+curry,AQ,708
+udon,AD,252
+udon,AE,981
+udon,AF,278
+udon,AG,156
+udon,AI,783
+udon,AL,175
+udon,AO,587
+udon,AQ,827
