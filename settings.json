@@ -10,11 +10,11 @@
     },
     "Folder": {
       "index": 1,
-      "w": 532
+      "w": 351
     },
     "Help": {
       "index": 2,
-      "w": 635
+      "w": 400
     },
     "Settings": {
       "index": 3,
@@ -40,15 +40,17 @@
   "published": [],
   "extension": true,
   "widthScale": 100,
-  "heightScale": 94.66666666666667,
+  "heightScale": 94.47619047619048,
   "lineNumbers": true,
   "vimEnabled": false,
   "autoClosePairs": true,
+  "markText": true,
   "darkMode": true,
   "autoFormat": false,
   "mask": false,
   "displayHistory": false,
-  "reserveSpace": false,
+  "reserveSpace": true,
+  "minimap": false,
   "imageQuality": 1,
   "jsPdfFont": "",
   "autoSave": false,
