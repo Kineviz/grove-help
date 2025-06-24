@@ -1,3 +1,4 @@
 *.log
 settings.json
 *.ver
+node_modules/**
