@@ -175,6 +175,28 @@
     ]
   },
   {
+    "title": "Sunburst",
+    "description": "Sunburst",
+    "fileKey": "template/sunburst/sunburst",
+    "files": [
+      {
+        "fileKey": "template/sunburst/exampleComponents",
+        "name": "exampleComponents",
+        "type": "text/plain"
+      },
+      {
+        "fileKey": "template/sunburst/files/flare.json",
+        "name": "flare.json",
+        "type": "text/json"
+      },
+      {
+        "fileKey": "template/sunburst/files/sunburst.jpg",
+        "name": "sunburst.jpg",
+        "type": "image/jpg"
+      }
+    ]
+  },
+  {
     "title": "Simple D3",
     "description": "The simplest starting point for working with D3.",
     "fileKey": "template/simple-d3/simple-d3",
