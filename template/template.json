@@ -289,5 +289,32 @@
     "description": "Three-js",
     "fileKey": "template/three-js/three-js",
     "files": []
+  },
+  {
+    "title": "React-start",
+    "description": "React-start",
+    "fileKey": "template/react-start/react-start",
+    "files": [
+      {
+        "fileKey": "template/react-start/files/filter react.png",
+        "name": "filter react.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/react-start/files/separate change.png",
+        "name": "separate change.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/react-start/files/switch language mode.png",
+        "name": "switch language mode.png",
+        "type": "image/png"
+      },
+      {
+        "fileKey": "template/react-start/files/sync change.png",
+        "name": "sync change.png",
+        "type": "image/png"
+      }
+    ]
   }
 ]
