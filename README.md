@@ -14,11 +14,11 @@ Grove makes it easy to create, remix, and share interactive data visualizations 
 3. Open the notebook in grove to explore the interactive visualization.
 
 ## 🔗 Example Notebooks
-![image-20250818130624085](.\template.png)
+![image-20250818130624085](./template.png)
 
 Here are some template examples. Including how to use tables, plot charts, D3 charts, React program examples, etc.
 
-![image-20250818130759551](.\react.png)
+![image-20250818130759551](react.png)
 
 Here are some react app examples.
 
