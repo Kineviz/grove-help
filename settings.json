@@ -6,118 +6,66 @@
   "drawerType": {
     "None": {
       "index": 0,
-      "w": 355.5
+      "w": 480
     },
     "Folder": {
       "index": 1,
-      "w": 389
+      "w": 384
     },
     "Help": {
       "index": 2,
-      "w": 400
+      "w": 960
     },
     "Settings": {
       "index": 3,
-      "w": 410
+      "w": 960
     },
     "Panels": {
       "index": 4,
-      "w": 905
+      "w": 1440
     },
     "FileAttachments": {
       "index": 5,
-      "w": 401
+      "w": 465
     },
     "ImportModules": {
-      "index": 5,
-      "w": 374.66666666666674
+      "index": 6,
+      "w": 380
     },
     "FindAndReplace": {
       "index": 7,
-      "w": 391
+      "w": 384
+    },
+    "AiComp": {
+      "index": 8,
+      "w": 960
     }
   },
   "published": [],
   "extension": true,
-  "widthScale": 100,
-  "heightScale": 94.47619047619048,
-  "lineNumbers": true,
+  "widthScale": 45.46875,
+  "heightScale": 85.14285714285714,
+  "lineNumbers": false,
   "vimEnabled": false,
-  "autoClosePairs": true,
+  "autoClosePairs": false,
   "markText": true,
   "darkMode": true,
+  "lang": "en",
   "autoFormat": false,
   "mask": false,
   "displayHistory": false,
   "reserveSpace": true,
   "minimap": false,
-  "imageQuality": 1,
+  "imageQuality": 0.09,
   "jsPdfFont": "",
   "autoSave": false,
-  "autoSaveInSecond": 22,
+  "autoSaveInSecond": 10,
+  "tagVersionPeriod": 10,
   "notice_mode": "info",
   "usersSharePermission": {},
-  "databases": [
-    {
-      "name": "movies",
-      "type": "Neo4j",
-      "connectionHostedBy": "Grove",
-      "protocal": "neo4j",
-      "host": "demo.neo4jlabs.com",
-      "port": 7687,
-      "user": "movies",
-      "password": "movies",
-      "database": "movies",
-      "sslTls": false,
-      "file": "",
-      "secret": "eyJuYW1lIjoibW92aWVzIiwib3JpZ2luIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwIiwidHlwZSI6Im5lbzRqIiwiaG9zdCI6ImRlbW8ubmVvNGpsYWJzLmNvbSIsInBvcnQiOjc2ODcsInNzbCI6ImRpc2FibGVkIiwic2VjcmV0IjoiZDcwYWY2OGYtMjY5MC00ZGIyLTlhNzYtZTJlZDNjMjQzMDE5In0="
-    },
-    {
-      "name": "my",
-      "type": "Mysql",
-      "connectionHostedBy": "Grove",
-      "host": "127.0.0.1",
-      "port": 3306,
-      "user": "root",
-      "password": "root",
-      "database": "test",
-      "sslTls": false,
-      "file": ""
-    },
-    {
-      "name": "localNeo4j",
-      "type": "Neo4j",
-      "connectionHostedBy": "Client",
-      "sslTls": false,
-      "protocal": "neo4j",
-      "host": "localhost",
-      "port": 7687,
-      "user": "neo4j",
-      "password": "hahahehe123",
-      "database": "neo4j",
-      "file": "",
-      "secret": "eyJuYW1lIjoibG9jYWxOZW80aiIsIm9yaWdpbiI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTAwMCIsInR5cGUiOiJuZW80aiIsImhvc3QiOiJsb2NhbGhvc3QiLCJwb3J0Ijo3Njg3LCJzc2wiOiJkaXNhYmxlZCIsInNlY3JldCI6IjcxYjhiODYzLTI4NDItNDY3Yy1hMzJjLTdlOWNjMzcwZGNjZiJ9"
-    },
-    {
-      "name": "198.181.42.141",
-      "type": "Neo4j",
-      "connectionHostedBy": "Client",
-      "sslTls": false,
-      "protocal": "neo4j",
-      "host": "198.181.42.141",
-      "port": 7786,
-      "user": "neo4j",
-      "password": "briansales2024",
-      "database": "neo4j",
-      "file": "",
-      "secret": "eyJuYW1lIjoiMTk4LjE4MS40Mi4xNDEiLCJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJ0eXBlIjoibmVvNGoiLCJob3N0IjoiMTk4LjE4MS40Mi4xNDEiLCJwb3J0Ijo3Nzg2LCJzc2wiOiJkaXNhYmxlZCIsInNlY3JldCI6IjE3ZmI3YmU1LWNiZTctNDU2YS05MjE5LWYxYTM1MDY0NzcwMSJ9"
-    }
-  ],
-  "secrets": [
-    {
-      "name": "test",
-      "value": "abc",
-      "createTime": 1713072788969
-    }
-  ]
+  "databases": [],
+  "aiModels": [],
+  "selectedAiIndex": 0,
+  "inlinePeriod": 1200,
+  "secrets": []
 }
