@@ -217,11 +217,6 @@
         "fileKey": "template/d3-u-s-map/files/counties-albers-10m.json",
         "name": "counties-albers-10m.json",
         "type": "text/json"
-      },
-      {
-        "fileKey": "template/d3-u-s-map/files/30f28c76aad0f49f92ee59a1bbb5555a4da664388cee9cdfc93fffd00f9bdac1.jpg",
-        "name": "30f28c76aad0f49f92ee59a1bbb5555a4da664388cee9cdfc93fffd00f9bdac1.jpg",
-        "type": "image/jpg"
       }
     ]
   },
