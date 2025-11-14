@@ -1,0 +1,1945 @@
+{
+ "blocks": [
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "",
+     "pinCode": true,
+     "dname": "575f576c-5b3b-4658-beb2-7fbd1464aad7",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "<H5 style=\"color:red\">11月即是运动会又是劳动周，多减了老师的课时？</H5>",
+     "pinCode": false,
+     "dname": "8735cf17-d284-4cda-9608-7d30f20d65c4",
+     "codeMode": "htmlmixed"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "monthKeshiChanges = {\n  let _cancelInfos = await FileAttachment(\"_xb_cancelInfos.js\").text();\n  let _9 = await FileAttachment(\"_xb_9_change.js\").text();\n  let _10 = await FileAttachment(\"_xb_10_change.js\").text();\n  let _11 = await FileAttachment(\"_xb_11_change.js\").text();\n  return { _cancelInfos, _9, _10, _11, aaa };\n}",
+     "pinCode": false,
+     "dname": "44fe5960-1dd7-4beb-b3b1-edc244ad5873",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "mutable aaa = 123;",
+     "pinCode": false,
+     "dname": "09fbd776-5e5c-4b51-8c1b-c853a9ee5825",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "reloadHejianFunc = function (){\n  mutable aaa = aaa + 1;\n}",
+     "pinCode": false,
+     "dname": "8c77a995-2991-4492-a5e8-48ab6a2b7903",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "<style>\n  .global-style .full-screen .grove-react-app .ant-affix {\n  \ttop: 0px!important;\n  }\n</style>",
+     "pinCode": false,
+     "dname": "756791cf-abda-4842-920c-bd1589b0e29c",
+     "codeMode": "htmlmixed"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof config = render(({ useSetter }) => {\n  const { Switch, Affix, InputNumber, Space, Select, Button } = Antd;\n  const { CheckOutlined, CloseOutlined } = AntdIcons;\n  const [ checked, setChecked ] = useState(false);\n  const [ 一次算完, set一次算完 ] = useState(false);\n  const [ month, setMonth ] = useState(date.getMonth() + 1);\n  const [top, setTop] = useState(80);\n  const [bottom, setBottom] = useState(60);\n  const [xsType, setXsType] = useState(xsTypeOptions[date.getMonth() - onejan.getMonth()].value);\n  const App = () => <Affix offsetTop={top} offsetBottom={bottom}>\n    <Space>\n      <Switch checkedChildren=\"开启一次算完\" unCheckedChildren=\"关闭一次算完\" checked={一次算完} onChange={( checked ) => {\n          set一次算完(checked);\n          setXsType(xsTypeOptions[xsTypeOptions.length-1].value)\n        }} />\n      <Button onClick={reloadHejianFunc}>重新加载核减数据</Button>\n      选择月份：<InputNumber min={1} max={12} value={month} onChange={(value) => {\n          setMonth( value);\n          let index = (value - 1) - onejan.getMonth();\n          if(index>=0&&index<=periods.length){\n            setXsType(xsTypeOptions[index].value)\n          }else{\n            setXsType(xsTypeOptions[0].value)\n          }\n        }} />\n      <Select  \n        value={xsType}\n        style={{ width: 120 }}\n        onChange={(value) => {\n          setXsType(value);\n        }}\n        options={xsTypeOptions}\n        />\n      <span title=\"Jump to the cell\" className=\"icon fas fa-crosshairs clicker\" onClick={(e)=>{\n          e.currentTarget.closest(\".code-edit-result\").scrollIntoView({ behavior: \"auto\", block: \"center\", inline: \"nearest\" })\n        }}></span>\n    </Space>\n  </Affix>;\n  useSetter({xingshi:checked,month,一次算完,xsType});\n  return <App key='9f0f469f-df45-4a96-8f57-fa6746caac5c' />;\n})",
+     "pinCode": false,
+     "dname": "07fb312c-61cd-4f6a-a629-765f17d7eadb",
+     "codeMode": "jsx"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "{\n  let month = date.getMonth()+1;\n  let weekNum = _.filter(\n    _.reduce(monthConfig, (p, config, month) => {p.push(...config.weeks);return p},[]),\n    (w)=>{\n  \treturn date>= w.startDay &&date<w.endDay\n  })[0]?.weekNum\n  return md`# 今天：${month} 月，第${weekNum}教学周， ${formatDate( date)}`\n}",
+     "pinCode": false,
+     "dname": "cf3e1504-e9c8-4101-b285-29b526dbb082",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table(partial, { layout: \"auto\" })",
+     "pinCode": false,
+     "dname": "fa0bd069-36d3-4e3f-a3db-922088c37f6b",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "lecturePeriod = _.invert(partial[0])",
+     "pinCode": false,
+     "dname": "fe72835e-df18-4235-aa4f-92b2bedaf558",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "formatDate = function (date){return  moment(date).format(\"MM月DD日\")}",
+     "pinCode": false,
+     "dname": "5956d7f1-df7e-46e7-874a-d5468816a27d",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 自动生成${showMonthStr}月课时量计算函数",
+     "pinCode": false,
+     "dname": "183974bf-c797-4e34-b790-5c3d83e4032f",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof button = Inputs.button(htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:red'>拷贝${showMonthStr}计算函数</div>`,{reduce: () => {\ncopyContent(`getDetails_${showMonthStr.replace(\"、\",\"_\")} = function (teacher) {\n${funcContent}\n}`)\n}})",
+     "pinCode": false,
+     "dname": "42b6370c-f138-42f8-9398-cea52cc7c635",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "funcContent =\n`\n  /*\n  *${showMonthStr}月份课时量\n  *${moment(currentMonthConfig.start).format(\"YYYY-MM-DD\")} ~ ${moment(currentMonthConfig.end).format(\"YYYY-MM-DD\")}\n  *第${currentMonthConfig.weekIndexs[0]} - ${currentMonthConfig.weekIndexs[currentMonthConfig.weekIndexs.length-1]}周\n  */\n  const { infos, xsKeshiShuTotal } = getTeacherKeShi(teacher);\n  let details = {};\n  ${sizhengLectures.length && !_.isEmpty(sizhengs) ? `//上${sizhengLectures.join(\"和\")}的老师\n  let sizhengs = ${JSON.stringify(sizhengs)};\n  let sizhengLectures = ${JSON.stringify(sizhengLectures)};\n  let addSizhengWeeks = ~_.keys(sizhengs).indexOf(teacher) ? sizhengs[teacher] : 0;`:\"\"}\n  let cancelInfos = {};\n  ///////////////// 节假日、实训或者劳动周多减课程要删掉\n  ${monthKeshiChanges._cancelInfos || \"\"}\n  ////////////////\n  let ret = {\n    /////////////////// 附加条件\n    ${一次算完 ? _.values(\n  _.reduce(\n    monthKeshiChanges,\n    (p, v, k) => {\n      if (!~[\"_cancelInfos\", \"aaa\"].indexOf(k)) {\n        p[k] = v;\n      }\n      return p;\n    },\n    {}\n  )\n).join(\"\\n\") : monthKeshiChanges[`_${month}`] ||\"\" }\n    ///////////////////\n      ${sizhengLectures.length && !_.isEmpty(sizhengs) ? `[\"加上${sizhengLectures.join(\"和\")}\"]: addSizhengWeeks > 0 ? reduceDakeShu([\n        ..._.filter(infos, (info) => {\n          return (\n            !~info.clazz.indexOf(\"五年制\") && ~sizhengLectures.indexOf( info.lecture)\n          );\n        }),\n      ]) * 2 * addSizhengWeeks: 0,`:\"\"}\n    加上阶段性课时: xsKeshiShuTotal,\n    ${\n      _.isEmpty(sxAndLd) ? \"\" : _.map(sxAndLd,(arr,week)=>{\n        let desc = \"实训\";\n//             Array.from(_.reduce((arr),(prev,inf,index)=>{\n//           if(~inf.lecture.indexOf(\"劳动周\")){\n//         \tprev.add(inf.lecture)\n//           }else{\n//             prev.add(\"实训\")\n//           }\n//           return prev;\n//         },new Set())).join(\"和\")\n        let ret =[ `减去第${week}周${desc}:\n      shixunHeMinusKeshiXishu(infos,\n            ${JSON.stringify(_.map(arr,(inf,index)=>{return inf.clazz}))},\n            details,\"减去第${week}周${desc}\", cancelInfos._${week}\n          ) * 2`]\n        let divMap = {};///这一周有多少老师是组队实训的，<老师名字，组队成员数目>\n        let objs = _.reduce(arr,(prev, inf, index)=>{\n          if(inf.teacher!=='学院安排') {//学院安排一般是劳动周、军训则忽略\n            _.each(inf.teacher.split(\"、\"),(tc,i,tcs)=>{\n              if(!prev[tc]){\n                prev[tc] = [];\n              }\n              prev[tc].push(inf.clazz);\n              if(tcs.length>1){//多位老师带实训？\n                if(divMap[tc]){\n                \tconsole.error(\"严重错误???，怎么重复插入实训老师？\"+inf.teacher)\n                }else{\n                  divMap[tc] = tcs.length;\n                }\n              }\n            })\n          }\n          return prev;\n        }, {});\n  \t\tlet sxs = _.reduce(objs,(prev, clazzs, teacher)=>{\n          if(clazzs.length === 1){\n            let clazz = clazzs[0];\n            prev.push(`加上${clazz.replace(/[\\(|\\)]/g,\"_\")}第${week}周${divMap[teacher]?teacher:\"\"}实训:\n       teacher === \"${teacher}\" ? clazzConfigs[\"${clazz}\"].shixunZhou${divMap[teacher]?`/${divMap[teacher]}`:\"\"} : 0`)\n          } else {\n            prev.push(`加上${clazzs.join(\"_\").replace(/[\\(|\\)]/g,\"_\")}第${week}周${divMap[teacher]?teacher:\"\"}实训:\n       teacher === \"${teacher}\" ? shixunZhouKeshi(${_.reduce(clazzs,(p,clazz)=>{ p.push(`clazzConfigs[\"${clazz}\"].num`);return p },[]).join(\" + \")},1,true)${divMap[teacher]?`/${divMap[teacher]}`:\"\"} : 0`)\n          }\n          return prev;\n        }, []);\n  \t\tret = ret.concat(...sxs);\n        return ret.join(\",\\n    \");\n      }).join(\",\\n    \") +\",\"\n\t}\n    shorts:{},\n    erasers:[]\n  };\n  ret.details = details;\n  return ret;\n`",
+     "pinCode": false,
+     "dname": "11e7a970-89e1-4033-be9e-0f4e77fcc01f",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//计算函数               \ndetailFunc = function (teacher) {\n  let func = new Function(\n    [\"teacher\", \"outTeachers\", \"getTeacherKeShi\", \"shixunHeMinusKeshiXishu\", \"clazzConfigs\", \"shixunZhouKeshi\", \"currentMonthConfig\", \"reduceDakeShu\", \"periods\",\"sizhengLectures\", \"lecturePeriod\"],\n    funcContent\n  );\n  return func(teacher, outTeachers, getTeacherKeShi, shixunHeMinusKeshiXishu, clazzConfigs, shixunZhouKeshi, currentMonthConfig, reduceDakeShu, periods, sizhengLectures, lecturePeriod);\n}",
+     "pinCode": false,
+     "dname": "69631426-b0ae-4533-99f1-d684929e240e",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "\"开学时间：\" + onejan.toLocaleString()",
+     "pinCode": false,
+     "dname": "ae1b6b88-debc-467b-9f8c-768a6131156f",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 设置参数",
+     "pinCode": false,
+     "dname": "32f70ed7-a39b-41c8-a898-5488e48cff10",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//实训新加入的老师列表，或者其他原因加入的老师\naddTeacherList = [\"基外聘2\",\"学院安排\", \"施婧\"];",
+     "pinCode": false,
+     "dname": "0914b32b-d95b-4dee-b2de-a75042daa350",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//本部算了的，无需重复算课时的老师列表 ; 或者是企业老师，不需要算 ///如：[\"彭洋\"]\nremoveTeachers = [\"刘璇\",\"陈学理\",\"学院安排\",\"盛坚强\",\"基外聘2\",\"企业老师1\",\"企业老师2\"];",
+     "pinCode": false,
+     "dname": "5a9192c9-bab8-4c2d-9282-e3d99638e740",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//这些班算单班课时，外聘老师按公式正常算，因为人数比较多 // 例如：[\"21机电一体化(五年制)\"]\nexceptClazzNames = [];",
+     "pinCode": false,
+     "dname": "959b499c-ed24-4a74-af54-e6016994a64e",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "sizhengLectures  = [];",
+     "pinCode": false,
+     "dname": "547a6bf3-a45d-4179-84e2-1e0ca9433213",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//上形势与政策1的老师，上几周\nsizhengs = {\n  return { };\n}",
+     "pinCode": false,
+     "dname": "ca1b3f59-34c4-44fa-af87-8fbfb380f553",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//外聘老师 单班是否按1算\nviewof waipinDanban = Inputs.radio([true, false], {\n  label: html`外聘单班是否按1算`,\n  value: true,\n  width: 300\n})",
+     "pinCode": false,
+     "dname": "70525778-60a5-4838-a656-9a57ce20d983",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//一次晚自习多少课时\nwzxKeshi = 1.9",
+     "pinCode": false,
+     "dname": "36c2c891-5356-4d2e-84a0-bc9218d02d99",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "### 即是端午又是劳动和实训，是否会多减外聘老师的课时量",
+     "pinCode": false,
+     "dname": "e14f025f-26a5-4a45-8683-9b7770f3ff14",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//本学期教学周数\njxWeekNum = 18",
+     "pinCode": false,
+     "dname": "92722c70-ef29-4ce2-b74c-560a4340c759",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof date = Inputs.date({label: \"当前日期\", value: new Date()})",
+     "pinCode": false,
+     "dname": "afd528fe-68cf-4752-9860-2eeb5530ae3e",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//哪些连起来的月份需要合着算 如：[ [9, 10] ]\nhes = [\n//   [9, 10]\n\n]",
+     "pinCode": false,
+     "dname": "423df806-ce80-4c24-b49a-d51aa96070e4",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "month = config.month",
+     "pinCode": false,
+     "dname": "814b20b8-b9ad-4df9-87af-166976c16c80",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "一次算完 = config.一次算完",
+     "pinCode": false,
+     "dname": "a1d5fea7-af18-43eb-9a27-54404848408b",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "xingshi = config.xingshi",
+     "pinCode": false,
+     "dname": "642b4b97-5c1f-4b85-98ed-72e48768df91",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "xsType = config.xsType",
+     "pinCode": false,
+     "dname": "e6f8ea80-8f86-46b9-addb-145872c66780",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "heArr = {\n  let heArr = _.filter(hes, (he, index) => {\n    return ~he.indexOf(month);\n  });\n  if (heArr.length && (heArr.length > 1 || heArr[0].length != 2)) {\n    throw new Error(\"配置合者算的月份错误！！！\");\n  }\n  return heArr;\n}",
+     "pinCode": false,
+     "dname": "0133d386-3453-405e-9bb5-333d5921b5e1",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "showMonthStr = 一次算完?\"整个学期\": (heArr.length ? heArr[0].join(\"、\") +\"月\" : month + \"月\")",
+     "pinCode": false,
+     "dname": "ca48a25e-7d96-439c-9e3b-eb6f503361a6",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//有些月份需要特殊处理，直接设置它算几周的课时\nweekNum = {\n  if (一次算完) {\n    return jxWeekNum;\n  }\n  switch (currentMonthConfig.month) {\n//     case 9:\n//       return 2;\n//     case 10:\n//       return 2;\n    default:\n      return currentMonthConfig.weeks.length;\n  }\n}",
+     "pinCode": false,
+     "dname": "fe16b3d4-d60e-44bb-99df-1794c131d8dd",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "currentMonthConfig = {\n  if (一次算完) {\n    return oneCalcConfig;\n  } else {\n    if (heArr.length) {\n      let he = heArr[0];\n      let startMonthConfig = monthConfig[he[0]];\n      let endMonthConfig = monthConfig[he[1]];\n      let ret = _.cloneDeep(startMonthConfig);\n      ret.end = endMonthConfig.end;\n      for (let s = he[0] + 1; s <= he[1]; s++) {\n        _.each(monthConfig[s].weeks, (week) => {\n          ret.weeks.push(week);\n        });\n        _.each(monthConfig[s].weekIndexs, (weekIndex) => {\n          ret.weekIndexs.push(weekIndex);\n        });\n      }\n      return ret;\n    } else {\n      return monthConfig[month];\n    }\n  }\n}",
+     "pinCode": false,
+     "dname": "fc33a16c-4276-4575-a7a0-0133d2458aae",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "sxAndLd = _.pick(weekTeachers, currentMonthConfig.weekIndexs)",
+     "pinCode": false,
+     "dname": "3e059365-aa4e-47ce-ae85-64432cd0dbd2",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "oneCalcConfig = {\n  let _config = { weeks: [], start: undefined, end: undefined };\n  for (let i = 0; i < jxWeekNum; i++) {\n    let wconfig = { startDay: new Date(), endDay: new Date(), weekNum: i + 1 };\n    wconfig.startDay.setTime(\n      onejan.getTime() + i * 7 * 24 * 3600 * 1000\n    );\n    wconfig.endDay.setTime(\n      onejan.getTime() + (i + 1) * 7 * 24 * 3600 * 1000\n    );\n    _config.weeks.push(wconfig);\n  }\n  _config.start = new Date(_config.weeks[0].startDay);\n  _config.end = new Date(_config.weeks[_config.weeks.length - 1].endDay);\n  _config.end.setTime(\n    _config.end.getTime() - 2 * 24 * 3600 * 1000\n  );\n  _config.weekIndexs = _.reduce(\n    _config.weeks,\n    (prev, w, i) => {\n      prev.push(w.weekNum);\n      return prev;\n    },\n    []\n  );\n  return _config\n}",
+     "pinCode": false,
+     "dname": "e0482f2a-397a-4cdb-b4c4-02e071918317",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof notTooManyWeeksLeft  = Inputs.toggle({label: \"不多的周数是否算在上个月\", value: false})",
+     "pinCode": false,
+     "dname": "73165ee8-7d21-4b02-b478-50851a282b76",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "monthConfig = {\n  let monthConfig = {};\n  let lastMonth = onejan.getMonth() + 1;\n  for (let i = 0; i < jxWeekNum; i++) {\n    let wconfig = { startDay: new Date(), endDay: new Date(), weekNum: i + 1 };\n    wconfig.startDay.setTime(\n      onejan.getTime() + i * 7 * 24 * 3600 * 1000\n    );\n    wconfig.endDay.setTime(\n      onejan.getTime() + (i + 1) * 7 * 24 * 3600 * 1000\n    );\n    let m = wconfig.startDay.getMonth() + 1;\n    if (!monthConfig[m] && (!notTooManyWeeksLeft || jxWeekNum - i >= 3)) {//剩下不多的周数是否全部算到上个月，\n      lastMonth = m;\n      monthConfig[lastMonth] = { weeks: [], start: undefined, end: undefined };\n    }\n    monthConfig[lastMonth].weeks.push(wconfig);\n  }\n  _.map(monthConfig, (config, m) => {\n    config.month = parseInt(m);\n    config.start = new Date(config.weeks[0].startDay);\n    config.end = new Date(config.weeks[config.weeks.length - 1].endDay);\n    config.end.setTime(\n      config.end.getTime() - 2 * 24 * 3600 * 1000\n    );\n    config.weekIndexs = _.reduce(config.weeks,(prev,w,i)=>{\n      prev.push(w.weekNum)\n      return prev;\n    },[])\n  });\n  return monthConfig;\n}",
+     "pinCode": false,
+     "dname": "f7da79ba-e0ce-463a-9d66-c3fb44184123",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//是否疫情\nyiqing = false",
+     "pinCode": false,
+     "dname": "78279491-5a1c-4770-a9ad-5c2f7fc413f3",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "/** 获取老师的课时信息 */\ngetTeacherKeShi =  function (teacher) {\n  let info = getTeacherLectures(teacher);\n  let { infos, wanzixiNum, wanzixiArray, wanzixiDetail } = info;\n  let obj = { \"2024\": []  };\n  _.reduce(\n    infos,\n    (prev, info) => {\n      if (info.keshiXishu && typeof info.keshiXishu === \"number\") {\n        if (info.clazz.startsWith(\"2024\")) {\n          obj[\"2024\"].push(info);\n        } else {\n          throw new Error(\"班级名称无法判断哪一年级\");\n        }\n        prev += info.keshiXishu;\n      }\n      return prev;\n    },\n    0\n  );\n  info.weekDaKeShuByGrade = obj;\n  //周大课数目(不包括阶段性课程)\n  info.weekDaKeShu = reduceDakeShu(_.filter(infos,(info)=>!~periods.indexOf(info.period)));\n  //周课时数\n  info.weekKeshiShu = info.weekDaKeShu * 2 + info.wanzixiNum * wzxKeshi;\n  //阶段性课程周大课数目\n  info.xsByPeriod = _.reduce(periods, (p, period)=>{\n    let periodInfos = _.filter(infos,(info)=> period === info.period);\n    if(periodInfos.length){\n      let dakeShu = reduceDakeShu(periodInfos);\n      let keshiShu = dakeShu * 2;\n      let weekShu =  5; ///(Math.abs(eval(period.replace(\"(全周)\",\"\"))) + 1);\n      let partTotal = keshiShu * weekShu;\n      p.push({\n        period, periodInfos, dakeShu, keshiShu, weekShu, partTotal\n      })\n      let hongseInfos = _.filter(periodInfos,(info)=> ~info.lecture.indexOf(\"红色文化\"));\n      if(hongseInfos.length){\n        let dakeShu = reduceDakeShu(hongseInfos);\n        let keshiShu = dakeShu * 2;\n        let weekShu = 3; //红色文化多3周课时\n        let partTotal = keshiShu * weekShu;\n        p.push({\n          period:`${period}${\"红色加3周\"}`, periodInfos:hongseInfos, dakeShu, keshiShu, weekShu, partTotal\n        })\n      }\n    }\n    return p;\n  },[])\n  //阶段性课程周课时数\n  info.xsKeshiShuTotal = _.reduce(info.xsByPeriod, (p,a)=>{ p+= a.weekShu * a.keshiShu ;return p},0)\n  info.wanzixiArray = wanzixiArray;\n  info.wanzixiDetail = wanzixiDetail;\n  let cancel_infos = [];\n  let cancel_keshiXishu = 0;\n  let cancel_details = \"\";\n  info.cancel_infos  = cancel_infos;\n  info.cancel_keshiXishu = cancel_keshiXishu;\n  info.cancel_details = cancel_details;\n  return info;\n}",
+     "pinCode": false,
+     "dname": "a7385c62-eb7b-404d-8236-eae8f47448a5",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 月份课时详情函数",
+     "pinCode": false,
+     "dname": "793a4a0e-4315-4323-a1d7-d708bcbdcdc7",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails = {\n  if(一次算完){\n//   \treturn getDetails_整个学期;\n  }\n  switch (month) {\n//     case 2:\n//       return getDetails_2月;\n//     case 3:\n//       return getDetails_3月;\n//     case 4:\n//       return getDetails_4月;\n//     case 5:\n//       return getDetails_5月;\n//     case 6:\n//       return getDetails_6月;\n    default:\n      return detailFunc;\n  }\n}",
+     "pinCode": true,
+     "dname": "076afb9d-ce48-40d4-b29f-999d623b5e31",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "currentMonthConfig",
+     "pinCode": false,
+     "dname": "ef4d395d-1dc1-4083-b6c7-daf6bd302929",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "###### 2月份",
+     "pinCode": false,
+     "dname": "a9d2af82-c4af-4252-8bb2-5045d683a365",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_2月 = function (teacher) {\n\n  /*\n  *2月月份课时量\n  *2025-02-17 ~ 2025-03-01\n  *第1 - 2周\n  */\n  const { infos } = getTeacherKeShi(teacher);\n  let details = {};\n  \n  let ret = {\n      \n    减去开学周一到三课程: reduceDakeShu([\n          ..._.filter(infos, (info) => {\n            return (\n              \"B\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"P\".charCodeAt() && !(~periods.indexOf(info.period) || ~sizhengLectures.indexOf(info.lecture))\n            );\n          }),\n        ]) * 2,\n    加上周五一次课: teacher === '苑文建' ? 1.55 * 2 : 0,\n    加上周四一次课: teacher === '王诗怡' ? 1.89 * 2 : 0,\n    减去第一周周五一次课: teacher === '范宁' ? 1 * 2 : 0,\n    shorts:{},\n    erasers:[]\n  };\n  ret.details = details;\n  return ret;\n\n}",
+     "pinCode": false,
+     "dname": "5e2be813-e346-4b14-b361-dfb6a5d9d185",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "###### 3月份",
+     "pinCode": false,
+     "dname": "16522f09-cfa9-433b-a9a8-4c4a12fadaa0",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_3月 = function (teacher) {\n\n  /*\n  *3月月份课时量\n  *2025-03-03 ~ 2025-04-05\n  *第3 - 7周\n  */\n  const { infos, xsKeshiShuTotal } = getTeacherKeShi(teacher);\n  let details = {};\n  \n  let ret = {\n    减去清明周五课程: ~outTeachers.indexOf(teacher)\n      ? reduceDakeShu([\n          ..._.filter(infos, (info) => {\n            return (\n              \"V\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"X\".charCodeAt() && !(~periods.indexOf(info.period) || ~sizhengLectures.indexOf(info.lecture))\n            );\n          }),\n        ]) * 2 : 0,\n    \n    加上阶段性课时: xsKeshiShuTotal,\n    减去第3周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级美容美体艺术2\"],\n            details,\"减去第3周劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术1_2024级美容美体艺术2第3周实训:\n       teacher === \"黎海春\" ? shixunZhouKeshi(clazzConfigs[\"2024级美容美体艺术1\"].num + clazzConfigs[\"2024级美容美体艺术2\"].num) : 0,\n    减去第4周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级工程测量技术1\"],\n            details,\"减去第4周劳动周\"\n          ) * 2,\n    加上2024级工程测量技术1第4周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级工程测量技术1\"].shixunZhou : 0,\n    减去第5周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级工程测量技术2\",\"2024级美容美体艺术2\"],\n            details,\"减去第5周实训和劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术1第5周实训:\n       teacher === \"企业老师1\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级工程测量技术2第5周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级工程测量技术2\"].shixunZhou : 0,\n    加上2024级美容美体艺术2第5周实训:\n       teacher === \"企业老师2\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    减去第6周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级工程测量技术3\",\"2024级工程造价2\"],\n            details,\"减去第6周劳动周\"\n          ) * 2,\n    加上2024级工程测量技术3_2024级工程造价2第6周实训:\n       teacher === \"黎海春\" ? shixunZhouKeshi(clazzConfigs[\"2024级工程测量技术3\"].num + clazzConfigs[\"2024级工程造价2\"].num) : 0,\n    减去第7周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级工程造价1\"],\n            details,\"减去第7周劳动周\"\n          ) * 2,\n    加上2024级工程造价1第7周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级工程造价1\"].shixunZhou : 0,\n    shorts:{},\n    erasers:[]\n  };\n  ret.details = details;\n  return ret;\n\n}",
+     "pinCode": false,
+     "dname": "d17db562-791f-410d-982f-2b79223312a8",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "###### 4月份",
+     "pinCode": false,
+     "dname": "a6a10ded-4669-4a13-8b32-358a01444f4e",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_4月 = function (teacher) {\n\n  /*\n  *4月月份课时量\n  *2025-04-07 ~ 2025-05-03\n  *4月27补5.2周五\n  *减去5.1周四休假一天\n  *第8 - 11周\n  */\n  const { infos, xsKeshiShuTotal } = getTeacherKeShi(teacher);\n  let details = {};\n  \n  let ret = {\n    \n    减去五一周四课程: ~outTeachers.indexOf(teacher)\n      ? reduceDakeShu([\n          ..._.filter(infos, (info) => {\n            return (\n              \"Q\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"U\".charCodeAt() && !(~periods.indexOf(info.period) || ~sizhengLectures.indexOf(info.lecture))\n            );\n          }),\n        ]) * 2 : 0,\n    \n    加上阶段性课时: xsKeshiShuTotal,\n    减去第8周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级计算机网络技术1\"],\n            details,\"减去第8周劳动周\"\n          ) * 2,\n    加上2024级计算机网络技术1第8周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou : 0,\n    减去第9周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级计算机网络技术2\",\"2024级美容美体艺术2\"],\n            details,\"减去第9周实训和劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术1第9周实训:\n       teacher === \"企业老师1\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级计算机网络技术2第9周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术2\"].shixunZhou : 0,\n    加上2024级美容美体艺术2第9周实训:\n       teacher === \"企业老师2\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    减去第10周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级计算机网络技术3\"],\n            details,\"减去第10周劳动周\"\n          ) * 2,\n    加上2024级计算机网络技术3第10周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术3\"].shixunZhou : 0,\n    减去第11周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级计算机网络技术4\"],\n            details,\"减去第11周劳动周\"\n          ) * 2,\n    加上2024级计算机网络技术4第11周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术4\"].shixunZhou : 0,\n    shorts:{},\n    erasers:[]\n  };\n  ret.details = details;\n  return ret;\n\n}",
+     "pinCode": false,
+     "dname": "6ed26988-c67d-42b7-a579-346f57ccd343",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "###### 5月份",
+     "pinCode": false,
+     "dname": "cddec702-6e4e-46dd-be31-ee78d3e37a28",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_5月 = function (teacher) {\n\n  /*\n  *5月月份课时量\n  *2025-05-05 ~ 2025-05-31\n  *\n  *第12 - 15周\n  */\n  const { infos, xsKeshiShuTotal } = getTeacherKeShi(teacher);\n  let details = {};\n  let jingsai_infos = _.filter(infos, (info) => {\n            return (\n              \"I\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"J\".charCodeAt() && !(~periods.indexOf(info.period) || ~sizhengLectures.indexOf(info.lecture))\n            );\n          });\n  let cancel_infos = [...jingsai_infos];\n  let ret = {\n    /////////////////// 附加条件\n    减去13周周二下午竞赛课程: ~outTeachers.indexOf(teacher)//第13周 5.13周二下午技能竞赛\n      ? reduceDakeShu([\n          ...jingsai_infos,\n        ]) * 2 : 0,\n    ///////////////////\n    加上阶段性课时: xsKeshiShuTotal,\n    减去第12周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级计算机网络技术5\"],\n            details,\"减去第12周劳动周\"\n          ) * 2,\n    加上2024级计算机网络技术5第12周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术5\"].shixunZhou : 0,\n    减去第13周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级软件技术1\",\"2024级计算机应用技术1\",\"2024级软件技术4\"],\n            details,\"减去第13周劳动周和实训\", cancel_infos\n          ) * 2,\n    加上2024级软件技术1第13周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术1\"].shixunZhou : 0,\n    加上2024级计算机应用技术1第13周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术1\"].shixunZhou : 0,\n    加上2024级软件技术4第13周实训:\n       teacher === \"江国文\" ? clazzConfigs[\"2024级软件技术4\"].shixunZhou : 0,\n    减去第14周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级软件技术2\",\"2024级工程测量技术3\",\"2024级建设工程管理\",\"2024级建筑室内设计3\",\"2024级计算机网络技术2\",\"2024级计算机应用技术2\",\"2024级计算机应用技术4\",\"2024级计算机应用技术5\",\"2024级软件技术5\"],\n            details,\"减去第14周劳动周和实训\"\n          ) * 2,\n    加上2024级软件技术2第14周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术2\"].shixunZhou : 0,\n    加上2024级工程测量技术3第14周实训:\n       teacher === \"杨登攀\" ? clazzConfigs[\"2024级工程测量技术3\"].shixunZhou : 0,\n    加上2024级建设工程管理第14周实训:\n       teacher === \"袁志明\" ? clazzConfigs[\"2024级建设工程管理\"].shixunZhou : 0,\n    加上2024级建筑室内设计3第14周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑室内设计3\"].shixunZhou : 0,\n    加上2024级计算机网络技术2第14周实训:\n       teacher === \"徐春华\" ? clazzConfigs[\"2024级计算机网络技术2\"].shixunZhou : 0,\n    加上2024级计算机应用技术2第14周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术2\"].shixunZhou : 0,\n    加上2024级计算机应用技术4_2024级计算机应用技术5第14周实训:\n       teacher === \"胡江昊\" ? shixunZhouKeshi(clazzConfigs[\"2024级计算机应用技术4\"].num + clazzConfigs[\"2024级计算机应用技术5\"].num) : 0,\n    加上2024级软件技术5第14周实训:\n       teacher === \"江国文\" ? clazzConfigs[\"2024级软件技术5\"].shixunZhou : 0,\n    减去第15周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级软件技术3\",\"2024级商务英语1\",\"2024级商务英语2\",\"2024级学前教育1\",\"2024级五年制会计\",\"2024级建设工程管理\",\"2024级工程测量技术3\",\"2024级工程造价1\",\"2024级工程造价2\",\"2024级建筑室内设计1\",\"2024级建筑室内设计2\",\"2024级建筑装饰工程技术1\",\"2024级建筑装饰工程技术2\",\"2024级计算机网络技术3\",\"2024级计算机应用技术4\",\"2024级计算机应用技术5\",\"2024级计算机应用技术3\",\"2024级计算机应用技术1\",\"2024级软件技术5\",\"2024级软件技术4\"],\n            details,\"减去第15周劳动周和实训\"\n          ) * 2,\n    加上2024级软件技术3第15周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术3\"].shixunZhou : 0,\n    加上2024级商务英语1_2024级商务英语2第15周钟晴实训:\n       teacher === \"钟晴\" ? shixunZhouKeshi(clazzConfigs[\"2024级商务英语1\"].num + clazzConfigs[\"2024级商务英语2\"].num)/2 : 0,\n    加上2024级商务英语1_2024级商务英语2第15周范宁实训:\n       teacher === \"范宁\" ? shixunZhouKeshi(clazzConfigs[\"2024级商务英语1\"].num + clazzConfigs[\"2024级商务英语2\"].num)/2 : 0,\n    加上2024级学前教育1第15周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级学前教育1\"].shixunZhou : 0,\n    加上2024级五年制会计第15周实训:\n       teacher === \"彭欣展\" ? clazzConfigs[\"2024级五年制会计\"].shixunZhou : 0,\n    加上2024级建设工程管理第15周实训:\n       teacher === \"张涛\" ? clazzConfigs[\"2024级建设工程管理\"].shixunZhou : 0,\n    加上2024级工程测量技术3第15周实训:\n       teacher === \"袁志明\" ? clazzConfigs[\"2024级工程测量技术3\"].shixunZhou : 0,\n    加上2024级工程造价1_2024级工程造价2第15周实训:\n       teacher === \"文娜先\" ? shixunZhouKeshi(clazzConfigs[\"2024级工程造价1\"].num + clazzConfigs[\"2024级工程造价2\"].num) : 0,\n    加上2024级建筑室内设计1第15周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑室内设计1\"].shixunZhou : 0,\n    加上2024级建筑室内设计2第15周实训:\n       teacher === \"郑易琛\" ? clazzConfigs[\"2024级建筑室内设计2\"].shixunZhou : 0,\n    加上2024级建筑装饰工程技术1_2024级建筑装饰工程技术2第15周实训:\n       teacher === \"袁林嘉欣\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑装饰工程技术1\"].num + clazzConfigs[\"2024级建筑装饰工程技术2\"].num) : 0,\n    加上2024级计算机网络技术3第15周实训:\n       teacher === \"徐春华\" ? clazzConfigs[\"2024级计算机网络技术3\"].shixunZhou : 0,\n    加上2024级计算机应用技术4_2024级计算机应用技术5第15周实训:\n       teacher === \"钟凯洋\" ? shixunZhouKeshi(clazzConfigs[\"2024级计算机应用技术4\"].num + clazzConfigs[\"2024级计算机应用技术5\"].num) : 0,\n    加上2024级计算机应用技术3第15周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术3\"].shixunZhou : 0,\n    加上2024级计算机应用技术1第15周实训:\n       teacher === \"胡江昊\" ? clazzConfigs[\"2024级计算机应用技术1\"].shixunZhou : 0,\n    加上2024级软件技术5第15周实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级软件技术5\"].shixunZhou : 0,\n    加上2024级软件技术4第15周实训:\n       teacher === \"李安裕\" ? clazzConfigs[\"2024级软件技术4\"].shixunZhou : 0,\n    shorts:{},\n    erasers:[]\n  };\n  ret.details = details;\n  return ret;\n\n}",
+     "pinCode": false,
+     "dname": "353ff52d-0077-4fa8-a7a7-dc14d3a609c8",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_6月 = function (teacher) {\n\n  /*\n  *6月月份课时量\n  *2025-06-02 ~ 2025-06-14\n  *第16 - 17周\n  */\n  const { infos, xsKeshiShuTotal } = getTeacherKeShi(teacher);\n  let details = {};\n  let duanwu_infos = _.filter(infos, (info) => {\n            return (\n              \"B\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"F\".charCodeAt() && !(~periods.indexOf(info.period) || ~sizhengLectures.indexOf(info.lecture))\n            );\n          })\n  let cancel_infos = [...duanwu_infos];\n  let ret = {\n    /////////////////// 附加条件\n\t减去16周端午节周一课程: ~outTeachers.indexOf(teacher)\n      ? reduceDakeShu([\n          ...duanwu_infos,\n        ]) * 2 : 0,\n    ///////////////////\n      \n    加上阶段性课时: xsKeshiShuTotal,\n    减去第16周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级软件技术4\",\"2024级美容美体艺术2\",\"2024级商务英语1\",\"2024级商务英语2\",\"2024级计算机网络技术1\",\"2024级学前教育2\",\"2024级学前教育4\",\"2024级建筑工程技术1\",\"2024级建筑工程技术2\",\"2024级工程测量技术1\",\"2024级工程测量技术2\",\"2024级建筑室内设计2\",\"2024级建筑室内设计1\",\"2024级建筑室内设计3\",\"2024级建筑装饰工程技术1\",\"2024级建筑装饰工程技术2\",\"2024级计算机网络技术2\",\"2024级计算机网络技术5\",\"2024级计算机网络技术4\",\"2024级计算机应用技术1\",\"2024级计算机应用技术4\",\"2024级计算机应用技术2\",\"2024级计算机应用技术3\",\"2024级软件技术1\",\"2024级软件技术2\",\"2024级软件技术3\",\"2024级数字媒体艺术设计\"],\n            details,\"减去第16周实训和劳动周\", cancel_infos\n          ) * 2,\n    加上2024级美容美体艺术1第16周实训:\n       teacher === \"企业老师1\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级软件技术4第16周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术4\"].shixunZhou : 0,\n    加上2024级美容美体艺术2第16周实训:\n       teacher === \"企业老师2\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    加上2024级商务英语1_2024级商务英语2第16周实训:\n       teacher === \"余莉娟\" ? shixunZhouKeshi(clazzConfigs[\"2024级商务英语1\"].num + clazzConfigs[\"2024级商务英语2\"].num) : 0,\n    加上2024级计算机网络技术1第16周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou : 0,\n    加上2024级学前教育2第16周实训:\n       teacher === \"曾鸣\" ? clazzConfigs[\"2024级学前教育2\"].shixunZhou : 0,\n    加上2024级学前教育4第16周实训:\n       teacher === \"彭欣展\" ? clazzConfigs[\"2024级学前教育4\"].shixunZhou : 0,\n    加上2024级建筑工程技术1_2024级建筑工程技术2第16周实训:\n       teacher === \"张涛\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑工程技术1\"].num + clazzConfigs[\"2024级建筑工程技术2\"].num) : 0,\n    加上2024级工程测量技术1第16周实训:\n       teacher === \"杨登攀\" ? clazzConfigs[\"2024级工程测量技术1\"].shixunZhou : 0,\n    加上2024级工程测量技术2第16周实训:\n       teacher === \"袁志明\" ? clazzConfigs[\"2024级工程测量技术2\"].shixunZhou : 0,\n    加上2024级建筑室内设计2第16周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑室内设计2\"].shixunZhou : 0,\n    加上2024级建筑室内设计1_2024级建筑室内设计3第16周实训:\n       teacher === \"李威\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑室内设计1\"].num + clazzConfigs[\"2024级建筑室内设计3\"].num) : 0,\n    加上2024级建筑装饰工程技术1_2024级建筑装饰工程技术2第16周实训:\n       teacher === \"郑易琛\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑装饰工程技术1\"].num + clazzConfigs[\"2024级建筑装饰工程技术2\"].num) : 0,\n    加上2024级计算机网络技术2_2024级计算机网络技术5第16周实训:\n       teacher === \"文博\" ? shixunZhouKeshi(clazzConfigs[\"2024级计算机网络技术2\"].num + clazzConfigs[\"2024级计算机网络技术5\"].num) : 0,\n    加上2024级计算机网络技术4第16周实训:\n       teacher === \"徐春华\" ? clazzConfigs[\"2024级计算机网络技术4\"].shixunZhou : 0,\n    加上2024级计算机应用技术1第16周实训:\n       teacher === \"钟凯洋\" ? clazzConfigs[\"2024级计算机应用技术1\"].shixunZhou : 0,\n    加上2024级计算机应用技术4第16周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术4\"].shixunZhou : 0,\n    加上2024级计算机应用技术2第16周实训:\n       teacher === \"胡江昊\" ? clazzConfigs[\"2024级计算机应用技术2\"].shixunZhou : 0,\n    加上2024级计算机应用技术3第16周实训:\n       teacher === \"徐荣海\" ? clazzConfigs[\"2024级计算机应用技术3\"].shixunZhou : 0,\n    加上2024级软件技术1第16周刘霆实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级软件技术1\"].shixunZhou/2 : 0,\n    加上2024级软件技术1_2024级软件技术2第16周苑文建实训:\n       teacher === \"苑文建\" ? shixunZhouKeshi(clazzConfigs[\"2024级软件技术1\"].num + clazzConfigs[\"2024级软件技术2\"].num)/2 : 0,\n    加上2024级软件技术3第16周实训:\n       teacher === \"江国文\" ? clazzConfigs[\"2024级软件技术3\"].shixunZhou : 0,\n    加上2024级数字媒体艺术设计第16周实训:\n       teacher === \"郑心雨\" ? clazzConfigs[\"2024级数字媒体艺术设计\"].shixunZhou : 0,\n    减去第17周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级软件技术5\",\"2024级美容美体艺术1\",\"2024级美容美体艺术2\",\"2024级商务英语1\",\"2024级商务英语2\",\"2024级计算机网络技术3\",\"2024级学前教育3\",\"2024级建筑工程技术1\",\"2024级建筑工程技术2\",\"2024级工程测量技术2\",\"2024级工程测量技术1\",\"2024级建筑室内设计1\",\"2024级建筑室内设计2\",\"2024级建筑室内设计3\",\"2024级建筑装饰工程技术1\",\"2024级建筑装饰工程技术2\",\"2024级计算机网络技术1\",\"2024级计算机网络技术4\",\"2024级计算机网络技术5\",\"2024级计算机应用技术5\",\"2024级计算机应用技术3\",\"2024级计算机应用技术2\",\"2024级软件技术2\",\"2024级软件技术1\",\"2024级软件技术3\",\"2024级数字媒体艺术设计\"],\n            details,\"减去第17周劳动周和实训\"\n          ) * 2,\n    加上2024级软件技术5第17周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术5\"].shixunZhou : 0,\n    加上2024级美容美体艺术1第17周实训:\n       teacher === \"邓心雨\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级美容美体艺术2第17周实训:\n       teacher === \"黄仕尘\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    加上2024级商务英语1_2024级商务英语2第17周实训:\n       teacher === \"范宁\" ? shixunZhouKeshi(clazzConfigs[\"2024级商务英语1\"].num + clazzConfigs[\"2024级商务英语2\"].num) : 0,\n    加上2024级计算机网络技术3第17周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级计算机网络技术3\"].shixunZhou : 0,\n    加上2024级学前教育3第17周实训:\n       teacher === \"曾鸣\" ? clazzConfigs[\"2024级学前教育3\"].shixunZhou : 0,\n    加上2024级建筑工程技术1_2024级建筑工程技术2第17周实训:\n       teacher === \"姚帆\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑工程技术1\"].num + clazzConfigs[\"2024级建筑工程技术2\"].num) : 0,\n    加上2024级工程测量技术2第17周实训:\n       teacher === \"杨登攀\" ? clazzConfigs[\"2024级工程测量技术2\"].shixunZhou : 0,\n    加上2024级工程测量技术1第17周实训:\n       teacher === \"袁志明\" ? clazzConfigs[\"2024级工程测量技术1\"].shixunZhou : 0,\n    加上2024级建筑室内设计1_2024级建筑室内设计2_2024级建筑室内设计3第17周实训:\n       teacher === \"王诗怡\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑室内设计1\"].num + clazzConfigs[\"2024级建筑室内设计2\"].num + clazzConfigs[\"2024级建筑室内设计3\"].num) : 0,\n    加上2024级建筑装饰工程技术1_2024级建筑装饰工程技术2第17周实训:\n       teacher === \"黄子豪\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑装饰工程技术1\"].num + clazzConfigs[\"2024级建筑装饰工程技术2\"].num) : 0,\n    加上2024级计算机网络技术1第17周袁军萍实训:\n       teacher === \"袁军萍\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou/2 : 0,\n    加上2024级计算机网络技术1第17周李星实训:\n       teacher === \"李星\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou/2 : 0,\n    加上2024级计算机网络技术4第17周实训:\n       teacher === \"文博\" ? clazzConfigs[\"2024级计算机网络技术4\"].shixunZhou : 0,\n    加上2024级计算机网络技术5第17周实训:\n       teacher === \"徐春华\" ? clazzConfigs[\"2024级计算机网络技术5\"].shixunZhou : 0,\n    加上2024级计算机应用技术5第17周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术5\"].shixunZhou : 0,\n    加上2024级计算机应用技术3第17周实训:\n       teacher === \"胡江昊\" ? clazzConfigs[\"2024级计算机应用技术3\"].shixunZhou : 0,\n    加上2024级计算机应用技术2第17周实训:\n       teacher === \"徐荣海\" ? clazzConfigs[\"2024级计算机应用技术2\"].shixunZhou : 0,\n    加上2024级软件技术2第17周刘霆实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级软件技术2\"].shixunZhou/2 : 0,\n    加上2024级软件技术2_2024级软件技术1_2024级软件技术3第17周苑文建实训:\n       teacher === \"苑文建\" ? shixunZhouKeshi(clazzConfigs[\"2024级软件技术2\"].num + clazzConfigs[\"2024级软件技术1\"].num + clazzConfigs[\"2024级软件技术3\"].num)/2 : 0,\n    加上2024级数字媒体艺术设计第17周实训:\n       teacher === \"郑心雨\" ? clazzConfigs[\"2024级数字媒体艺术设计\"].shixunZhou : 0,\n    shorts:{},\n    erasers:[]\n  };\n  ret.details = details;\n  return ret;\n\n}",
+     "pinCode": false,
+     "dname": "42179048-0225-4d96-8716-4d17e7aadc10",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "# 整个学期",
+     "pinCode": false,
+     "dname": "4505c162-ed15-46af-97da-7f789d404e9c",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_整个学期 = function (teacher) {\n\n  /*\n  *整个学期月份课时量\n  *2025-02-17 ~ 2025-06-14\n  *第1 - 17周\n  */\n  const { infos, xsKeshiShuTotal } = getTeacherKeShi(teacher);\n  let details = {};\n  \n  let ret = {\n    ///////////////////附加条件\n    减去开学周一到三课程: reduceDakeShu([\n      ..._.filter(infos, (info) => {\n        return (\n          \"B\".charCodeAt() <= info.column.charCodeAt() &&\n          info.column.charCodeAt() <= \"P\".charCodeAt() && !(~periods.indexOf(info.period) || ~sizhengLectures.indexOf(info.lecture))\n        );\n      }),\n    ]) * 2,\n    加上周五一次课: teacher === '苑文建' ? 1.55 * 2 : 0,\n    加上周四一次课: teacher === '王诗怡' ? 1.89 * 2 : 0,\n    减去第一周周五一次课: teacher === '范宁' ? 1 * 2 : 0,\n    减去周四一次课: teacher === '郑心雨' ? 1.01 * 2 : 0,\n    加上开学两次课: teacher === '江国文' ? 1.0 * 4 : 0,\n    ///////////////////\n      \n    加上阶段性课时: xsKeshiShuTotal,\n    减去第3周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级美容美体艺术2\"],\n            details,\"减去第3周劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术1_2024级美容美体艺术2第3周实训:\n       teacher === \"黎海春\" ? shixunZhouKeshi(clazzConfigs[\"2024级美容美体艺术1\"].num + clazzConfigs[\"2024级美容美体艺术2\"].num) : 0,\n    减去第4周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级工程测量技术1\"],\n            details,\"减去第4周劳动周\"\n          ) * 2,\n    加上2024级工程测量技术1第4周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级工程测量技术1\"].shixunZhou : 0,\n    减去第5周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级工程测量技术2\",\"2024级美容美体艺术2\"],\n            details,\"减去第5周实训和劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术1第5周实训:\n       teacher === \"企业老师1\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级工程测量技术2第5周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级工程测量技术2\"].shixunZhou : 0,\n    加上2024级美容美体艺术2第5周实训:\n       teacher === \"企业老师2\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    减去第6周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级工程测量技术3\",\"2024级工程造价2\"],\n            details,\"减去第6周劳动周\"\n          ) * 2,\n    加上2024级工程测量技术3_2024级工程造价2第6周实训:\n       teacher === \"黎海春\" ? shixunZhouKeshi(clazzConfigs[\"2024级工程测量技术3\"].num + clazzConfigs[\"2024级工程造价2\"].num) : 0,\n    减去第7周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级工程造价1\"],\n            details,\"减去第7周劳动周\"\n          ) * 2,\n    加上2024级工程造价1第7周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级工程造价1\"].shixunZhou : 0,\n    减去第8周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级计算机网络技术1\"],\n            details,\"减去第8周劳动周\"\n          ) * 2,\n    加上2024级计算机网络技术1第8周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou : 0,\n    减去第9周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级计算机网络技术2\",\"2024级美容美体艺术2\"],\n            details,\"减去第9周实训和劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术1第9周实训:\n       teacher === \"企业老师1\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级计算机网络技术2第9周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术2\"].shixunZhou : 0,\n    加上2024级美容美体艺术2第9周实训:\n       teacher === \"企业老师2\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    减去第10周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级计算机网络技术3\"],\n            details,\"减去第10周劳动周\"\n          ) * 2,\n    加上2024级计算机网络技术3第10周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术3\"].shixunZhou : 0,\n    减去第11周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级计算机网络技术4\"],\n            details,\"减去第11周劳动周\"\n          ) * 2,\n    加上2024级计算机网络技术4第11周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术4\"].shixunZhou : 0,\n    减去第12周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级计算机网络技术5\"],\n            details,\"减去第12周劳动周\"\n          ) * 2,\n    加上2024级计算机网络技术5第12周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级计算机网络技术5\"].shixunZhou : 0,\n    减去第13周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级软件技术1\",\"2024级计算机应用技术1\",\"2024级软件技术4\"],\n            details,\"减去第13周劳动周和实训\"\n          ) * 2,\n    加上2024级软件技术1第13周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术1\"].shixunZhou : 0,\n    加上2024级计算机应用技术1第13周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术1\"].shixunZhou : 0,\n    加上2024级软件技术4第13周实训:\n       teacher === \"江国文\" ? clazzConfigs[\"2024级软件技术4\"].shixunZhou : 0,\n    减去第14周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级软件技术2\",\"2024级工程测量技术3\",\"2024级建设工程管理\",\"2024级建筑室内设计3\",\"2024级计算机网络技术2\",\"2024级计算机应用技术2\",\"2024级计算机应用技术4\",\"2024级计算机应用技术5\",\"2024级软件技术5\"],\n            details,\"减去第14周劳动周和实训\"\n          ) * 2,\n    加上2024级软件技术2第14周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术2\"].shixunZhou : 0,\n    加上2024级工程测量技术3第14周实训:\n       teacher === \"杨登攀\" ? clazzConfigs[\"2024级工程测量技术3\"].shixunZhou : 0,\n    加上2024级建设工程管理第14周实训:\n       teacher === \"袁志明\" ? clazzConfigs[\"2024级建设工程管理\"].shixunZhou : 0,\n    加上2024级建筑室内设计3第14周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑室内设计3\"].shixunZhou : 0,\n    加上2024级计算机网络技术2第14周实训:\n       teacher === \"徐春华\" ? clazzConfigs[\"2024级计算机网络技术2\"].shixunZhou : 0,\n    加上2024级计算机应用技术2第14周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术2\"].shixunZhou : 0,\n    加上2024级计算机应用技术4_2024级计算机应用技术5第14周实训:\n       teacher === \"胡江昊\" ? shixunZhouKeshi(clazzConfigs[\"2024级计算机应用技术4\"].num + clazzConfigs[\"2024级计算机应用技术5\"].num) : 0,\n    加上2024级软件技术5第14周实训:\n       teacher === \"江国文\" ? clazzConfigs[\"2024级软件技术5\"].shixunZhou : 0,\n    减去第15周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级软件技术3\",\"2024级商务英语1\",\"2024级商务英语2\",\"2024级学前教育1\",\"2024级五年制会计\",\"2024级建设工程管理\",\"2024级工程测量技术3\",\"2024级工程造价1\",\"2024级工程造价2\",\"2024级建筑室内设计1\",\"2024级建筑室内设计2\",\"2024级建筑装饰工程技术1\",\"2024级建筑装饰工程技术2\",\"2024级计算机网络技术3\",\"2024级计算机应用技术4\",\"2024级计算机应用技术5\",\"2024级计算机应用技术3\",\"2024级计算机应用技术1\",\"2024级软件技术5\",\"2024级软件技术4\"],\n            details,\"减去第15周劳动周和实训\"\n          ) * 2,\n    加上2024级软件技术3第15周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术3\"].shixunZhou : 0,\n    加上2024级商务英语1_2024级商务英语2第15周钟晴实训:\n       teacher === \"钟晴\" ? shixunZhouKeshi(clazzConfigs[\"2024级商务英语1\"].num + clazzConfigs[\"2024级商务英语2\"].num)/2 : 0,\n    加上2024级商务英语1_2024级商务英语2第15周范宁实训:\n       teacher === \"范宁\" ? shixunZhouKeshi(clazzConfigs[\"2024级商务英语1\"].num + clazzConfigs[\"2024级商务英语2\"].num)/2 : 0,\n    加上2024级学前教育1第15周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级学前教育1\"].shixunZhou : 0,\n    加上2024级五年制会计第15周实训:\n       teacher === \"彭欣展\" ? clazzConfigs[\"2024级五年制会计\"].shixunZhou : 0,\n    加上2024级建设工程管理第15周实训:\n       teacher === \"张涛\" ? clazzConfigs[\"2024级建设工程管理\"].shixunZhou : 0,\n    加上2024级工程测量技术3第15周实训:\n       teacher === \"袁志明\" ? clazzConfigs[\"2024级工程测量技术3\"].shixunZhou : 0,\n    加上2024级工程造价1_2024级工程造价2第15周实训:\n       teacher === \"文娜先\" ? shixunZhouKeshi(clazzConfigs[\"2024级工程造价1\"].num + clazzConfigs[\"2024级工程造价2\"].num) : 0,\n    加上2024级建筑室内设计1第15周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑室内设计1\"].shixunZhou : 0,\n    加上2024级建筑室内设计2第15周实训:\n       teacher === \"郑易琛\" ? clazzConfigs[\"2024级建筑室内设计2\"].shixunZhou : 0,\n    加上2024级建筑装饰工程技术1_2024级建筑装饰工程技术2第15周实训:\n       teacher === \"袁林嘉欣\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑装饰工程技术1\"].num + clazzConfigs[\"2024级建筑装饰工程技术2\"].num) : 0,\n    加上2024级计算机网络技术3第15周实训:\n       teacher === \"徐春华\" ? clazzConfigs[\"2024级计算机网络技术3\"].shixunZhou : 0,\n    加上2024级计算机应用技术4_2024级计算机应用技术5第15周实训:\n       teacher === \"钟凯洋\" ? shixunZhouKeshi(clazzConfigs[\"2024级计算机应用技术4\"].num + clazzConfigs[\"2024级计算机应用技术5\"].num) : 0,\n    加上2024级计算机应用技术3第15周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术3\"].shixunZhou : 0,\n    加上2024级计算机应用技术1第15周实训:\n       teacher === \"胡江昊\" ? clazzConfigs[\"2024级计算机应用技术1\"].shixunZhou : 0,\n    加上2024级软件技术5第15周实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级软件技术5\"].shixunZhou : 0,\n    加上2024级软件技术4第15周实训:\n       teacher === \"李安裕\" ? clazzConfigs[\"2024级软件技术4\"].shixunZhou : 0,\n    减去第16周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级软件技术4\",\"2024级美容美体艺术2\",\"2024级商务英语1\",\"2024级商务英语2\",\"2024级计算机网络技术1\",\"2024级学前教育2\",\"2024级学前教育4\",\"2024级建筑工程技术1\",\"2024级建筑工程技术2\",\"2024级工程测量技术1\",\"2024级工程测量技术2\",\"2024级建筑室内设计2\",\"2024级建筑室内设计1\",\"2024级建筑室内设计3\",\"2024级建筑装饰工程技术1\",\"2024级建筑装饰工程技术2\",\"2024级计算机网络技术2\",\"2024级计算机网络技术5\",\"2024级计算机网络技术4\",\"2024级计算机应用技术1\",\"2024级计算机应用技术4\",\"2024级计算机应用技术2\",\"2024级计算机应用技术3\",\"2024级软件技术1\",\"2024级软件技术2\",\"2024级软件技术3\",\"2024级数字媒体艺术设计\"],\n            details,\"减去第16周实训和劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术1第16周实训:\n       teacher === \"企业老师1\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级软件技术4第16周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术4\"].shixunZhou : 0,\n    加上2024级美容美体艺术2第16周实训:\n       teacher === \"企业老师2\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    加上2024级商务英语1_2024级商务英语2第16周实训:\n       teacher === \"余莉娟\" ? shixunZhouKeshi(clazzConfigs[\"2024级商务英语1\"].num + clazzConfigs[\"2024级商务英语2\"].num) : 0,\n    加上2024级计算机网络技术1第16周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou : 0,\n    加上2024级学前教育2第16周实训:\n       teacher === \"曾鸣\" ? clazzConfigs[\"2024级学前教育2\"].shixunZhou : 0,\n    加上2024级学前教育4第16周实训:\n       teacher === \"彭欣展\" ? clazzConfigs[\"2024级学前教育4\"].shixunZhou : 0,\n    加上2024级建筑工程技术1_2024级建筑工程技术2第16周实训:\n       teacher === \"张涛\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑工程技术1\"].num + clazzConfigs[\"2024级建筑工程技术2\"].num) : 0,\n    加上2024级工程测量技术1第16周实训:\n       teacher === \"杨登攀\" ? clazzConfigs[\"2024级工程测量技术1\"].shixunZhou : 0,\n    加上2024级工程测量技术2第16周实训:\n       teacher === \"袁志明\" ? clazzConfigs[\"2024级工程测量技术2\"].shixunZhou : 0,\n    加上2024级建筑室内设计2第16周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑室内设计2\"].shixunZhou : 0,\n    加上2024级建筑室内设计1_2024级建筑室内设计3第16周实训:\n       teacher === \"李威\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑室内设计1\"].num + clazzConfigs[\"2024级建筑室内设计3\"].num) : 0,\n    加上2024级建筑装饰工程技术1_2024级建筑装饰工程技术2第16周实训:\n       teacher === \"郑易琛\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑装饰工程技术1\"].num + clazzConfigs[\"2024级建筑装饰工程技术2\"].num) : 0,\n    加上2024级计算机网络技术2_2024级计算机网络技术5第16周实训:\n       teacher === \"文博\" ? shixunZhouKeshi(clazzConfigs[\"2024级计算机网络技术2\"].num + clazzConfigs[\"2024级计算机网络技术5\"].num) : 0,\n    加上2024级计算机网络技术4第16周实训:\n       teacher === \"徐春华\" ? clazzConfigs[\"2024级计算机网络技术4\"].shixunZhou : 0,\n    加上2024级计算机应用技术1第16周实训:\n       teacher === \"钟凯洋\" ? clazzConfigs[\"2024级计算机应用技术1\"].shixunZhou : 0,\n    加上2024级计算机应用技术4第16周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术4\"].shixunZhou : 0,\n    加上2024级计算机应用技术2第16周实训:\n       teacher === \"胡江昊\" ? clazzConfigs[\"2024级计算机应用技术2\"].shixunZhou : 0,\n    加上2024级计算机应用技术3第16周实训:\n       teacher === \"徐荣海\" ? clazzConfigs[\"2024级计算机应用技术3\"].shixunZhou : 0,\n    加上2024级软件技术1第16周刘霆实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级软件技术1\"].shixunZhou/2 : 0,\n    加上2024级软件技术1_2024级软件技术2第16周苑文建实训:\n       teacher === \"苑文建\" ? shixunZhouKeshi(clazzConfigs[\"2024级软件技术1\"].num + clazzConfigs[\"2024级软件技术2\"].num)/2 : 0,\n    加上2024级软件技术3第16周实训:\n       teacher === \"江国文\" ? clazzConfigs[\"2024级软件技术3\"].shixunZhou : 0,\n    加上2024级数字媒体艺术设计第16周实训:\n       teacher === \"郑心雨\" ? clazzConfigs[\"2024级数字媒体艺术设计\"].shixunZhou : 0,\n    减去第17周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级软件技术5\",\"2024级美容美体艺术1\",\"2024级美容美体艺术2\",\"2024级商务英语1\",\"2024级商务英语2\",\"2024级计算机网络技术3\",\"2024级学前教育3\",\"2024级建筑工程技术1\",\"2024级建筑工程技术2\",\"2024级工程测量技术2\",\"2024级工程测量技术1\",\"2024级建筑室内设计1\",\"2024级建筑室内设计2\",\"2024级建筑室内设计3\",\"2024级建筑装饰工程技术1\",\"2024级建筑装饰工程技术2\",\"2024级计算机网络技术1\",\"2024级计算机网络技术4\",\"2024级计算机网络技术5\",\"2024级计算机应用技术5\",\"2024级计算机应用技术3\",\"2024级计算机应用技术2\",\"2024级软件技术2\",\"2024级软件技术1\",\"2024级软件技术3\",\"2024级数字媒体艺术设计\"],\n            details,\"减去第17周劳动周和实训\"\n          ) * 2,\n    加上2024级软件技术5第17周实训:\n       teacher === \"黎海春\" ? clazzConfigs[\"2024级软件技术5\"].shixunZhou : 0,\n    加上2024级美容美体艺术1第17周实训:\n       teacher === \"邓心雨\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级美容美体艺术2第17周实训:\n       teacher === \"黄仕尘\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    加上2024级商务英语1_2024级商务英语2第17周实训:\n       teacher === \"范宁\" ? shixunZhouKeshi(clazzConfigs[\"2024级商务英语1\"].num + clazzConfigs[\"2024级商务英语2\"].num) : 0,\n    加上2024级计算机网络技术3第17周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级计算机网络技术3\"].shixunZhou : 0,\n    加上2024级学前教育3第17周实训:\n       teacher === \"曾鸣\" ? clazzConfigs[\"2024级学前教育3\"].shixunZhou : 0,\n    加上2024级建筑工程技术1_2024级建筑工程技术2第17周实训:\n       teacher === \"姚帆\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑工程技术1\"].num + clazzConfigs[\"2024级建筑工程技术2\"].num) : 0,\n    加上2024级工程测量技术2第17周实训:\n       teacher === \"杨登攀\" ? clazzConfigs[\"2024级工程测量技术2\"].shixunZhou : 0,\n    加上2024级工程测量技术1第17周实训:\n       teacher === \"袁志明\" ? clazzConfigs[\"2024级工程测量技术1\"].shixunZhou : 0,\n    加上2024级建筑室内设计1_2024级建筑室内设计2_2024级建筑室内设计3第17周实训:\n       teacher === \"王诗怡\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑室内设计1\"].num + clazzConfigs[\"2024级建筑室内设计2\"].num + clazzConfigs[\"2024级建筑室内设计3\"].num) : 0,\n    加上2024级建筑装饰工程技术1_2024级建筑装饰工程技术2第17周实训:\n       teacher === \"黄子豪\" ? shixunZhouKeshi(clazzConfigs[\"2024级建筑装饰工程技术1\"].num + clazzConfigs[\"2024级建筑装饰工程技术2\"].num) : 0,\n    加上2024级计算机网络技术1第17周袁军萍实训:\n       teacher === \"袁军萍\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou/2 : 0,\n    加上2024级计算机网络技术1第17周李星实训:\n       teacher === \"李星\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou/2 : 0,\n    加上2024级计算机网络技术4第17周实训:\n       teacher === \"文博\" ? clazzConfigs[\"2024级计算机网络技术4\"].shixunZhou : 0,\n    加上2024级计算机网络技术5第17周实训:\n       teacher === \"徐春华\" ? clazzConfigs[\"2024级计算机网络技术5\"].shixunZhou : 0,\n    加上2024级计算机应用技术5第17周实训:\n       teacher === \"曾莹莹\" ? clazzConfigs[\"2024级计算机应用技术5\"].shixunZhou : 0,\n    加上2024级计算机应用技术3第17周实训:\n       teacher === \"胡江昊\" ? clazzConfigs[\"2024级计算机应用技术3\"].shixunZhou : 0,\n    加上2024级计算机应用技术2第17周实训:\n       teacher === \"徐荣海\" ? clazzConfigs[\"2024级计算机应用技术2\"].shixunZhou : 0,\n    加上2024级软件技术2第17周刘霆实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级软件技术2\"].shixunZhou/2 : 0,\n    加上2024级软件技术2_2024级软件技术1_2024级软件技术3第17周苑文建实训:\n       teacher === \"苑文建\" ? shixunZhouKeshi(clazzConfigs[\"2024级软件技术2\"].num + clazzConfigs[\"2024级软件技术1\"].num + clazzConfigs[\"2024级软件技术3\"].num)/2 : 0,\n    加上2024级数字媒体艺术设计第17周实训:\n       teacher === \"郑心雨\" ? clazzConfigs[\"2024级数字媒体艺术设计\"].shixunZhou : 0,\n    shorts:{},\n    erasers:[]\n  };\n  ret.details = details;\n  return ret;\n\n}",
+     "pinCode": false,
+     "dname": "56a1220f-4093-40d6-a0bb-02147fb4e5af",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "###### 9月份",
+     "pinCode": false,
+     "dname": "5df37a48-b72d-414b-a766-038436eb859a",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_9月 = function (teacher) {\n  /*\n  *9月月份课时量\n  *9.10（周二）开课，9.14补周一\n  *9.16（周一）~9.17（周二）休中秋\n  *9.23~9.27入学教育\n  *9月29（周日）补周五\n  *10.1~10.7休假\n  *\n  *2024-09-02 ~ 2024-10-05\n  *只上两周课加上9月29补周五的课，外聘老师减去中秋休假（周二）\n  *第1 - 5周\n  */  \n  const { infos } = getTeacherKeShi(teacher);\n  let details = {};\n  //上形势与政策1(8-12周)和形势与政策1(13-17周)的老师\n  let sizhengs = { 潘威全: 5, 钟莹: 5, 徐兰兰: 5 };\n  let sizhengLectures = [\"形势与政策1(8-12周)\", \"形势与政策1(13-17周)\"];\n  let addSizhengWeeks = ~_.keys(sizhengs).indexOf(teacher)\n    ? sizhengs[teacher]\n    : 0;\n  let ret = {\n    [\"加上形势与政策1(8-12周)和形势与政策1(13-17周)\"]:\n      addSizhengWeeks > 0\n        ? reduceDakeShu([\n            ..._.filter(infos, (info) => {\n              return (\n                !~info.clazz.indexOf(\"五年制\") &&\n                ~sizhengLectures.indexOf(info.lecture)\n              );\n            }),\n          ]) *\n          2 *\n          addSizhengWeeks\n        : 0,\n    加上9月29补周五的课:\n      reduceDakeShu([\n        ..._.filter(infos, (info) => {\n          return (\n            \"V\".charCodeAt() <= info.column.charCodeAt() &&\n            info.column.charCodeAt() <= \"W\".charCodeAt() &&\n            !(\n              !~info.clazz.indexOf(\"五年制\") &&\n              ~sizhengLectures.indexOf(info.lecture)\n            )\n          );\n        }),\n      ]) * 2,\n    减去中秋休假周二的课: ~outTeachers.indexOf(teacher)\n      ? reduceDakeShu([\n          ..._.filter(infos, (info) => {\n            return (\n              \"G\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"K\".charCodeAt() &&\n              !(\n                !~info.clazz.indexOf(\"五年制\") &&\n                ~sizhengLectures.indexOf(info.lecture)\n              )\n            );\n          }),\n        ]) * 2\n      : 0,\n    shorts: {},\n  };\n  ret.details = details;\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "faeea8a3-0dae-49ea-8962-45d9e23c4f3d",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "10月课时量",
+    "level": 6
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_10月 = function (teacher) {\n\n  /*\n  *10月月份课时量\n  *2024-10-07 ~ 2024-11-02\n  *减去10月21和22的课\n  *外聘老师减去10月29日5-6，运动会彩排\n  *第6 - 9周\n  */\n  const { infos } = getTeacherKeShi(teacher);\n  let details = {};\n  //上形势与政策1(8-12周)和形势与政策1(13-17周)的老师\n  let sizhengs = {\"潘威全\":5,\"钟莹\":5,\"徐兰兰\":5};\n  let sizhengLectures = [\"形势与政策1(8-12周)\",\"形势与政策1(13-17周)\"];\n  let addSizhengWeeks = ~_.keys(sizhengs).indexOf(teacher) ? sizhengs[teacher] : 0;\n  let ret = {\n      [\"加上形势与政策1(8-12周)和形势与政策1(13-17周)\"]: addSizhengWeeks > 0 ? reduceDakeShu([\n        ..._.filter(infos, (info) => {\n          return (\n            !~info.clazz.indexOf(\"五年制\") && ~sizhengLectures.indexOf( info.lecture)\n          );\n        }),\n      ]) * 2 * addSizhengWeeks: 0,\n    减去10月21和22的课:\n      reduceDakeShu([\n        ..._.filter(infos, (info) => {\n          return (\n            \"B\".charCodeAt() <= info.column.charCodeAt() &&\n            info.column.charCodeAt() <= \"K\".charCodeAt() &&\n            !(\n              !~info.clazz.indexOf(\"五年制\") &&\n              ~sizhengLectures.indexOf(info.lecture)\n            )\n          );\n        }),\n      ]) * 2,\n    减去第9周劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级商务英语1\",\"2024级商务英语2\"],\n            details,\"减去第9周劳动周\"\n          ) * 2,\n    减去彩排周二56的课: ~outTeachers.indexOf(teacher)\n      ? reduceDakeShu([\n          ..._.filter(infos, (info) => {\n            return (\n              \"I\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"I\".charCodeAt() &&\n              !(\n                !~info.clazz.indexOf(\"五年制\") &&\n                ~sizhengLectures.indexOf(info.lecture)\n              )\n            );\n          }),\n        ]) * 2\n      : 0,\n    shorts:{}\n  };\n  ret.details = details;\n  return ret;\n\n}",
+     "pinCode": false,
+     "dname": "602ff8d0-0067-4aae-8b45-4b17ea73d210",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "innerTeachers",
+     "pinCode": false,
+     "dname": "d210e772-fa68-45ef-90eb-8f482a84b4f3",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "11月即是运动会又是劳动周，多减了老师的课时？",
+    "level": 6
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "11月课时量",
+    "level": 6
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_11月 = function (teacher) {\n\n  /*\n  *11月月份课时量\n  *2024-11-04 ~ 2024-11-30\n  *运动会 外聘老师需要减掉课时\n  *第10 - 13周\n  */\n  const { infos } = getTeacherKeShi(teacher);\n  let details = {};\n  //上形势与政策1(8-12周)和形势与政策1(13-17周)的老师\n  let sizhengs = {\"潘威全\":5,\"钟莹\":5,\"徐兰兰\":5};\n  let sizhengLectures = [\"形势与政策1(8-12周)\",\"形势与政策1(13-17周)\"];\n  let addSizhengWeeks = ~_.keys(sizhengs).indexOf(teacher) ? sizhengs[teacher] : 0;\n  let ret = {\n    \t\"加上课时\":teacher === \"谢子文\" ? 15 : 0,\n      [\"加上形势与政策1(8-12周)和形势与政策1(13-17周)\"]: addSizhengWeeks > 0 ? reduceDakeShu([\n        ..._.filter(infos, (info) => {\n          return (\n            !~info.clazz.indexOf(\"五年制\") && ~sizhengLectures.indexOf( info.lecture)\n          );\n        }),\n      ]) * 2 * addSizhengWeeks: 0,\n//     减去第10周劳动周:\n//       shixunHeMinusKeshiXishu(infos,\n//             [\"2024级五年制会计\",\"2024级建设工程管理\"],\n//             details,\"减去第10周劳动周\", ~innerTeachers.indexOf(teacher) ? infos : []//本校老师运动会又是劳动周，不需要减去\n//           ) * 2,\n    减去运动会的课: ~outTeachers.indexOf(teacher)\n      ? reduceDakeShu([\n          ..._.filter(infos, (info) => {\n            return (\n              \"B\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"W\".charCodeAt() &&\n              !(\n                !~info.clazz.indexOf(\"五年制\") &&\n                ~sizhengLectures.indexOf(info.lecture)\n              )\n            );\n          }),\n        ]) * 2\n      : 0,\n    减去第11周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术2\",\"2024级学前教育1\"],\n            details,\"减去第11周实训和劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术2第11周实训:\n       teacher === \"企业教师\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    减去第12周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级学前教育2\",\"2024级建筑装饰工程技术1\"],\n            details,\"减去第12周实训和劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术1第12周实训:\n       teacher === \"企业教师\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级建筑装饰工程技术1第12周实训:\n       teacher === \"邓尉\" ? clazzConfigs[\"2024级建筑装饰工程技术1\"].shixunZhou : 0,\n    减去第13周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级建筑工程技术1\",\"2024级建筑工程技术2\"],\n            details,\"减去第13周劳动周和实训\"\n          ) * 2,\n    加上2024级建筑工程技术2第13周实训:\n       teacher === \"张涛\" ? clazzConfigs[\"2024级建筑工程技术2\"].shixunZhou : 0,\n    shorts:{}\n  };\n  ret.details = details;\n  return ret;\n\n}",
+     "pinCode": false,
+     "dname": "a83fbf9b-06f4-4f42-91c3-9bb12cddecab",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "12月课时量",
+    "level": 6
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails_12月 = function (teacher) {\n\n  /*\n  *12月月份课时量\n  *2024-12-02 ~ 2025-01-04\n  *如果18周实训，不要又元旦多减了，因为本身就减掉了\n  *\n  *第14 - 18周\n  */\n  const { infos } = getTeacherKeShi(teacher);\n  let details = {};\n  //上形势与政策1(8-12周)和形势与政策1(13-17周)的老师\n  let sizhengs = {\"潘威全\":5,\"钟莹\":5,\"徐兰兰\":5};\n  let sizhengLectures = [\"形势与政策1(8-12周)\",\"形势与政策1(13-17周)\"];\n  let addSizhengWeeks = ~_.keys(sizhengs).indexOf(teacher) ? sizhengs[teacher] : 0;\n  let ret = {\n    减去元旦的课: ~outTeachers.indexOf(teacher)\n      ? reduceDakeShu([\n          ..._.filter(infos, (info) => {\n            return (\n              \"L\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"P\".charCodeAt() &&\n              !(\n                !~info.clazz.indexOf(\"五年制\") &&\n                ~sizhengLectures.indexOf(info.lecture)\n              )\n            );\n          }),\n        ]) * 2\n      : 0,\n    加上课时:\n       teacher === \"谢子文\" ? 2*2 : 0,\n    减去课时:\n       teacher === \"曾舒琪\" ? 2*2 : 0,\n      [\"加上形势与政策1(8-12周)和形势与政策1(13-17周)\"]: addSizhengWeeks > 0 ? reduceDakeShu([\n        ..._.filter(infos, (info) => {\n          return (\n            !~info.clazz.indexOf(\"五年制\") && ~sizhengLectures.indexOf( info.lecture)\n          );\n        }),\n      ]) * 2 * addSizhengWeeks: 0,\n    减去第14周劳动周和实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级学前教育3\",\"2024级建筑室内设计3\",\"2024级计算机网络技术3\",\"2024级计算机网络技术2\",\"2024级计算机网络技术4\",\"2024级计算机网络技术5\",\"2024级计算机应用技术1\",\"2024级数字媒体艺术设计\"],\n            details,\"减去第14周劳动周和实训\"\n          ) * 2,\n    加上2024级建筑室内设计3第14周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑室内设计3\"].shixunZhou : 0,\n    加上2024级计算机网络技术3第14周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级计算机网络技术3\"].shixunZhou : 0,\n    加上2024级计算机网络技术2第14周实训:\n       teacher === \"徐荣海\" ? clazzConfigs[\"2024级计算机网络技术2\"].shixunZhou : 0,\n    加上2024级计算机网络技术4第14周实训:\n       teacher === \"钟凯洋\" ? clazzConfigs[\"2024级计算机网络技术4\"].shixunZhou : 0,\n    加上2024级计算机网络技术5第14周实训:\n       teacher === \"曾鸣\" ? clazzConfigs[\"2024级计算机网络技术5\"].shixunZhou : 0,\n    加上2024级计算机应用技术1第14周实训:\n       teacher === \"李安康\" ? clazzConfigs[\"2024级计算机应用技术1\"].shixunZhou : 0,\n    加上2024级数字媒体艺术设计第14周实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级数字媒体艺术设计\"].shixunZhou : 0,\n    减去第15周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术2\",\"2024级美容美体艺术1\",\"2024级计算机网络技术2\",\"2024级建筑工程技术2\",\"2024级建筑工程技术1\",\"2024级工程测量技术1\",\"2024级建筑装饰工程技术2\",\"2024级计算机网络技术1\",\"2024级计算机应用技术3\",\"2024级计算机网络技术3\",\"2024级计算机网络技术5\",\"2024级计算机应用技术2\",\"2024级计算机应用技术1\"],\n            details,\"减去第15周实训和劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术2第15周实训:\n       teacher === \"企业教师\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    加上2024级美容美体艺术1第15周实训:\n       teacher === \"李含笑\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级计算机网络技术2第15周实训:\n       teacher === \"段王一马\" ? clazzConfigs[\"2024级计算机网络技术2\"].shixunZhou : 0,\n    加上2024级建筑工程技术1第15周实训:\n       teacher === \"张涛\" ? clazzConfigs[\"2024级建筑工程技术1\"].shixunZhou : 0,\n    加上2024级工程测量技术1第15周实训:\n       teacher === \"吴链\" ? clazzConfigs[\"2024级工程测量技术1\"].shixunZhou : 0,\n    加上2024级建筑装饰工程技术2第15周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑装饰工程技术2\"].shixunZhou : 0,\n    加上2024级计算机网络技术1第15周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou : 0,\n    加上2024级计算机应用技术3第15周实训:\n       teacher === \"徐荣海\" ? clazzConfigs[\"2024级计算机应用技术3\"].shixunZhou : 0,\n    加上2024级计算机网络技术3第15周实训:\n       teacher === \"彭欣展\" ? clazzConfigs[\"2024级计算机网络技术3\"].shixunZhou : 0,\n    加上2024级计算机网络技术5第15周实训:\n       teacher === \"黄月发\" ? clazzConfigs[\"2024级计算机网络技术5\"].shixunZhou : 0,\n    加上2024级计算机应用技术2第15周实训:\n       teacher === \"李安康\" ? clazzConfigs[\"2024级计算机应用技术2\"].shixunZhou : 0,\n    加上2024级计算机应用技术1第15周实训:\n       teacher === \"张奋元\" ? clazzConfigs[\"2024级计算机应用技术1\"].shixunZhou : 0,\n    减去第16周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级美容美体艺术1\",\"2024级美容美体艺术2\",\"2024级商务英语2\",\"2024级商务英语1\",\"2024级学前教育4\",\"2024级工程造价1\",\"2024级工程测量技术3\",\"2024级工程测量技术2\",\"2024级工程造价2\",\"2024级建筑室内设计2\",\"2024级软件技术4\",\"2024级计算机网络技术1\",\"2024级计算机应用技术2\",\"2024级计算机网络技术4\",\"2024级计算机应用技术3\",\"2024级软件技术1\",\"2024级软件技术2\",\"2024级软件技术5\",\"2024级数字媒体艺术设计\"],\n            details,\"减去第16周实训和劳动周\"\n          ) * 2,\n    加上2024级美容美体艺术1第16周实训:\n       teacher === \"企业教师\" ? clazzConfigs[\"2024级美容美体艺术1\"].shixunZhou : 0,\n    加上2024级美容美体艺术2第16周实训:\n       teacher === \"李含笑\" ? clazzConfigs[\"2024级美容美体艺术2\"].shixunZhou : 0,\n    加上2024级商务英语2第16周实训:\n       teacher === \"段王一马\" ? clazzConfigs[\"2024级商务英语2\"].shixunZhou : 0,\n    加上2024级商务英语1第16周实训:\n       teacher === \"邓胜平\" ? clazzConfigs[\"2024级商务英语1\"].shixunZhou : 0,\n    加上2024级工程造价1第16周实训:\n       teacher === \"张涛\" ? clazzConfigs[\"2024级工程造价1\"].shixunZhou : 0,\n    加上2024级工程测量技术3第16周实训:\n       teacher === \"陈洪志\" ? clazzConfigs[\"2024级工程测量技术3\"].shixunZhou : 0,\n    加上2024级工程测量技术2第16周实训:\n       teacher === \"杨登攀\" ? clazzConfigs[\"2024级工程测量技术2\"].shixunZhou : 0,\n    加上2024级工程造价2第16周实训:\n       teacher === \"刘晶莹\" ? clazzConfigs[\"2024级工程造价2\"].shixunZhou : 0,\n    加上2024级建筑室内设计2第16周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑室内设计2\"].shixunZhou : 0,\n    加上2024级软件技术4第16周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级软件技术4\"].shixunZhou : 0,\n    加上2024级计算机网络技术1第16周实训:\n       teacher === \"袁军萍\" ? clazzConfigs[\"2024级计算机网络技术1\"].shixunZhou : 0,\n    加上2024级计算机应用技术2第16周实训:\n       teacher === \"徐荣海\" ? clazzConfigs[\"2024级计算机应用技术2\"].shixunZhou : 0,\n    加上2024级计算机网络技术4第16周实训:\n       teacher === \"黄月发\" ? clazzConfigs[\"2024级计算机网络技术4\"].shixunZhou : 0,\n    加上2024级计算机应用技术3第16周实训:\n       teacher === \"张奋元\" ? clazzConfigs[\"2024级计算机应用技术3\"].shixunZhou : 0,\n    加上2024级软件技术1第16周实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级软件技术1\"].shixunZhou : 0,\n    加上2024级软件技术2第16周实训:\n       teacher === \"黄仕尘\" ? clazzConfigs[\"2024级软件技术2\"].shixunZhou : 0,\n    加上2024级软件技术5第16周实训:\n       teacher === \"李星\" ? clazzConfigs[\"2024级软件技术5\"].shixunZhou : 0,\n    加上2024级数字媒体艺术设计第16周实训:\n       teacher === \"郑心雨\" ? clazzConfigs[\"2024级数字媒体艺术设计\"].shixunZhou : 0,\n    减去第17周实训和劳动周:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级商务英语1\",\"2024级商务英语2\",\"2024级建筑装饰工程技术1\",\"2024级建筑装饰工程技术2\",\"2024级工程造价2\",\"2024级工程测量技术1\",\"2024级建设工程管理\",\"2024级工程测量技术3\",\"2024级工程造价1\",\"2024级建筑室内设计1\",\"2024级软件技术3\",\"2024级软件技术5\",\"2024级计算机应用技术5\",\"2024级计算机应用技术4\",\"2024级软件技术2\",\"2024级软件技术1\",\"2024级数字媒体艺术设计\"],\n            details,\"减去第17周实训和劳动周\"\n          ) * 2,\n    加上2024级商务英语1第17周实训:\n       teacher === \"段王一马\" ? clazzConfigs[\"2024级商务英语1\"].shixunZhou : 0,\n    加上2024级商务英语2第17周实训:\n       teacher === \"邓胜平\" ? clazzConfigs[\"2024级商务英语2\"].shixunZhou : 0,\n    加上2024级工程造价2第17周实训:\n       teacher === \"张涛\" ? clazzConfigs[\"2024级工程造价2\"].shixunZhou : 0,\n    加上2024级工程测量技术1第17周实训:\n       teacher === \"陈洪志\" ? clazzConfigs[\"2024级工程测量技术1\"].shixunZhou : 0,\n    加上2024级建设工程管理第17周实训:\n       teacher === \"吴链\" ? clazzConfigs[\"2024级建设工程管理\"].shixunZhou : 0,\n    加上2024级工程测量技术3第17周实训:\n       teacher === \"杨登攀\" ? clazzConfigs[\"2024级工程测量技术3\"].shixunZhou : 0,\n    加上2024级工程造价1第17周实训:\n       teacher === \"刘晶莹\" ? clazzConfigs[\"2024级工程造价1\"].shixunZhou : 0,\n    加上2024级建筑室内设计1第17周实训:\n       teacher === \"黄子豪\" ? clazzConfigs[\"2024级建筑室内设计1\"].shixunZhou : 0,\n    加上2024级软件技术3第17周实训:\n       teacher === \"黄良璜\" ? clazzConfigs[\"2024级软件技术3\"].shixunZhou : 0,\n    加上2024级软件技术5第17周实训:\n       teacher === \"徐荣海\" ? clazzConfigs[\"2024级软件技术5\"].shixunZhou : 0,\n    加上2024级计算机应用技术5第17周实训:\n       teacher === \"钟凯洋\" ? clazzConfigs[\"2024级计算机应用技术5\"].shixunZhou : 0,\n    加上2024级计算机应用技术4第17周实训:\n       teacher === \"张奋元\" ? clazzConfigs[\"2024级计算机应用技术4\"].shixunZhou : 0,\n    加上2024级软件技术2第17周实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级软件技术2\"].shixunZhou : 0,\n    加上2024级软件技术1第17周实训:\n       teacher === \"黄仕尘\" ? clazzConfigs[\"2024级软件技术1\"].shixunZhou : 0,\n    加上2024级数字媒体艺术设计第17周实训:\n       teacher === \"郑心雨\" ? clazzConfigs[\"2024级数字媒体艺术设计\"].shixunZhou : 0,\n    减去第18周实训:\n      shixunHeMinusKeshiXishu(infos,\n            [\"2024级五年制会计\",\"2024级工程测量技术2\",\"2024级计算机应用技术4\",\"2024级计算机应用技术5\",\"2024级软件技术3\",\"2024级软件技术4\"],\n            details,\"减去第18周实训\",_.filter(infos, (info) => {\n            return (////注意这里不要多减了，因为元旦外聘老师已经减去了一天，这里18周星期三又是实训，就不要再减了\n               ~outTeachers.indexOf(teacher) && \"L\".charCodeAt() <= info.column.charCodeAt() &&\n              info.column.charCodeAt() <= \"P\".charCodeAt() &&! (~ [\"2024级五年制会计\",\"2024级工程测量技术2\",\"2024级计算机应用技术4\",\"2024级计算机应用技术5\",\"2024级软件技术3\",\"2024级软件技术4\"].indexOf(info.clazz) && ~sizhengLectures.indexOf( info.lecture))\n            );\n          })\n          ) * 2,\n    加上2024级五年制会计第18周实训:\n       teacher === \"段王一马\" ? clazzConfigs[\"2024级五年制会计\"].shixunZhou : 0,\n    加上2024级工程测量技术2第18周实训:\n       teacher === \"吴链\" ? clazzConfigs[\"2024级工程测量技术2\"].shixunZhou : 0,\n    加上2024级计算机应用技术4第18周实训:\n       teacher === \"钟凯洋\" ? clazzConfigs[\"2024级计算机应用技术4\"].shixunZhou : 0,\n    加上2024级计算机应用技术5第18周实训:\n       teacher === \"张奋元\" ? clazzConfigs[\"2024级计算机应用技术5\"].shixunZhou : 0,\n    加上2024级软件技术3第18周实训:\n       teacher === \"刘霆\" ? clazzConfigs[\"2024级软件技术3\"].shixunZhou : 0,\n    加上2024级软件技术4第18周实训:\n       teacher === \"李星\" ? clazzConfigs[\"2024级软件技术4\"].shixunZhou : 0,\n    shorts:{}\n  };\n  ret.details = details;\n  return ret;\n\n}",
+     "pinCode": false,
+     "dname": "3ced9159-8ba7-4eb1-a77c-cfbbf1d89116",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "rxjySheet = {\n  let arr = (\n    await FileAttachment(\n      \"2023-2024学年第一学期2023级入学教育课表-1006.xlsx\"\n    ).xlsx()\n  ).sheet(\"教师姓名\");\n  let ret = _.reduce(arr,(prev,obj,index)=>{\n    if(obj.A && obj.B){\n      prev[obj.A] = obj.B;\n    }\n    return prev;\n  },{})\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "f3329ea4-0032-4c57-a3f9-994d31e52ef5",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "_旧版晚自习老师 = \"贺春,叶群群,叶凡,廖静,赵妍欢,邱欢,叶保春,罗如意,刘奕,贺卫,黄雪玉,敖欢,何丹,刘彩\".split(\",\");",
+     "pinCode": false,
+     "dname": "d6e89f7b-82e6-4954-ba7c-fba4fece7259",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "shixunZhouKeshi(\n  clazzConfigs[_.keys(clazzConfigs)[0]].num +\n    clazzConfigs[_.keys(clazzConfigs)[1]].num,\n  ShixunType.innerSchool\n)",
+     "pinCode": false,
+     "dname": "125ee877-9b18-4563-8244-8e12f9dfaf5c",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "/**\n明细 2-5周 9.5~9.30\n**/\ngetDetails_common = function (teacher) {\n  const {  \n    weekKeshiShu,\n    weekDaKeShu,\n    weekDaKeShuByGrade,\n    name,\n    wanzixiNum,\n    infos,\n    wanzixiArray,\n    wanzixiDetail,\n    cancel_infos,\n    cancel_keshiXishu,\n    cancel_details, } = getTeacherKeShi(teacher)\n  let ret = {\n    \n    shorts: {\n     \n    }\n  }\n  let details={};\n  if(cancel_details){\n  \tdetails[\"取消明细\"] = cancel_details;\n  }\n  ret.details = details\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "df61c2ef-635f-4c16-b0a6-13706a8f6513",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "selectTeacher = getTeacherKeShi(select)",
+     "pinCode": false,
+     "dname": "864f7610-c3be-4f1b-8c6b-9462e0c7ff60",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 老师课时量",
+     "pinCode": false,
+     "dname": "8f3dbbfd-c2c6-4451-abb4-a503e8940a10",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof select = render(({ useSetter }) => {\n  const { Select } = Antd;\n  const options = _.reduce(teacherList,(p,t,i)=>{\n    p.push({lable:t,value:t});\n    return p;\n  },[])\n  const [tc,setTc] = useState(options[0].value)\n  const handleChange = (value) => {\n    setTc(value);\n    console.log(`selected ${value}`);\n  };\n  useSetter(tc);\n  return jsx`<${Select} key='4224078d-b1fc-4e0b-bd70-f2a24c267842'\n    showSearch\n        value=${tc}\n        style=${{ width: 400 }}\n        onChange=${handleChange}\n        options=${options}\n    />`;\n})\n\n\n// Inputs.select(teacherList, {value: \"刘毅\"//\"余娜\"///郑杰锋、李星 ，涂弥云\n// .trim(),label: \"选择一个老师\"})",
+     "pinCode": false,
+     "dname": "3d08295c-33fa-49e1-a735-a7b18968274c",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table((teachers[select]||[]).sort((a,b)=>a.week-b.week),{rows: 24,header:{lecture:\"环节\",clazz:\"班级\",num:\"人数\",week:\"周次\",isOk:\"检查\",teacher:\"教师\",ji:\"机房\"}})",
+     "pinCode": false,
+     "dname": "453d12a6-5b90-4a79-9f21-a06dcf797b9e",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof table_1 = Inputs.table(selectTeacher.infos,{\n  rows :300,\n  columns:[\"teacher\",\"lecture\", \"period\", \"time\",\"clazz\",\"keshiXishu\",\"isHe\",\"clazzNum\", \"room\"],\n  header :{\"teacher\":\"教师\",\"lecture\":\"课程名\",\"period\":\"周次\",\"time\":\"时间\",\"isHe\":\"是否合班\",\"clazzNum\":\"人数\", \"room\":\"教室\",\"clazz\":\"专业\",\"keshiXishu\":\"课时系数\"},\n  width:{\"teacher\":100,\"lecture\":200,\"time\":100,\"isHe\":50,\"clazzNum\":50, \"room\":100,\"clazz\":200,\"keshiXishu\":50},\n})",
+     "pinCode": false,
+     "dname": "0426d557-17c5-40f1-84b7-b08fbfb07488",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "render(({ useSetter }) => {\n    const { Space } = Antd;\n  \tconst { weekKeshiShu, xsKeshiShuTotal, xsByPeriod } = getTeacherKeShi(select);\n    return <Space key='52b21416-74f0-428b-b923-ddf0f0a00fa1' direction=\"vertical\">\n      <div className={selectTeacher.num !== selectTeacher.configNum ? \"text-danger\" : \"\"}>课时数：{selectTeacher.num}</div>\n      <div className={  selectTeacher.wanzixiNum !== selectTeacher.configWanzixiNum ? \"text-danger\" : \"\"  }>晚自习数目：{selectTeacher.wanzixiNum}，{ teacherConfigs[selectTeacher.name].clazzs.length > 0\n            ? `管理班级：${teacherConfigs[selectTeacher.name].clazzs}` : \"\"}</div>\n      <div>所选周次：{`${[currentMonthConfig.weekIndexs[0], currentMonthConfig.weekIndexs[currentMonthConfig.weekIndexs.length - 1]].join(\"-\")}周`}</div>\n      <div>周课时数 {selectTeacher.weekDaKeShu.toFixed(2)} * 2 + { selectTeacher.wanzixiNum  } * {wzxKeshi} = {selectTeacher.weekKeshiShu.toFixed(2)}</div>\n      <pre style={{wordBreak: \"break-word\",whiteSpace: \"break-spaces\"}}>增减明细：{getNote(\n          getDetails(select)\n        )}</pre>\n      <div>周课时：{weekKeshiShu.toFixed(2)}</div>\n      <div>{weekNum}周课时：{(weekKeshiShu * weekNum).toFixed(2)}</div>\n      {!!xsKeshiShuTotal && <div>阶段性课时：{_.map(xsByPeriod,(a,i)=>{\n            return <div key={i}>\n              {i!==0&&<span>+</span>} {a.period}: {a.dakeShu.toFixed(2)} * 2 * {a.weekShu} = {a.partTotal.toFixed(2)}\n            </div>})}  = {xsKeshiShuTotal.toFixed(2)}</div>}\n      <div>变化课时：{getMinus(getDetails(select)).toFixed(2)}</div>\n      <div style={{fontWeight:\"bolder\"}}>课时总计：{(\n          weekKeshiShu * weekNum +\n          getMinus(getDetails(select))\n        ).toFixed(2)}</div>\n      <div>{getNote(getDetails(select), true)}</div>\n    </Space>;\n})",
+     "pinCode": false,
+     "dname": "2d24d902-7f6b-4227-b200-0f5b1c322b93",
+     "codeMode": "jsx"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "`${(~outTeachers.indexOf(select)) ? \"外聘老师\": (~innerTeachers.indexOf(select)) ?\"本部老师\":\"企业或者其他老师\"}`",
+     "pinCode": false,
+     "dname": "75e57725-dc36-4d16-be7b-690055c7c8cb",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getDetails(select)",
+     "pinCode": false,
+     "dname": "a3572931-dfbb-4e62-af21-6c9e9d522182",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getTeacherKeShi(select)",
+     "pinCode": false,
+     "dname": "f5aba6c7-3d42-42a7-9e2e-3a502af07b35",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//本校老师\ninnerTeachers = _.reduce(\n  innerTeacherList,\n  (prev, outTeacher, index) => {\n    if (!~removeTeachers.indexOf(outTeacher.name)) {\n      prev.push(outTeacher.name);\n    }\n    return prev;\n  },\n  []\n)",
+     "pinCode": false,
+     "dname": "dc5a9912-f32e-4c03-84b2-7c30e91f65e0",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 导出表格",
+     "pinCode": false,
+     "dname": "605baaec-c166-474e-a138-10f952880f10",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof workbook1 = Inputs.button(\n  htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:red'>导出${showMonthStr}老师周课时表</div>`,\n  {\n    value: null,\n    reduce: () => {\n      exportCsv(`${showMonthStr}老师周课时`, ConvertToCSV(calcKeshi));\n    },\n  }\n)",
+     "pinCode": false,
+     "dname": "97b980eb-6536-4815-b4f7-3ae329d6e2b8",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table(calcKeshi)",
+     "pinCode": false,
+     "dname": "e475d11f-5f53-4351-a53e-f78c8072d34b",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof workbook2 = Inputs.button(\n  htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:red'>导出${showMonthStr}外聘老师课时量表</div>`,\n  {\n    value: null,\n    reduce: () => {\n      exportCsv(\n        `${showMonthStr}外聘老师课时量`,\n        ConvertToCSV(getTeacherTableDatas(outTeachers))\n      );\n    },\n  }\n)",
+     "pinCode": false,
+     "dname": "475123f8-256f-4c19-9eac-65b2ba3b070f",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table(getTeacherTableDatas(outTeachers))",
+     "pinCode": false,
+     "dname": "b4b51180-106c-4bc6-8e92-2743c5de2c61",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof workbook3 = Inputs.button(\n  htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:red'>导出${showMonthStr}学院老师课时量表</div>`,\n  {\n    value: null,\n    reduce: () => {\n      exportCsv(\n        `${showMonthStr}学院老师课时量`,\n        ConvertToCSV(getTeacherTableDatas(innerTeachers))\n      );\n    },\n  }\n)",
+     "pinCode": false,
+     "dname": "b982c07d-e53c-409a-9df6-95f80632fc15",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table(getTeacherTableDatas(innerTeachers))",
+     "pinCode": false,
+     "dname": "812904ca-e3d7-43b3-9de7-c1f249589d76",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof workbook_bank = Inputs.button(\n  htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:red'>导出${showMonthStr}外聘老师课时费</div>`,\n  {\n    value: null,\n    reduce: () => {\n      exportCsv(`${showMonthStr}外聘老师课时费`, ConvertToCSV(outKeshiFee));\n    },\n  }\n)",
+     "pinCode": false,
+     "dname": "8a0dfd85-8116-472c-bf6f-4eea2ee8a1c4",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table(outKeshiFee,{rows:22})",
+     "pinCode": false,
+     "dname": "a85a81bd-b2bc-4642-8aab-c750d1a32bc7",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getTeacherTableDatas = function (teachers) {\n  let ret = [];\n  ret.columns = [\n    \"序号\",\n    \"姓名\",\n    \"周数\",\n    \"单周课时\",\n    \"实训课时\",\n    \"核减课时\",\n    \"总计课时\",\n    \"备注\",\n  ];\n  _.each(teachers, (outTeacher) => {\n    let teacherKeShi = getTeacherKeShi(outTeacher);\n    const { weekKeshiShu } = teacherKeShi;\n    let details = getDetails(outTeacher);\n    let minus = getMinus(details);\n    let total = weekKeshiShu * weekNum + minus;\n    if(total <=0){\n      console.log(outTeacher +\"，无课时量\")\n      return;\n    }\n    let obj = {\n      序号: 0,\n      姓名: outTeacher,\n      周数: weekNum,\n      单周课时: weekKeshiShu.toFixed(2),\n      实训课时: \"\",\n      核减课时: minus.toFixed(2),\n      总计课时: (weekKeshiShu * weekNum + minus).toFixed(2),\n      备注: getNote(details, true),\n    };\n    ret.push(obj);\n  });\n  ret.sort((a,b)=>{ return pySort(a,b,\"姓名\") })\n  _.each(ret, (v, index) => {\n    v[\"序号\"] = index + 1;\n  });\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "3ec63bfd-1c0c-4eb9-b71c-dfaca1d699db",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getMinus = function (details) {\n  return _.reduce(\n    details,\n    (prev, v, k) => {\n      if (v !== 0 && !~[\"shorts\", \"details\", \"erasers\"].indexOf(k)) {\n        if(typeof v === 'number'){\n        \tprev += k.startsWith(\"减\") ? -v : v;\n        }else{\n          alert(\"类型错误！！！！\")\n        }\n      }\n      return prev;\n    },\n    0\n  );\n}",
+     "pinCode": false,
+     "dname": "b9a3f614-9540-4e11-b1b1-57e4a580aa62",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getNote = function (details, shortNote) {\n  let ret = _.reduce(\n    details,\n    (prev, v, k) => {\n      if (v !== 0 && !~[\"shorts\", \"details\", \"erasers\"].indexOf(k)) {\n        if (prev) {\n          prev += \"，\";\n        }\n        if(!(details.erasers && ~details.erasers.indexOf(k))){\n          prev += (shortNote ? details.shorts && details.shorts[k] || k : k) +\":\" + v.toFixed(2);\n        }\n      }\n      return prev;\n    },\n    \"\"\n  );\n  if (!shortNote) {\n    ret +=\n      \"\\n\" +\n      _.reduce(\n        details.details,\n        (prev, v, k) => {\n          prev += prev ? \"\\n\" : \"\";\n          prev += k + \":\" + v;\n          return prev;\n        },\n        \"\"\n      );\n  }\n  \n  return ret;\n}",
+     "pinCode": false,
+     "dname": "d49e9614-2259-480d-ac64-351acf11de71",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "calcClazzsKeshiXishu = function (clazzs) {\n  return heKeshiXishu(\n    _.reduce(\n      clazzs,\n      (prev, clazz) => {\n        prev += clazzConfigs[clazz].num;\n        return prev;\n      },\n      0\n    )\n  );\n}",
+     "pinCode": false,
+     "dname": "69377887-dccc-47f1-bf08-4cc8ce6bffb1",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "shixunZhouKeshi(clazzConfigs[_.keys(clazzConfigs)[0]].num)===clazzConfigs[_.keys(clazzConfigs)[0]].shixunZhou",
+     "pinCode": false,
+     "dname": "695a92c2-b1dc-48f9-8d83-a9fbb96ab754",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "shixunZhouKeshi(clazzConfigs[_.keys(clazzConfigs)[0]].num+clazzConfigs[_.keys(clazzConfigs)[1]].num)",
+     "pinCode": false,
+     "dname": "14ebc35c-a7ca-4b18-909b-b6e2cf227d73",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "<H1 class=\"text-danger\">有个隐藏bug,课时重复减的情况，如果是合班课咋整？？？？cancel_infos</h1>",
+     "pinCode": false,
+     "dname": "b611cbd2-6f4e-4e79-a35b-509380806c69",
+     "codeMode": "htmlmixed"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "periods",
+     "pinCode": false,
+     "dname": "98b7ddf0-ecc0-4a65-a4c9-3e580b338a06",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "/**\n*\n*\n*劳动周、实训周、创业培训等某个老师的课要减掉多少课时？因为可能是合班、单班的情况\n*思政课会过滤掉，不多减\n*@param infos 某个老师课程列表\n*@param clazzNames 哪些班级实训周\n*@param details 如果要附上描述\n*@param key 如果要附上描述访问的key\n*@param cancel_infos 如果已经取消的课程则不需要重复减\n*/\nshixunHeMinusKeshiXishu = function (infos, clazzNames, details, key, cancel_infos=[]) {\n  clazzNames = typeof clazzNames === \"string\" ? [clazzNames] : clazzNames;\n  let desc = new Set();\n  desc.add(\"影响班级列表：\");\n  let effectClazz = new Set();\n  //查找那几列是有相关劳动周、实训周、创业培训班的课；晚自习、思政课的排外\n  let columns = Array.from(\n    _.reduce(\n      infos,\n      (prev, info, index) => {\n        if (\n          ((~clazzNames.indexOf(info.clazz) && info.lecture !== \"晚自习\") ||\n          (info.keshiXishu && ~clazzNames.indexOf(info.keshiXishu))) && !(~sizhengLectures.indexOf( info.lecture)||~periods.indexOf( info.period))\n        ) {\n          if (~clazzNames.indexOf(info.clazz)) {\n            effectClazz.add(info.clazz);\n          }\n          prev.add(info.column);\n        }\n        return prev;\n      },\n      new Set()\n    )\n  );\n  desc.add(Array.from(effectClazz).join(\"、\"));\n  desc.add(\"；\");\n  //有些列有合班的要计算进来，合班系数-单班系数计算\n  let arr = _.reduce(\n    infos,\n    (prev, info, index) => {\n      if (~columns.indexOf(info.column)) {\n        let haveArr = _.filter(cancel_infos,(cinfo,index)=>{return cinfo.tag === info.tag; })\n        if(haveArr.length===0){\n        \tprev.push(info);\n        }else{\n          console.warn(\"取消的课程已经减去了\"+ info)\n        }\n        \n      }\n      return prev;\n    },\n    []\n  );\n  if (!arr.length) {\n    return 0;\n  }\n  let jianXishu = reduceDakeShu(\n    _.reduce(\n      _.cloneDeep(arr),\n      (prev, info, index, newInfos) => {\n        if (info.isHe) {\n          if (\n            _.filter(prev, (obj) => {\n              return obj.column === info.column;\n            }).length\n          ) {\n            console.log(\"合班课已经放入一个，无需重复计算\");\n            return prev;\n          }\n          let oldKeshiXishu = _.filter(infos, (inf) => {\n            return (\n              typeof inf.keshiXishu === \"number\" && inf.column === info.column\n            );\n          })[0].keshiXishu;\n          console.log(`${info.teacher}原来的课时系数：${oldKeshiXishu}`);\n          let leftInfos = _.filter(newInfos, (inf) => {\n            return (\n              !~clazzNames.indexOf(inf.clazz) && inf.column === info.column\n            );\n          });\n          let newXishu;\n          //减去多个班还有多个班\n          if (leftInfos.length > 1) {\n            let leftClazznum = _.reduce(\n              leftInfos,\n              (prev, info, index) => {\n                return (prev += clazzConfigs[info.clazz].num);\n              },\n              0\n            );\n            newXishu = heKeshiXishu(leftClazznum);\n          } else if (leftInfos.length === 1) {\n            newXishu = clazzConfigs[leftInfos[0].clazz].keshiXishu;\n          } else {\n            newXishu = 0;\n          }\n          console.log(`${info.teacher}现在的课时系数：${newXishu}`);\n          info.keshiXishu = oldKeshiXishu - newXishu;\n          desc.add(\n            `${partial[0][info.column]} 前${(oldKeshiXishu * 2).toFixed(\n              2\n            )}，后${(newXishu * 2).toFixed(2)}[-${(info.keshiXishu * 2).toFixed(\n              2\n            )}]；`\n          );\n          prev.push(info);\n        } else {\n          prev.push(info);\n          desc.add(\n            `${partial[0][info.column]} [-${(info.keshiXishu * 2).toFixed(2)}]；`\n          );\n        }\n        return prev;\n      },\n      []\n    )\n  );\n  if (details && key) {\n    details[key] = Array.from(desc).join(\"\");\n  }\n  return jianXishu;\n}",
+     "pinCode": false,
+     "dname": "d5e1e0d1-0ce1-4914-bab0-56b423910932",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "teacherList",
+     "pinCode": false,
+     "dname": "0f315a44-de09-4a4f-bc6f-492483f94982",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 读取配置",
+     "pinCode": false,
+     "dname": "360a82d8-d136-4f28-9ea0-73f07ead8fe6",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof bankwb  = Inputs.button(htl.html`<div style='color:green;font-size:20px;font-weight:bolder;background-color:yellow'>重新读取银行卡号表</div>`, { value: reduce3(), reduce: reduce3})",
+     "pinCode": false,
+     "dname": "4a982141-308d-4503-aa21-9ab9b4f4b175",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "reduce3 = async () => {\n  return (await FileAttachment(\"银行卡号.xlsx\").xlsx()).sheet(0);\n}",
+     "pinCode": false,
+     "dname": "34c7af6d-c51f-40cd-a6f4-3c0c42009994",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "// import {\n//   getTeacherLectures as getTeacherLectures_xianshang\n// } with { workbook_xianshang as  workbook} from \"excel/excel\";\ngetTeacherLectures_xianshang = getTeacherLectures",
+     "pinCode": false,
+     "dname": "65902b6d-7b75-4812-95bf-288efce21935",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getTeacherLectures_xianshang(select)",
+     "pinCode": false,
+     "dname": "da5ffe23-b200-44c7-866f-539319b8c94d",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "reduceDakeShu = function (infos) {\n  return _.reduce(\n    infos,\n    (prev, info) => {\n      info.keshiXishu &&\n        typeof info.keshiXishu === \"number\" &&\n        (prev += info.keshiXishu);\n      return prev;\n    },\n    0\n  );\n}",
+     "pinCode": false,
+     "dname": "60218b3e-5559-4982-b52f-a383f2615a26",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "calcKeshi = {\n  let ret = [];\n  ret.columns = [\"教师\", ..._.keys(clazzConfigs), \"晚自习\", \"核周课时\"];\n  ret.push(\n    _.reduce(\n      clazzConfigs,\n      (prev, clazzConfig, key) => {\n        if (!clazzConfig.num) {\n        }\n        prev[key] = clazzConfig.num;\n        return prev;\n      },\n      { 教师: \"人数\" }\n    )\n  );\n  ret.push(\n    _.reduce(\n      clazzConfigs,\n      (prev, clazzConfig, key) => {\n        prev[key] = clazzConfig.keshiXishu;\n        return prev;\n      },\n      { 教师: \"课时系数\" }\n    )\n  );\n  ret.push(\n    _.reduce(\n      clazzConfigs,\n      (prev, clazzConfig, key) => {\n        prev[key] = clazzConfig.shixunZhou;\n        return prev;\n      },\n      { 教师: \"实训周\" }\n    )\n  );\n  _.each(teacherList, (teacher) => {\n    let { infos, wanzixiNum, weekKeshiShu, xsKeshiShuTotal  } = getTeacherKeShi(teacher);\n    if (teacher === \"潘威全\") {\n    }\n    if(0==weekKeshiShu&&0==xsKeshiShuTotal){\n      return;\n    }\n    let obj = {\n      教师: teacher,\n      晚自习: wanzixiNum ? wanzixiNum * wzxKeshi : \"\",\n      核周课时: `${weekKeshiShu?(weekKeshiShu).toFixed(2):\"0\"}${xsKeshiShuTotal ? `+阶段${(xsKeshiShuTotal/jxWeekNum).toFixed(2)}` :\"\"}`,\n    };\n    _.each(infos, (info) => {\n      if (undefined !== info.keshiXishu && !~periods.indexOf(info.period)) {\n        if (typeof info.keshiXishu === \"number\") {\n          if (undefined === obj[info.clazz]) {\n            obj[info.clazz] = 0;\n          }\n          if (typeof obj[info.clazz] !== \"number\") {\n            if (typeof obj[info.clazz] !== \"object\") {\n              obj[info.clazz] = [obj[info.clazz], info.keshiXishu * 2];\n              console.log(teacher, obj[info.clazz], \"又加上单班数据。。。\");\n            } else {\n              obj[info.clazz] = [...obj[info.clazz], info.keshiXishu * 2];\n              console.log(teacher, obj[info.clazz], \"又加上n个单班数据。。。\");\n            }\n          } else {\n            obj[info.clazz] += info.keshiXishu * 2;\n          }\n        } else if (\n          undefined !== obj[info.clazz] &&\n          typeof obj[info.clazz] !== \"object\"\n        ) {\n          if (obj[info.clazz] !== info.keshiXishu) {\n            obj[info.clazz] = [obj[info.clazz], info.keshiXishu];\n            console.log(teacher, obj[info.clazz], \"又加上合班数据。。。\");\n          }\n        } else {\n          if (!obj[info.clazz]) {\n            obj[info.clazz] = info.keshiXishu;\n          } else if (typeof obj[info.clazz] === \"object\") {\n            if (!~obj[info.clazz].indexOf(info.keshiXishu)) {\n              obj[info.clazz] = [...obj[info.clazz], info.keshiXishu];\n              console.log(teacher, obj[info.clazz], \"又加上n个合班数据。。。\");\n            }\n          } else {\n            throw new Error(\"不会发生，严重错误\");\n          }\n        }\n      }\n    });\n    _.map(obj, (v, k) => {\n      if (typeof v === \"object\") {\n        obj[k] = v.join(\" \");\n      }\n    });\n    ret.push(obj);\n  });\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "8d1c56d1-8c79-4508-8d42-f6a8c405110c",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "outTeacherList",
+     "pinCode": false,
+     "dname": "8c595714-0771-4c14-bb88-48e1ffd304b0",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "moment =require('moment')",
+     "pinCode": false,
+     "dname": "4b3f477b-1226-4dc9-8d33-0e7794c476e0",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "outKeshiFee = {\n  //外聘老师课时费\n  let ret = [];\n  ret.columns = [\n    \"序号\",\n    \"姓名\",\n    \"身份证号\",\n    \"银行账号\",\n    \"手机号码\",\n    \"课时单价\",\n    \"课时数\",\n    \"金额\",\n  ];\n  _.reduce(\n    outTeachers,\n    (prev, curr, index) => {\n      let f = _.filter(bankwb, (v) => {\n        return v.A === curr;\n      });\n      const { weekKeshiShu } = getTeacherKeShi(curr);\n      let keshiNum = weekKeshiShu * weekNum + getMinus(getDetails(curr));\n      let price = 60;\n      if (f.length === 0) {\n        //         序号\t姓名\t身份证号\t银行账号\t课时单价\t课时数\t金额\n        prev.push({\n          序号: 0,\n          姓名: curr,\n          身份证号: \"未知\",\n          银行账号: \"未知\",\n          手机号码: \"未知\",\n          课时单价: price,\n          课时数: keshiNum.toFixed(2),\n          金额: (price * keshiNum).toFixed(2),\n        });\n      } else if (f.length !== 1) {\n        throw new Error(\"严重错误，信息重复\");\n      } else {\n        prev.push({\n          序号: 0,\n          姓名: curr,\n          身份证号: `${f[0]?.B?.replace(/\\W/g, \"\")}`,\n          银行账号: `${f[0]?.C?.replace(/\\W/g, \"\")}`,\n          手机号码: `${f[0]?.E ? f[0].E:\"未知\"}`,\n          课时单价: price,\n          课时数: keshiNum.toFixed(2),\n          金额: (price * keshiNum).toFixed(2),\n        });\n      }\n      return prev;\n    },\n    ret\n  );\n  ret.sort((a,b)=>{ return pySort(a,b,\"姓名\") })\n  _.each(ret, (v, index) => {\n    v[\"序号\"] = index + 1;\n  });\n  return Promises.delay(1000, ret);\n}",
+     "pinCode": false,
+     "dname": "2b631c86-0838-489b-b7da-537a7e930350",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "innerKeshiFee = getTeacherTableDatas(innerTeachers)",
+     "pinCode": false,
+     "dname": "a0157341-a1e2-482c-8c1e-5886e7416685",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "antChart",
+   "data": {
+    "chartConfigs": {
+     "5f5e6b9f-6f69-4ba4-88be-531275f52631": {
+      "chartKey": "5f5e6b9f-6f69-4ba4-88be-531275f52631",
+      "createTime": 1701779824101,
+      "renderType": "Chart",
+      "active": true,
+      "fetchPeriod": 0,
+      "text": "",
+      "selectedCategoryFrom": "shareData",
+      "selectedCategory": "outKeshiFee",
+      "selectedProperties": [
+       "姓名",
+       "课时数"
+      ],
+      "selectedDb": "",
+      "chartData": [],
+      "emptyFills": {},
+      "castColumns": {},
+      "joinColumns": {},
+      "chartColumns": [],
+      "type": "Basic Column",
+      "options": {
+       "xField": "姓名",
+       "yField": "课时数",
+       "title": {
+        "text": "外聘老师课时量",
+        "size": {
+         "displayConfig": {
+          "type": "Select"
+         },
+         "selector": [
+          "h1",
+          "h2",
+          "h3",
+          "h4",
+          "h5",
+          "h6"
+         ],
+         "value": "h6"
+        }
+       },
+       "description": {
+        "text": "a simple column chart",
+        "displayConfig": {
+         "type": "On"
+        }
+       },
+       "padding": {
+        "displayConfig": {
+         "type": "Padding"
+        },
+        "value": 30
+       },
+       "legend": {
+        "displayConfig": {
+         "type": "Remove",
+         "offValue": false
+        },
+        "position": {
+         "displayConfig": {
+          "type": "Select"
+         },
+         "selector": [
+          "top",
+          "top-left",
+          "top-right",
+          "left",
+          "left-top",
+          "left-bottom",
+          "right",
+          "right-top",
+          "right-bottom",
+          "bottom",
+          "bottom-left",
+          "bottom-right"
+         ],
+         "value": "top-left"
+        },
+        "flipPage": true,
+        "offsetX": 0,
+        "offsetY": 0
+       },
+       "label": {
+        "displayConfig": {
+         "type": "On"
+        },
+        "position": {
+         "displayConfig": {
+          "type": "Select"
+         },
+         "selector": [
+          "top",
+          "bottom",
+          "middle",
+          "left",
+          "right"
+         ],
+         "value": "top"
+        },
+        "offset": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "style": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "fontSize": 10,
+         "textAlign": {
+          "displayConfig": {
+           "type": "Select"
+          },
+          "selector": [
+           "left",
+           "center",
+           "right"
+          ],
+          "value": "center"
+         }
+        }
+       },
+       "tooltip": {
+        "displayConfig": {
+         "type": "Off",
+         "offValue": {
+          "showContent": false,
+          "shared": false
+         }
+        },
+        "showContent": true,
+        "offset": 0
+       },
+       "xAxis": {
+        "title": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "text": "姓名",
+         "autoRotate": true
+        },
+        "label": {
+         "offset": 10,
+         "offsetX": 0,
+         "offsetY": 0,
+         "rotate": {
+          "displayConfig": {
+           "type": "Number"
+          },
+          "minV": 0,
+          "maxV": 10,
+          "step": 0.01,
+          "value": 0
+         },
+         "autoRotate": false,
+         "autoHide": true,
+         "style": {
+          "displayConfig": {
+           "type": "Off"
+          },
+          "fontSize": 10,
+          "textAlign": {
+           "displayConfig": {
+            "type": "Select"
+           },
+           "selector": [
+            "left",
+            "center",
+            "right"
+           ],
+           "value": "center"
+          }
+         }
+        },
+        "tickLine": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "length": 5
+        },
+        "grid": {
+         "displayConfig": {
+          "type": "Off",
+          "offValue": null
+         },
+         "line": {
+          "style": {
+           "lineWidth": 1
+          }
+         }
+        },
+        "min": {
+         "displayConfig": {
+          "type": "Off",
+          "offValue": false,
+          "onValue": 0
+         }
+        },
+        "tickInterval": {
+         "displayConfig": {
+          "type": "Off",
+          "offValue": false,
+          "onValue": 5
+         }
+        }
+       },
+       "yAxis": {
+        "title": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "text": "课时数",
+         "autoRotate": true
+        },
+        "label": {
+         "offset": 10,
+         "offsetX": 0,
+         "offsetY": 0,
+         "rotate": {
+          "displayConfig": {
+           "type": "Number"
+          },
+          "minV": 0,
+          "maxV": 10,
+          "step": 0.01,
+          "value": 0
+         },
+         "autoRotate": false,
+         "autoHide": true,
+         "style": {
+          "displayConfig": {
+           "type": "Off"
+          },
+          "fontSize": 10,
+          "textAlign": {
+           "displayConfig": {
+            "type": "Select"
+           },
+           "selector": [
+            "left",
+            "center",
+            "right"
+           ],
+           "value": "center"
+          }
+         }
+        },
+        "tickLine": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "length": 5
+        },
+        "grid": {
+         "displayConfig": {
+          "type": "On",
+          "offValue": null
+         },
+         "line": {
+          "style": {
+           "lineWidth": 1
+          }
+         }
+        },
+        "min": {
+         "displayConfig": {
+          "type": "On",
+          "offValue": false,
+          "onValue": 0
+         }
+        },
+        "tickInterval": {
+         "displayConfig": {
+          "type": "Off",
+          "offValue": false,
+          "onValue": 5
+         }
+        }
+       },
+       "data": []
+      }
+     },
+     "dbd7d880-fa17-4161-8842-5c6549eb2e17": {
+      "chartKey": "dbd7d880-fa17-4161-8842-5c6549eb2e17",
+      "createTime": 1701779983548,
+      "renderType": "Chart",
+      "active": true,
+      "fetchPeriod": 0,
+      "text": "",
+      "selectedCategoryFrom": "shareData",
+      "selectedCategory": "innerKeshiFee",
+      "selectedProperties": [
+       "姓名",
+       "总计课时"
+      ],
+      "selectedDb": "",
+      "chartData": [],
+      "emptyFills": {},
+      "castColumns": {},
+      "joinColumns": {},
+      "chartColumns": [],
+      "type": "Basic Column",
+      "options": {
+       "xField": "姓名",
+       "yField": "总计课时",
+       "title": {
+        "text": "本校老师课时量",
+        "size": {
+         "displayConfig": {
+          "type": "Select"
+         },
+         "selector": [
+          "h1",
+          "h2",
+          "h3",
+          "h4",
+          "h5",
+          "h6"
+         ],
+         "value": "h6"
+        }
+       },
+       "padding": {
+        "displayConfig": {
+         "type": "Padding"
+        },
+        "value": 30
+       },
+       "legend": {
+        "displayConfig": {
+         "type": "Remove",
+         "offValue": false
+        },
+        "position": {
+         "displayConfig": {
+          "type": "Select"
+         },
+         "selector": [
+          "top",
+          "top-left",
+          "top-right",
+          "left",
+          "left-top",
+          "left-bottom",
+          "right",
+          "right-top",
+          "right-bottom",
+          "bottom",
+          "bottom-left",
+          "bottom-right"
+         ],
+         "value": "top-left"
+        },
+        "flipPage": true,
+        "offsetX": 0,
+        "offsetY": 0
+       },
+       "label": {
+        "displayConfig": {
+         "type": "On"
+        },
+        "position": {
+         "displayConfig": {
+          "type": "Select"
+         },
+         "selector": [
+          "top",
+          "bottom",
+          "middle",
+          "left",
+          "right"
+         ],
+         "value": "top"
+        },
+        "offset": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "style": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "fontSize": 10,
+         "textAlign": {
+          "displayConfig": {
+           "type": "Select"
+          },
+          "selector": [
+           "left",
+           "center",
+           "right"
+          ],
+          "value": "center"
+         }
+        }
+       },
+       "tooltip": {
+        "displayConfig": {
+         "type": "On",
+         "offValue": {
+          "showContent": false,
+          "shared": false
+         }
+        },
+        "showContent": true,
+        "offset": 0
+       },
+       "xAxis": {
+        "title": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "text": "姓名",
+         "autoRotate": true
+        },
+        "label": {
+         "offset": 10,
+         "offsetX": 0,
+         "offsetY": 0,
+         "rotate": {
+          "displayConfig": {
+           "type": "Number"
+          },
+          "minV": 0,
+          "maxV": 10,
+          "step": 0.01,
+          "value": 0
+         },
+         "autoRotate": false,
+         "autoHide": true,
+         "style": {
+          "displayConfig": {
+           "type": "Off"
+          },
+          "fontSize": 10,
+          "textAlign": {
+           "displayConfig": {
+            "type": "Select"
+           },
+           "selector": [
+            "left",
+            "center",
+            "right"
+           ],
+           "value": "center"
+          }
+         }
+        },
+        "tickLine": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "length": 5
+        },
+        "grid": {
+         "displayConfig": {
+          "type": "Off",
+          "offValue": null
+         },
+         "line": {
+          "style": {
+           "lineWidth": 1
+          }
+         }
+        },
+        "min": {
+         "displayConfig": {
+          "type": "Off",
+          "offValue": false,
+          "onValue": 0
+         }
+        },
+        "tickInterval": {
+         "displayConfig": {
+          "type": "Off",
+          "offValue": false,
+          "onValue": 5
+         }
+        }
+       },
+       "yAxis": {
+        "title": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "text": "总计课时",
+         "autoRotate": true
+        },
+        "label": {
+         "offset": 10,
+         "offsetX": 0,
+         "offsetY": 0,
+         "rotate": {
+          "displayConfig": {
+           "type": "Number"
+          },
+          "minV": 0,
+          "maxV": 10,
+          "step": 0.01,
+          "value": 0
+         },
+         "autoRotate": false,
+         "autoHide": true,
+         "style": {
+          "displayConfig": {
+           "type": "Off"
+          },
+          "fontSize": 10,
+          "textAlign": {
+           "displayConfig": {
+            "type": "Select"
+           },
+           "selector": [
+            "left",
+            "center",
+            "right"
+           ],
+           "value": "center"
+          }
+         }
+        },
+        "tickLine": {
+         "displayConfig": {
+          "type": "Off"
+         },
+         "length": 5
+        },
+        "grid": {
+         "displayConfig": {
+          "type": "On",
+          "offValue": null
+         },
+         "line": {
+          "style": {
+           "lineWidth": 1
+          }
+         }
+        },
+        "min": {
+         "displayConfig": {
+          "type": "On",
+          "offValue": false,
+          "onValue": 0
+         }
+        },
+        "tickInterval": {
+         "displayConfig": {
+          "type": "Off",
+          "offValue": false,
+          "onValue": 5
+         }
+        }
+       },
+       "data": []
+      }
+     }
+    },
+    "layouts": {
+     "lg": [
+      {
+       "w": 12,
+       "h": 15,
+       "x": 0,
+       "y": 0,
+       "i": "5f5e6b9f-6f69-4ba4-88be-531275f52631",
+       "minW": 2,
+       "minH": 3,
+       "moved": false,
+       "static": false,
+       "isDraggable": true,
+       "isResizable": true
+      },
+      {
+       "w": 12,
+       "h": 13,
+       "x": 0,
+       "y": 15,
+       "i": "dbd7d880-fa17-4161-8842-5c6549eb2e17",
+       "minW": 2,
+       "minH": 3,
+       "moved": false,
+       "static": false,
+       "isDraggable": true,
+       "isResizable": true
+      },
+      {
+       "w": 3,
+       "h": 4,
+       "x": 0,
+       "y": 28,
+       "i": "add",
+       "minW": 2,
+       "minH": 3,
+       "moved": false,
+       "static": false,
+       "isDraggable": false,
+       "isResizable": false
+      }
+     ],
+     "sm": [
+      {
+       "w": 6,
+       "h": 11,
+       "x": 0,
+       "y": 0,
+       "i": "5f5e6b9f-6f69-4ba4-88be-531275f52631",
+       "minW": 2,
+       "minH": 3,
+       "moved": false,
+       "static": false,
+       "isDraggable": true,
+       "isResizable": true
+      },
+      {
+       "w": 6,
+       "h": 4,
+       "x": 0,
+       "y": 11,
+       "i": "dbd7d880-fa17-4161-8842-5c6549eb2e17",
+       "minW": 2,
+       "minH": 3,
+       "moved": false,
+       "static": false,
+       "isDraggable": true,
+       "isResizable": true
+      },
+      {
+       "w": 3,
+       "h": 4,
+       "x": 0,
+       "y": 15,
+       "i": "add",
+       "minW": 2,
+       "minH": 3,
+       "moved": false,
+       "static": false,
+       "isDraggable": false,
+       "isResizable": false
+      }
+     ],
+     "xxs": [
+      {
+       "w": 2,
+       "h": 11,
+       "x": 0,
+       "y": 0,
+       "i": "5f5e6b9f-6f69-4ba4-88be-531275f52631",
+       "minW": 2,
+       "minH": 3,
+       "moved": false,
+       "static": false,
+       "isDraggable": true,
+       "isResizable": true
+      },
+      {
+       "w": 2,
+       "h": 4,
+       "x": 0,
+       "y": 11,
+       "i": "dbd7d880-fa17-4161-8842-5c6549eb2e17",
+       "minW": 2,
+       "minH": 3,
+       "moved": false,
+       "static": false,
+       "isDraggable": true,
+       "isResizable": true
+      },
+      {
+       "w": 2,
+       "h": 4,
+       "x": 0,
+       "y": 15,
+       "i": "add",
+       "minW": 2,
+       "minH": 3,
+       "moved": false,
+       "static": false,
+       "isDraggable": false,
+       "isResizable": false
+      }
+     ]
+    },
+    "dname": "dcffac99-a3cc-4def-bb1b-dbc99972aa65",
+    "lock": false,
+    "breakPoints": {
+     "lg": 1200,
+     "sm": 768,
+     "xxs": 0
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "teacherList",
+     "pinCode": true,
+     "dname": "d41e1700-2571-482e-b915-b324a883f472",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "# Dependencies",
+     "pinCode": false,
+     "dname": "14ad67fd-4a2d-4b25-a949-1a9d4daa995c",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "import {jsx, render, useState, component, useEffect, Fragment } from \"https://grove-help.graphxr.com/react/react\"",
+     "pinCode": false,
+     "dname": "b3ac3f32-3516-4313-9884-503f7cb1844e",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "import {\n  getTeacherLectures,\n  clazzConfigs,\n  teacherList,\n  teacherInfos,\n  outTeacherList ,\n  innerTeacherList,\n  outTeachers,\n  exportCsv,\n  ConvertToCSV,\n  partial,\n  danKeshiXishu,\n  heKeshiXishu,\n  teacherConfigs,\n  shixunZhouKeshi,\n  ShixunType,\n  pySort,\n  periods,\n  xsTypeOptions,\n} with { month, waipinDanban, exceptClazzNames, xingshi, removeTeachers, addTeacherList, xsType } from \"./excel.json\";",
+     "pinCode": false,
+     "dname": "86c61d21-5d4d-4285-94df-d22a2ca77a8b",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "import { onejan, weekTeachers, teachers } with { month } from \"./zhouli.json\";",
+     "pinCode": false,
+     "dname": "a93c6ac7-72cc-43d1-aa53-80eadf4b60f5",
+     "codeMode": "javascript2"
+    }
+   }
+  }
+ ],
+ "version": "2.19.1"
+}

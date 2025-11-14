@@ -1,0 +1,1350 @@
+{
+ "blocks": [
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table(ddww)",
+     "pinCode": false,
+     "dname": "0536c67e-e049-41cc-9b36-4626fb979756",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "<style>\n  .global-style .full-screen .grove-react-app .ant-affix {\n  \ttop: 0px!important;\n  }\n</style>",
+     "pinCode": false,
+     "dname": "48e84235-13bc-4ce3-a9da-aebb07dc26a2",
+     "codeMode": "htmlmixed"
+    }
+   }
+  },
+  {
+   "type": "plotChart",
+   "data": {
+    "dataTypes": {
+     "title": {
+      "type": "string"
+     },
+     "num": {
+      "type": "number"
+     }
+    },
+    "pinCode": false,
+    "dname": "009491bc-ed4a-453d-aa98-d4ad1c37a9c4",
+    "customise": {
+     "title": "",
+     "subtitle": "",
+     "caption": "",
+     "height": "",
+     "widthType": "auto",
+     "width": 300,
+     "marginTop": "",
+     "marginRight": "",
+     "marginBottom": "",
+     "marginLeft": "",
+     "insetTop": "",
+     "insetRight": "",
+     "insetBottom": "",
+     "insetLeft": "",
+     "xLabel": "",
+     "xScale": "",
+     "xOptions": [],
+     "yLabel": "",
+     "yScale": "",
+     "yOptions": [],
+     "colorLegend": true,
+     "colorScheme": "",
+     "colorScale": "",
+     "colorOptions": []
+    },
+    "marks": {
+     "xf": "",
+     "x": "title",
+     "yf": "",
+     "y": "num",
+     "colorf": "",
+     "color": "",
+     "sizef": "",
+     "size": "",
+     "fx": "",
+     "fy": "",
+     "mark": "bar"
+    },
+    "selectedCategoryFrom": "shareData",
+    "selectedCategory": "a"
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "a = (function (周数不对实训, noTeachers, teacherTimeConflictList) {\n  let func = (o) => {\n    return _.reduce(\n      o,\n      (p, v, k) => {\n        if( v instanceof Array){\n        p.push(...v);\n        }else{\n          p.push(v)\n        }\n        return p;\n      },\n      []\n    ).length;\n  };\n  return Promises.delay(500,[\n    { title: \"周数不对实训\", num: func(周数不对实训) },\n    { title: \"实训没有分配老师\", num: func(noTeachers) },\n    { title: \"老师时间重叠\", num: func(teacherTimeConflictList) },\n  ]);\n})(周数不对实训, noTeachers, teacherTimeConflictList)",
+     "pinCode": false,
+     "dname": "df2698b1-bc00-40bb-a423-6086cdb14b8a",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 配置",
+     "pinCode": false,
+     "dname": "0f317384-27c2-4bc7-9840-57fa83a2370b",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof setDefaultTeacherForNotAssign = Inputs.radio([true,false], {label: \"对未分配教师的实训分配默认老师\", value:true})",
+     "pinCode": false,
+     "dname": "42f2e90d-1037-4869-b01c-0cf862b8e83a",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "### 实训系数配置",
+     "pinCode": false,
+     "dname": "117c1aab-da59-4c7a-8996-82c56c88c38f",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "sxTypeConfig = ({})",
+     "pinCode": false,
+     "dname": "ac5f7578-4ceb-4bc5-801b-9245cdaede3a",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "### 实训修改周次配置",
+     "pinCode": false,
+     "dname": "82cea87e-2ad4-42a4-9346-5ddaa0184bed",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "alterWeeks = ({\n  \"2024级学前教育4_幼儿园见习1_熊承焱\": {\n    week: \"9\",\n    toWeek: \"10\",\n  },\n})",
+     "pinCode": false,
+     "dname": "2562ea91-903a-4219-89d1-61095905a286",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "///多位老师实训分隔符\nsplitTcReg = /、|,/",
+     "pinCode": false,
+     "dname": "c00a0682-73f7-4326-a685-020dc1ea8668",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "st = workbook.sheet(\"周历\")",
+     "pinCode": false,
+     "dname": "239f0c7c-61c3-4510-aa02-4cff340eb566",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//教务系统需要的数据\nsxInfos = {\n  let arr = _.reduce(\n    teachers,\n    (prev, arr, key) => {\n      prev.push(...arr);\n      return prev;\n    },\n    []\n  );\n  let ret = [];\n  for (let i = 0; i < arr.length; i++) {\n    ret.push({\n      bjmc: clazzConfigs[arr[i].clazz].sysName,\n      mingcheng: arr[i].clazz,\n      kcmc:arr[i].lecture,\n      zc:arr[i].week,\n    });\n  }\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "0e67c2b0-aef8-4915-929b-d89aa67cade7",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof ldz = Inputs.radio([true, false], {label: \"显示劳动周\", value: false})",
+     "pinCode": false,
+     "dname": "f35ad755-d764-49a8-abef-25d41b0e86ba",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "查询班级实训",
+    "level": 2
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof config_table = render(({ useSetter }) => {\n  const { Select, Space } = Antd;\n  const { CheckOutlined, CloseOutlined } = AntdIcons;\n  const { Switch } = Antd;\n  const options = _.reduce(\n    clazzConfigs,\n    (p, v, k) => {\n      p.push({ label: k, value: k });\n      return p;\n    },\n    [{ label: \"全部\", value: \"\" }]\n  );\n  const [clazz, setClazz] = useState(options[0].value);\n  const [orderByWeek, setOrderByWeek] = useState(true);\n  const [ldz, setLdz] = useState(true);\n  const handleChange = (value) => {\n    setClazz(value);\n    console.log(`selected ${value}`);\n  };\n  useSetter({ clazz,ldz,orderByWeek });\n  return jsx`<${Space}>\n    选择班级：<${Select} key='1eb1b3d3-b029-4735-b8bd-1a42a2b332fb'\n    showSearch\n        value=${clazz}\n        style=${{ width: 400 }}\n        onChange=${handleChange}\n        options=${options}\n    />\n    按周次排序: <${Switch}\n        checkedChildren=${jsx`<${CheckOutlined} />`}\n        unCheckedChildren=${jsx`<${CloseOutlined} />`}\n        checked=${orderByWeek} onChange=${(value) => {\n    setOrderByWeek(value);\n  }}\n      />\n      显示劳动周： <${Switch}\n        checkedChildren=${jsx`<${CheckOutlined} />`}\n        unCheckedChildren=${jsx`<${CloseOutlined} />`}\n        checked=${ldz} onChange=${(value) => {\n    setLdz(value);\n  }}\n      />\n    </${Space}>\n    `;\n})",
+     "pinCode": false,
+     "dname": "61e528cf-e046-4f67-b7d6-365387d5247a",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof table_2 = {\n  const { ldz, orderByWeek, clazz } = config_table\n  let arr = _.reduce(\n    teachers,\n    (prev, arr, key) => {\n      _.each(arr,(l)=>{\n        if(clazz && clazz !== l.clazz){\n        return;\n        }\n        if(!ldz && l.lecture == \"劳动周\"){\n        return\n        }\n      \tprev.push(l);\n      })\n      \n      return prev;\n    },\n    []\n  );\n  if (orderByWeek) {\n    arr.sort((a, b) => {\n      return parseInt(a.week.split(\",\")[0]) - parseInt(b.week.split(\",\")[0]);\n    });\n  }\n  return Inputs.table(arr, {\n    rows: 240,\n    header: {\n      lecture: \"环节\",\n      clazz: \"班级\",\n      num: \"人数\",\n      week: \"周次\",\n      isOk: \"检查\",\n      teacher: \"教师\",\n      ji: \"机房\"\n    },\n  });\n}",
+     "pinCode": false,
+     "dname": "6f68d921-b084-441f-a936-f7384f26611b",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 导出表格",
+     "pinCode": false,
+     "dname": "52908daf-503e-421c-836d-b66ce1a91762",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.button(\n  htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:black'>导出教师实训表</div>`,\n  {\n    value: null,\n    reduce: () => {\n      let title = \"教师实训表\";\n      exportCsv(\n        title,\n        title +\n          \"\\r\\n\" +\n          ConvertToCSV(\n            _.reduce(\n              teachers,\n              (prev, arr, key) => {\n                prev.push(...arr);\n                return prev;\n              },\n              []\n            ),\n            {\n              clazz: \"班级\",\n              isOk: \"是否可用\",\n              ji: \"使用机房\",\n              lecture: \"课程\",\n              num: \"人数\",\n              teacher: \"教师\",\n              week: \"周次\",\n            }\n          )\n      );\n    },\n  }\n)",
+     "pinCode": false,
+     "dname": "a6be1134-3f09-4289-b79c-ee19609c90fe",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.button(\n  htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:black'>导出《设置班级环节周次》表</div>`,\n  {\n    value: null,\n    reduce: () => {\n      let title = \"设置班级环节周次\";\n      const { ldz, orderByWeek, clazz } = config_table\n      let arr = _.reduce(\n        teachers,\n        (prev, arr, key) => {\n          _.each(arr,(l)=>{\n            if(clazz && clazz !== l.clazz){\n            return;\n            }\n            if(!ldz && l.lecture == \"劳动周\"){\n            return\n            }\n            prev.push(l);\n          })\n\n          return prev;\n        },\n        []\n      );\n      if (orderByWeek) {\n        arr.sort((a, b) => {\n          return parseInt(a.week.split(\",\")[0]) - parseInt(b.week.split(\",\")[0]);\n        });\n      }\n      exportCsv(\n        title,\n        title +\n          \"\\r\\n\" +\n          ConvertToCSV(\n            arr,\n            {\n              lecture: \"环节\",\n              clazz: \"班级\",\n              num: \"人数\",\n              week: \"周次\",\n              isOk: \"检查\",\n              teacher: \"教师\",\n              ji: \"机房\"\n            }\n          )\n      );\n    },\n  }\n)",
+     "pinCode": false,
+     "dname": "aa5a4f98-aaba-4b64-8140-f9b7bc62bafb",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "  Inputs.button(\"拷贝设置班级环节周次数据\",{reduce:()=>{\n            //TODO\n  copyContent(JSON.stringify(sxInfos))\n        }})",
+     "pinCode": false,
+     "dname": "74bf8a58-c5e8-46bf-abe5-e96186aafb85",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "clazzConfigs",
+     "pinCode": false,
+     "dname": "99e0acec-f90e-4ab6-8097-03d770b64032",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//学期开始日\nonejan = new Date(new Date().getFullYear(), 9 - 1, 8, 0, 0, 0)",
+     "pinCode": false,
+     "dname": "7dcd2433-a815-4125-9645-9fdcc61c5851",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "ddww = {\n  let arr = [];\n  arr.columns = [];\n  let s = new Date(onejan.getTime());\n  for (let i = 0; i < 18; i++) {\n    arr.columns.push(i + 1);\n  }\n  let s1 = {};\n  let s2 = {};\n  for (let i = 0; i < 18; i++) {\n    s1[i + 1] = moment(new Date(s.getTime() + i * 7 * 24 * 3600 * 1000)).format(\n      \"MM∙DD\"\n    );\n    s2[i + 1] = moment(\n      new Date(s.getTime() + 6 * 24 * 3600 * 1000 + i * 7 * 24 * 3600 * 1000)\n    ).format(\"MM∙DD\");\n  }\n  arr.push(s1);\n  arr.push(s2);\n  return arr;\n}",
+     "pinCode": false,
+     "dname": "d60793af-babb-444c-90a9-a357bf225839",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//当前第几周\nweekDefault = {\n  const now = new Date();\n  return Math.ceil(\n    (now.getTime() - onejan.getTime()) / 86400000 / 7\n  );\n}",
+     "pinCode": false,
+     "dname": "56f186e4-1bef-412e-843d-b17791c5a8bf",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 读取配置",
+     "pinCode": false,
+     "dname": "77d44169-de33-480e-851b-a4dc99afb7dc",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "workbook = config_zl.value;",
+     "pinCode": false,
+     "dname": "e4dd8bbd-78e1-4b2a-8162-7f367e07fc9d",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof config_zl = render(({ useSetter }) => {\n    const { Affix, Switch, Button, Space } = Antd;\n  \tconst { CheckOutlined, CloseOutlined } = AntdIcons;\n    const [value, setValue] = useState(reduce());\n    const [top, setTop] = useState(100);\n    const [bottom, setBottom] = useState(100);\n    useSetter({ value });\n    return <Affix key=\"f6cba74f-a3fd-43c1-8dbe-f75d22e2745e\"  offsetTop={top} offsetBottom={bottom}>\n  <Space>\n    <Button style={{\n    color: \"green\",\n    fontWeight: \"bolder\",\n    backgroundColor: \"yellow\",\n  }}  onClick={() => {\n    setValue(reduce());\n  }}> 重新读取课表 \n    </Button>\n    <span title=\"Jump to the cell\" className=\"icon fas fa-crosshairs clicker\" onClick={(e)=>{\n    e.currentTarget.closest(\".code-edit-result\").scrollIntoView({ behavior: \"auto\", block: \"center\", inline: \"nearest\" })\n  }}></span>\n  </Space>\n</Affix>;\n})",
+     "pinCode": false,
+     "dname": "59d3ae4b-3657-4a90-aefa-192fcd36adcb",
+     "codeMode": "jsx"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof month = Inputs.number({\n  label: \"请填写填写月份\",\n  min: 1,\n  max: 12,\n  value: new Date().getMonth() + 1,\n})",
+     "pinCode": false,
+     "dname": "ec6b094b-4559-40ee-9f12-4e3ea7795684",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "实训没有分配老师的",
+    "level": 4
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "noTeachers = {\n  let ret = _.reduce(\n    tb.slice(1),\n    (prev, r, index) => {\n      let find = _.filter(_.keys(r), (k) => {\n        return k !== \"B\" && r[k] === r.B;\n      });\n      if(!r.A){\n        debugger\n        throw new Error(`r empty!`);\n      }\n      if (!find.length) {\n        throw new Error(`${r.A} ${r.B} ${r[khCol]} not config time of shiXun in zhouLi`);\n      }\n      let obj = {\n        lecture: r.B,\n        clazz: r.A,\n        week: _.reduce(\n          find,\n          (prev, v, index) => {\n            prev.push(st[1][v]);\n            return prev;\n          },\n          []\n        ).join(\",\"),\n        isOk: find.length === r.D,\n      }\n      if (!r.X) {\n        prev.push(obj);\n      }\n      return prev;\n    },\n    []\n  );\n  \n  return ret;\n}",
+     "pinCode": false,
+     "dname": "2d114e8a-6f3d-453f-a6c5-341010d2d287",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "#### 老师实训课列表",
+     "pinCode": false,
+     "dname": "5e2d2441-a33e-4508-b66e-d77b80856c90",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "teachers = {\n  let noTeacher=[];\n  let ret = _.reduce(\n    tb.slice(1), \n    (prev, r, index) => {             \n      let find = _.filter(_.keys(r), (k) => {       \n        return k !== \"B\" && r[k] === r.B; \n      });\n      if(!r.A||!clazzConfigs[r.A]){\n        debugger\n        throw new Error(`r empty!`);\n      }\n      if (!find.length) {\n        throw new Error(`${r.A} ${r.B} ${r[khCol]} not config`);\n      }\n      let obj = {\n        lecture: r.B,\n        clazz: r.A,\n        num:clazzConfigs[r.A].num,\n        week: _.reduce(\n          find,\n          (prev, v, index) => {\n            prev.push(st[1][v]);\n            return prev;\n          },\n          []\n        ).join(\",\"),\n        isOk: find.length === r.D,\n        teacher:r[tcCol],\n        ji: r[jiCol]==='是'?true:false,\n        xishu: sxTypeConfig[r.A] && sxTypeConfig[r.A][r.B]?sxTypeConfig[r.A][r.B].type.rate: ShixunType.innerSchool.rate\n      }\n      if(alterWeeks[`${obj.clazz}_${obj.lecture}_${obj.teacher}`] && alterWeeks[`${obj.clazz}_${obj.lecture}_${obj.teacher}`].week ===  obj.week) {\n        obj.week = alterWeeks[`${obj.clazz}_${obj.lecture}_${obj.teacher}`].toWeek;\n        alterWeeks[`${obj.clazz}_${obj.lecture}_${obj.teacher}`].bingo = true;\n      }\n      if (!r[tcCol]||!r[tcCol].trim()) {\n        noTeacher.push(obj);\n        return prev;\n      }\n      if(r[tcCol].split(splitTcReg).length===1){\n        if (!prev[r[tcCol]]) {\n          prev[r[tcCol]] = [];\n        }\n        prev[r[tcCol]].push(obj);\n      }else{////多位老师实训\n        _.each(r[tcCol].split(splitTcReg),(a,i)=>{\n          if (!prev[a]) {\n            prev[a] = [];\n          }\n          prev[a].push(obj);\n        })\n      }\n      return prev;\n    },\n    {}\n  );\n  _.each(ret,(v,k)=>{\n  \tv.sort((a,b)=>a.week-b.week);\n  })\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "eed1b73d-742b-437f-b434-4720904308df",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "{\n  return _.reduce(teachers,(prev,v,k)=>{\n      _.each(v,(val,index)=>{\n        const {week} = val;\n        let weeks = week.split(\",\");\n        _.each(weeks,(week,ind)=>{\n          let key  = `${week}`\n          if(!prev[key]){\n            prev[key] = [];\n          }\n          prev[key].push(k)\n        })\n      })\n    return prev;\n  },{})\n}",
+     "pinCode": false,
+     "dname": "f800633c-0251-4698-a496-e4b40a6fe128",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "每周需要机房的实训列表",
+    "level": 4
+   }
+  },
+  {
+   "type": "plotChart",
+   "data": {
+    "dataTypes": {
+     "周次": {
+      "type": "string"
+     },
+     "人次": {
+      "type": "number"
+     }
+    },
+    "pinCode": false,
+    "dname": "448ad67f-dbd3-4f81-a361-e04e9e359712",
+    "customise": {
+     "title": "",
+     "subtitle": "",
+     "caption": "",
+     "height": "",
+     "widthType": "auto",
+     "width": 300,
+     "marginTop": "",
+     "marginRight": "",
+     "marginBottom": "",
+     "marginLeft": "",
+     "insetTop": "",
+     "insetRight": "",
+     "insetBottom": "",
+     "insetLeft": "",
+     "xLabel": "",
+     "xScale": "",
+     "xOptions": [],
+     "yLabel": "",
+     "yScale": "",
+     "yOptions": [],
+     "colorLegend": true,
+     "colorScheme": "",
+     "colorScale": "",
+     "colorOptions": []
+    },
+    "marks": {
+     "xf": "",
+     "x": "周次",
+     "yf": "",
+     "y": "人次",
+     "colorf": "",
+     "color": "",
+     "sizef": "",
+     "size": "",
+     "fx": "",
+     "fy": "",
+     "mark": "bar"
+    },
+    "selectedCategoryFrom": "shareData",
+    "selectedCategory": "wTcsData"
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "wTcsData = (function (wTcs) {\n  let ret = _.reduce(\n    wTcs,\n    (p, v, k) => {\n      p.push({ 周次: `第${k}周`, 人次: v.length });\n      return p;\n    },\n    []\n  );\n  return Promises.delay(1, ret);\n})(wTcs)",
+     "pinCode": false,
+     "dname": "981769c5-958a-4440-8051-220117d03318",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "///每周需要机房的\nwTcs ={\n  return _.reduce(teachers,(prev,v,k)=>{\n      _.each(v,(val,index)=>{\n        const {week,ji} = val;\n        if(!ji){\n          return; \n        }\n        let weeks = week.split(\",\");\n        _.each(weeks,(week,ind)=>{\n          let key  = `${week}`\n          if(!prev[key]){\n            prev[key] = [];\n          }\n          prev[key].push(k)\n        })\n      })\n    return prev;\n  },{})\n}",
+     "pinCode": false,
+     "dname": "0cb56269-2359-43ff-b668-d2a9c06bb0cb",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "需要机房的老师",
+    "level": 4
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Array.from(_.reduce(\n  wTcs,\n  (p, arr, i) => {\n    _.each(arr, (t) => {\n      p.add(t);\n    });\n    return p;\n  },\n  new Set()\n))",
+     "pinCode": false,
+     "dname": "d4725e98-9914-4e2b-9b58-483cbc07da7b",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "老师周时间重叠的实训",
+    "level": 4
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "teacherTimeConflictList = _.reduce(\n  teachers,\n  (prev, v, k) => {\n    let weeks = _.reduce(\n      v,\n      (prev, val, index) => {\n        prev.push(...val.week.split(\",\"));\n        return prev;\n      },\n      []\n    );\n    let set = new Set(weeks);\n    if (set.size !== weeks.length) {\n      prev[k] = v;\n    }\n    return prev;\n  },\n  {}\n)",
+     "pinCode": false,
+     "dname": "8ce2059a-91e8-419b-b694-363457eb3677",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "周数不对实训",
+    "level": 4
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "周数不对实训 = _.reduce(\n  teachers,\n  (prev, v, k) => {\n    if (\n      _.filter(v, (val, index) => {\n        return !val.isOk;\n      }).length\n    ) {\n      prev[k] = v;\n    }\n    return prev;\n  },\n  {}\n)",
+     "pinCode": false,
+     "dname": "8ab2d093-ab2a-4745-aa23-89b50e5a2a92",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "只负责实训不负责上课的老师列表",
+    "level": 3
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "onlyShixunTeacherList = _.filter(_.keys(teachers), (t) => {\n  return !~lectureTeachers.indexOf(t);\n})",
+     "pinCode": true,
+     "dname": "04fa7762-2d1f-4c05-b2ba-eacfefd4345a",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 查询老师实训",
+     "pinCode": false,
+     "dname": "cef30bb5-8b6a-4864-a0c7-689c102d679a",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof selectTeacher = render(({ useSetter }) => {\n  let ret = _.reduce(tb.slice(1),\n    (prev, r, index) => {\n      if (r[tcCol]) {\n        _.each(r[tcCol].split(splitTcReg),(a,i)=>{\n          prev.add(a);\n        })\n      }\n      return prev;\n    },\n    new Set());\n  const options = _.reduce(Array.from(ret),(p,t)=>{\n    p.push({ value: t, label: t });\n    return p;\n  },[])\n  const { Select } = Antd;\n  const [value,setValue] = useState(options[0]?.value);\n  const handleChange = (value) => {\n    setValue(value);\n    console.log(`selected ${value}`);\n  };\n  useSetter(value);\n  return <Select key='aa753316-46d4-4fdc-9bf0-c93f94eda3db'\n  \tshowSearch\n        style={{ width: 400 }}\n        value={value}\n        onChange={handleChange}\n        options={options}\n    />;\n  //   return Inputs.select( Array.from(ret), {label: \"选择老师\"})\n})",
+     "pinCode": false,
+     "dname": "d45ac1a0-4a5b-4ed3-9b76-58257193f20e",
+     "codeMode": "jsx"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table(teachers[selectTeacher].sort((a,b)=>a.week-b.week),{rows: 24,header:{lecture:\"环节\",clazz:\"班级\",num:\"人数\",week:\"周次\",isOk:\"检查\",teacher:\"教师\",ji:\"机房\"}})",
+     "pinCode": false,
+     "dname": "cf77a7c4-eb8f-4628-a3f3-b540a85ea31f",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.button(\n  htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:black'>导出${selectTeacher}实训表</div>`,\n  {\n    value: null,\n    reduce: () => {\n      let title = `${selectTeacher}实训表`;\n      exportCsv(\n        title,\n        title +\n          \"\\r\\n\" +\n          ConvertToCSV(\n            teachers[selectTeacher],\n            {\n              clazz: \"班级\",\n              isOk: \"是否可用\",\n              ji: \"使用机房\",\n              lecture: \"课程\",\n              num: \"人数\",\n              teacher: \"教师\",\n              week: \"周次\",\n            }\n          )\n      );\n    },\n  }\n)",
+     "pinCode": false,
+     "dname": "0532ffc7-8e3d-4ec9-9b28-2e9359d93aa4",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof table_1 = Inputs.table(selectTeacher2.infos, {\n  rows: 30,\n  columns: [\"teacher\", \"lecture\", \"period\", \"time\", \"isHe\", \"room\", \"clazz\"],\n  header: {\n    teacher: \"教师\",\n    lecture: \"课程名\",\n    period: \"周次\",\n    time: \"时间\",\n    isHe: \"是否合班\",\n    room: \"教室\",\n    clazz: \"专业\",\n  },\n  width: {\n    teacher: 100,\n    lecture: 200,\n    time: 100,\n    isHe: 50,\n    room: 100,\n    clazz: 200,\n  },\n})",
+     "pinCode": false,
+     "dname": "51f36caa-a0cc-45ad-9537-2a04f3cfd7d4",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "selectTeacher2 = getTeacherLectures(selectTeacher)",
+     "pinCode": false,
+     "dname": "837a727a-7805-4baa-acc9-17de773352c0",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table(partial)",
+     "pinCode": false,
+     "dname": "f11be310-74ee-49cd-992a-fa9d94449c32",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "checks.alls",
+     "pinCode": false,
+     "dname": "caf8a1ac-adbe-45b8-8ecb-57907ab53233",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "_.values(teachers)",
+     "pinCode": false,
+     "dname": "962d0abf-3ac9-4599-bd8d-24db0e693593",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "## 每周实训列表",
+     "pinCode": false,
+     "dname": "3352078e-70d3-4e07-9404-d792f2e7988b",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getSxClazzs (selectWeek)",
+     "pinCode": false,
+     "dname": "5fd6dccf-6263-46fd-8d9b-3f6627961ff1",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof selectWeek = Inputs.select(\n  Array.from(_.reduce(_.values(teachers),(prev,v,index)=>{ \n\t_.each(v,(value)=>{\n    \t_.each(value.week.split(\",\"),a => prev.add(a))\n    })\n    return prev;\n  },new Set())).sort((a,b)=>{return a-b}), {label: \"选择周次\", value: weekDefault+\"\"})",
+     "pinCode": false,
+     "dname": "5ee5b49f-d797-4b8f-960b-ddd432eacbdf",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof table = Inputs.table(weekTeachers[selectWeek].sort((a,b)=>{return a.ji ? 1 : -1}),{rows: 100, header: {\n    teacher: \"教师\",\n    lecture: \"课程名\",\n  week:\"第几周\",\n    ji: \"机房\",\n    isOk: \"正常\",\n    num: \"人数\",\n    clazz: \"班级\",\n  },})",
+     "pinCode": false,
+     "dname": "136c82cc-5c7c-4041-ac69-f75f1e5a11ab",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "{\n  let ttt = jfDatas2(selectWeek);\n  let ret = _.reduce(ttt\n  ,\n  (prev, obj, index) => {\n    prev += _.filter(obj, (v, k) => {\n      return v === \" \"||/^(其他可占用)/.test(v);\n    }).length;\n    return prev;\n  },\n  0\n)\n  let ret2 = _.reduce(ttt\n  ,\n  (prev, obj, index) => {\n    prev += _.filter(obj, (v, k) => {\n      return /^(其他可占用)/.test(v);\n    }).length;\n    return prev;\n  },\n  0\n)\n  let num = _.filter(weekTeachers[selectWeek],(obj,index)=>{return obj.ji}).length\n  return htl.html`<h4>空位数：${ret}<br/>因为实训老师不要可占用位置：${ret2}<br/>机房实训老师数：${num}<br/>平均：${ret/num}</h4>`\n}",
+     "pinCode": false,
+     "dname": "e70fb7c0-ee42-447d-9b6b-b6aae1a563f1",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof hideNotNeed = Inputs.radio([\"是\", \"否\"], {\n  label: \"隐藏实训不用上\",\n  valueof: (e) => {\n    return e === \"是\" ? true : false;\n  },\n  value: false,\n})",
+     "pinCode": false,
+     "dname": "6dc117ec-9ad5-4350-a0ff-bfa66ecc5df4",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof hideSx = Inputs.radio([\"是\", \"否\"], {\n  label: \"隐藏实训可占用\",\n  valueof: (e) => {\n    return e === \"是\" ? true : false;\n  },\n  value: true,\n})",
+     "pinCode": false,
+     "dname": "da4ef29e-1d78-4476-b396-394b68b89e16",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof eeee = {\n  let jfs = jfDatas2(selectWeek);\n  return Inputs.table(jfs, {\n    multiple: false,\n    align: _.reduce(\n      jfs.columns,\n      (prev, v, index) => {\n        prev[v] = \"center\";\n        return prev;\n      },\n      {}\n    ),\n    format: _.reduce(\n      jfs.columns,\n      (prev, v, index) => {\n        prev[v] = sparkbar2();\n        return prev;\n      },\n      {}\n    ),\n    rows: 280,\n  });\n}",
+     "pinCode": false,
+     "dname": "bd518b82-7906-409f-b251-b71908960f24",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.button(`下载教室${selectWeek}`,{reduce:()=>exportToExcel(\"教室\", \".editorjs-anchor-ffff\")})",
+     "pinCode": false,
+     "dname": "9800c499-9296-45d9-aabb-58274d0cabe6",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.button(`下载机房${selectWeek}`,{reduce:()=>exportToExcel(\"机房\", \".editorjs-anchor-eeee\")})",
+     "pinCode": false,
+     "dname": "4805632d-0808-4248-8dae-d5dacbc4a815",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "ffff = {\n  let jfs = kxJsDatas(selectWeek);\n  return Inputs.table(jfs, {\n    multiple: false,\n    align: _.reduce(\n      jfs.columns,\n      (prev, v, index) => {\n        prev[v] = \"center\";\n        return prev;\n      },\n      {}\n    ),\n    format: _.reduce(\n      jfs.columns,\n      (prev, v, index) => {\n        prev[v] = sparkbar2();\n        return prev;\n      },\n      {}\n    ),\n    rows: 280,\n  });\n}",
+     "pinCode": false,
+     "dname": "7236dcfe-3c4b-43a7-a7ff-fd9e8da094ac",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "function exportToExcel(name, select) {\n  var location = 'data:application/vnd.ms-excel;base64,';\n  var excelTemplate = '<html> ' +\n      '<head> ' +\n      '<meta http-equiv=\"content-type\" content=\"text/plain; charset=UTF-8\"/> ' +\n      '</head> ' +\n      '<body> ' +\n      document.querySelector(select).innerHTML +\n      '</body> ' +\n      '</html>'\n  let fileName = `${name}${selectWeek}`\n  let downloadAnchorNode = document.createElement(\"a\");\n  downloadAnchorNode.setAttribute(\"href\", location + window.btoa(unescape(encodeURIComponent(excelTemplate))));\n  downloadAnchorNode.setAttribute(\"download\", fileName);\n  document.body.appendChild(downloadAnchorNode);\n  downloadAnchorNode.click();\n}",
+     "pinCode": false,
+     "dname": "2486e4ee-5227-4ab8-b835-866994dde543",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "jfDatas2(selectWeek)",
+     "pinCode": false,
+     "dname": "301123d3-433a-430c-a007-525895cb1494",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "weekTeachers = {\n  return _.reduce(teachers,(prev,v,k)=>{\n      _.each(v,(val,index)=>{\n        let weeks = val.week.split(\",\");\n        _.each(weeks,(week,ind)=>{\n          let key  = `${week}`\n          if(!prev[key]){\n            prev[key] = [];\n          }\n          if(!~prev[key].indexOf(val)){\n            prev[key].push(val)\n          }\n        })\n      })\n    return prev;\n  },{})\n}",
+     "pinCode": false,
+     "dname": "8de775ef-b886-42ec-b7a1-23691c124976",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "getSxClazzs = function (week){\n  return _.reduce(_.values(teachers),(prev,v,index)=>{ \n\t_.each(v,(value)=>{\n    \tif(~value.week.split(\",\").indexOf(week)){\n          prev.push(`${value.clazz}`)\n        }\n    })\n    return prev;\n  },[])\n}",
+     "pinCode": false,
+     "dname": "8a416383-75bd-498d-9284-00d1ee9aa687",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//节次 使用机房 责任老师 空闲机房\njfDatas2 = function (week) {\n  let sxClazzs = getSxClazzs(week);\n  let ret = [];\n  ret.columns = [\"机房\", ..._.values(partial[0])];\n  //忽略的大节课号\n  let eArr = [] //[\"一9∽10\", \"二9∽10\", \"三9∽10\", \"四9∽10\"];//\"一7∽8\", \"二7∽8\", \"三7∽8\", \"四7∽8\",\n  _.each(eArr, (k, index) => {\n    ret.columns.splice(ret.columns.indexOf(k), 1);\n  });\n  let kv = partial[0];\n  let temp = _.reduce(\n    kv,\n    (prev, v, k) => {\n      prev[v] = ~eArr.indexOf(v) ? \"\" : \" \";\n      return prev;\n    },\n    {}\n  );\n  _.each(jfs, (jf, index) => {\n    let obj = _.cloneDeep(temp);\n    obj[\"机房\"] = jf;\n    ret.push(obj);\n  });\n  let rowsjfs = _.reduce(\n    checks.alls,\n    (prev, v, k) => {\n      _.each(v, (obj, index) => {\n        if (obj.teacher && ~obj.room.indexOf(\"机房\")) {\n          let row = _.filter(ret, (o, index) => {\n            return o[\"机房\"] === obj.room;\n          })[0];\n          //         debugger\n          const { room, teacher, lecture, clazz } = obj;\n          row &&\n            (row[kv[k]] =\n              hideSx && ~sxClazzs.indexOf(clazz)\n                ? \" \"\n                : `${\n                    ~sxClazzs.indexOf(clazz) ? \"其他可占用\" : lecture.replace(/\\s/,\"_\")\n                  }\\n${teacher}\\n${clazz}`);\n        }\n      });\n      prev[kv[k]] = _.filter(v, (obj, index) => {\n        return obj.teacher && ~obj.room.indexOf(\"机房\");\n      });\n      return prev;\n    },\n    {}\n  );\n  let weekTeacher = weekTeachers[week];\n  let weekClazz = Array.from(\n    _.reduce(\n      weekTeacher,\n      (prev, sxTeacher) => {\n        prev.add(sxTeacher.clazz);\n        return prev;\n      },\n      new Set()\n    )\n  );\n  _.each(weekTeacher, (sxTeahcer, index) => {\n    const { lecture, clazz, teacher, ji } = sxTeahcer;\n    if (ji || teacher === \"学院安排\") {\n      let obj = { 机房: `${teacher}\\n${clazz}` };\n      if(teacher.split(splitTcReg).length  === 1){\n        let teacherLectures = getTeacherLectures(teacher);\n        _.each(teacherLectures.infos, (info, index2) => {\n          const { time, clazz, lecture } = info;\n          if (\n            (clazz !== sxTeahcer.clazz && !~weekClazz.indexOf(clazz)) ||\n            lecture === \"晚自习\"\n          ) {\n            obj[time] = lecture.replace(/\\s/,\"_\");\n          } else {\n            if (!hideNotNeed) {\n              obj[time] = `不用上\\n${lecture}`;\n            } else {\n            }\n          }\n        });\n      }\n      ret.push(obj);\n    }\n  })//   ret.push({\"机房\":\"\"})\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "6af5a9cc-a76a-4268-8a34-37e607a45ac5",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "roomArray = _.reduce(roomConfigs,(prev,roomConfig,index)=>{\n  if(!_.filter([\"教室未定\",\"机房\",\"舞蹈\",\"钢琴\"],(n)=> ~roomConfig.name.indexOf(n)).length && !~[\"践行楼204\"].indexOf(roomConfig.name)){\n  \tprev.push(roomConfig.name)\n  }\n\treturn prev;\n},[])",
+     "pinCode": false,
+     "dname": "0518c1d0-e62b-4917-afa5-af13bef188a2",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "kxJsDatas(selectWeek)",
+     "pinCode": false,
+     "dname": "7ed798ba-9394-4423-adbb-f5b710273394",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//节次 使用教室 责任老师 空闲教室\nkxJsDatas = function (week) {\n  //实训班级\n  let sxClazzs = getSxClazzs(week);\n  let ret = [];\n  ret.columns = [\"教室\", ..._.values(partial[0]),\"教室容量\"];\n  let eArr = []//[\"一9∽10\", \"二9∽10\", \"三9∽10\", \"四9∽10\"];\n  _.each(eArr, (k, index) => {\n    ret.columns.splice(ret.columns.indexOf(k), 1);\n  });\n  let kv = partial[0];\n  let temp = _.reduce(\n    kv,\n    (prev, v, k) => {\n      prev[v] = ~eArr.indexOf(v) ? \"\" : \" \";\n      return prev;\n    },\n    {}\n  );\n \n  _.each(roomArray, (js, index) => {\n    let obj = _.cloneDeep(temp);\n    obj[\"教室\"] = js;\n    obj[\"教室容量\"] = roomConfigs[js].num\n    ret.push(obj);\n  });\n  let rowsjfs = _.reduce(\n    checks.alls,\n    (prev, v, k) => {\n      _.each(v, (obj, index) => {\n        if (obj.teacher && ~roomArray.indexOf(obj.room)) {\n          let row = _.filter(ret, (o, index) => {\n            return o[\"教室\"] === obj.room;\n          })[0];\n          //         debugger\n          const { room, teacher, lecture, clazz } = obj;\n          if (row) {\n            if(~sxClazzs.indexOf(clazz)){\n              if(~[\" \",\"  \"].indexOf(row[kv[k]]) || row[kv[k]].startsWith(\"其他可占用\")) {\n                if(hideSx) {\n                  row[kv[k]] = \"  \"\n                } else {\n                  row[kv[k]] = `其他可占用\\n${teacher}\\n${clazz}`\n                }\n              }\n            } else {\n              row[kv[k]] = `${lecture.replace(/\\s/, \"_\")}\\n${teacher}\\n${clazz}`\n            }\n          }\n        }\n      });\n      prev[kv[k]] = _.filter(v, (obj, index) => {\n        return obj.teacher && ~roomArray.indexOf(obj.room);\n      });\n      return prev;\n    },\n    {}\n  );\n  let weekTeacher = weekTeachers[week];\n  let weekClazz = Array.from(\n    _.reduce(\n      weekTeacher,\n      (prev, sxTeacher) => {\n        prev.add(sxTeacher.clazz);\n        return prev;\n      },\n      new Set()\n    )\n  );\n  _.each(weekTeacher, (sxTeahcer, index) => {\n    const { lecture, clazz, teacher, ji } = sxTeahcer;\n    let obj = { 教室: `${teacher}\\n${clazz}` };\n    //实训两个人以上\n    _.each(teacher.split(splitTcReg),(tc)=>{\n      let teacherLectures = getTeacherLectures(tc);\n      _.each(teacherLectures.infos, (info, index2) => {\n        const { time, clazz, lecture } = info;\n        if (\n          (clazz !== sxTeahcer.clazz && !~weekClazz.indexOf(clazz)) ||\n          lecture === \"晚自习\"\n        ) {\n          obj[time] = [obj[time]?`${obj[time]}\\n`:\"\",`${tc}\\n${lecture.replace(/\\s/, \"_\")}`].join(\"\");\n        } else {\n          if (!hideNotNeed) {\n            obj[time] = [obj[time]?`${obj[time]}\\n`:\"\",`${tc}不用上\\n${lecture}`].join(\"\");\n          } else {\n          }\n        }\n      });\n    })\n    ret.push(obj);\n  });\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "2863b5af-1e21-4853-8292-5514c430ada8",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "function sparkbar2() {\n  return x => htl.html`<div style=\"\n   \twhite-space: pre;\n    ${/^其他可占用/.test(x) ? \"background-color: red; \":(\" \" === x ? \"background-color: green; \" : \"\")}\n    \">${x}</div>`\n}",
+     "pinCode": false,
+     "dname": "70a3ab08-1a53-4dbf-965e-189a81e87706",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "st[1]",
+     "pinCode": false,
+     "dname": "b26f9160-0c6f-4e68-98a6-10ad5416e78a",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "tb = {\n  let ret =[];\n  ret.columns = _.cloneDeep(_.keys(st[1]));\n  ret.push(st[1])\n  _.reduce(st.slice(5),(prev, r,index)=>{ \n    if (!r.A) {\n      debugger;\n      throw new Error(`r empty!`);\n    }\n    if(!r.X){\n      if(setDefaultTeacherForNotAssign){\n        r.X = \"学院安排\";\n      }\n      console.error(r.A +\",\"+r.B+\",\"+r.C+\",\"+r.X+\",未分配老师\")\n    }\n    if(r.A && r.B && r.C===\"环节\" && clazzConfigs[r.A]){\n      let cr = _.cloneDeep(r);\n      delete cr.C;\n      prev.push(cr);\n    }\n    return prev;\n  },ret);\n  return ret;\n}",
+     "pinCode": false,
+     "dname": "fa6884aa-2fe6-42b5-ad45-eb6219b666dc",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "extractAllKeys(\n  _.reduce(\n    ksList,\n    (p, k) => {\n      if (clazzConfigs[k.A]) {\n        p.push({\n          [\"班级\"]: k.A,\n          [\"课程\"]: k.B,\n          [\"人数\"]: clazzConfigs[k.A].num,\n          [\"教师\"]: k[tcCol],\n        });\n      }\n      return p;\n    },\n    []\n  )\n)",
+     "pinCode": false,
+     "dname": "c4d4975b-3255-4a77-b53a-d48adf7b9aee",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "function extractAllKeys(objects) {\n  let obj = {};\n  _.each(objects, (object) => {\n    _.each(object, (value, key) => {\n      if (undefined === obj[key]) {\n        obj[key] = value;\n      }\n    })\n  })\n  return obj;\n}",
+     "pinCode": false,
+     "dname": "06be9f00-354b-4207-9498-fd5edddacce5",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof ksType = render(({ useSetter }) => {\n    const { Select } = Antd;\n  const [type,setType] = useState(\"考查\")\n    const handleChange = (value) => {\n        setType(value)\n    };\n    useSetter(type);\n    return <Select key='df1c580a-993e-4f25-8a82-288ed295f154'\n        value={type}\n        style={{ width: 120 }}\n        onChange={handleChange}\n        options={[\n            { value: \"考查\", label: \"考查\" },\n            { value: \"考试\", label: \"考试\" },\n        ]}\n    />;\n})",
+     "pinCode": false,
+     "dname": "33f56f48-3b58-4f45-b256-6e5eec25890c",
+     "codeMode": "jsx"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.button(\n  htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:black'>导出${ksType}课列表</div>`,\n  {\n    value: null,\n    reduce: () => {\n      let title = `${ksType}课列表`;\n      exportCsv(\n        title,\n        title +\n          \"\\r\\n\" +\n          ConvertToCSV(\n            _.reduce(ksList,(p,k)=>{\n              p.push({\n                [\"班级\"]:k.A,\n              [\"课程\"]:k.B,\n              [\"人数\"]:clazzConfigs[k.A].num,\n               [\"教师\"]:k[tcCol],\n            })\n              return p},[])\n            \n          )\n      );\n    },\n  }\n)",
+     "pinCode": false,
+     "dname": "f9cfdfdc-ad54-4bb2-9d20-a34ead1e94a1",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "_.filter(st.slice(5), (a) => {\n  return clazzConfigs[a.A] && a[khCol] === ksType;\n})",
+     "pinCode": true,
+     "dname": "c143109b-1e7e-4a6a-ac17-824b340bd785",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "ksList = _.filter(st.slice(5), (a) => {\n  return clazzConfigs[a.A] && a[khCol] === ksType;\n}).toSorted((a, b) => {\n  if (a[khCol] === b[khCol]) {\n    return pySort(a[tcCol], b[tcCol]);\n  } else {\n    return a[khCol].charCodeAt(1) - b[khCol].charCodeAt(1);\n  }\n})",
+     "pinCode": false,
+     "dname": "d3cc6be9-7fb2-4db7-9d7d-b7207139303a",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof selectedTable = Inputs.table(tb)///",
+     "pinCode": false,
+     "dname": "a8906289-300a-4b5e-8bec-928c21170340",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "selectedTable",
+     "pinCode": false,
+     "dname": "b2ad4e4d-d903-4867-a206-58e286ba112a",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "moment = require(\"moment\")",
+     "pinCode": false,
+     "dname": "c09aedef-e2c1-4a51-abc0-14093c5d922b",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "header",
+   "data": {
+    "text": "授课计划时间",
+    "level": 2
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "开学时间：${moment(onejan).format(\"YYYY-MM-DD\")}",
+     "pinCode": false,
+     "dname": "1d2e0566-e2f6-4b3d-8ce1-9af9abca7b93",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "teacherList",
+     "pinCode": false,
+     "dname": "9a98b979-ba33-4a25-9132-c62aeabad6b3",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof selectTc ={ \n  return Inputs.select( [...teacherList,\"企业教师\"], {label: \"选择上课老师\",value:\"李星\"})\n}",
+     "pinCode": false,
+     "dname": "28ff95d5-2bb2-4861-9153-d55cf13bc0b6",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof 授课课程 = Inputs.select(_.reduce(shouKeInfos,(prev,shouKeInfo)=>{\n  prev.add(shouKeInfo.lecture)\n  return prev;\n},new Set()),{label:\"选择课程\"})",
+     "pinCode": false,
+     "dname": "dfcb7a1b-da8c-4d91-8b06-92083434efc1",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof displaySw = Inputs.radio([false, true], {label: \"显示节假日调课\", value: false})",
+     "pinCode": false,
+     "dname": "8cf46eb0-b5ac-49a2-b488-05b4b0915fbe",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof select_clazz = render(({ useSetter }) => {\n    const { Select, Space } = Antd;\n  \t  const [clazz,setClazz] = useState(授课班级列表[0]);\n    const handleChange = (value) => {\n        console.log(`selected ${value}`);\n      setClazz(value);\n    };\n    useSetter(clazz);\n    return <Space key='5a6332ff-c5a3-4757-8eed-bb311944cf61'>\n      请选择班级：\n       <Select \n        value={clazz}\n        style={{ width: 300 }}\n        onChange={handleChange}\n        options={_.reduce( 授课班级列表,(p,c,i)=>{\n      \t  p.push({ value: c, label: c });\n         return p;\n      },[])}\n    />\n   </Space>;\n})",
+     "pinCode": false,
+     "dname": "b073cb5c-8499-4a8c-9840-42d8cb038118",
+     "codeMode": "jsx"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "viewof workbook4 = Inputs.button(\n  htl.html`<div style='color:white;font-size:20px;font-weight:bolder;background-color:black'>导出${select_clazz}[${授课课程}]授课计划时间表</div>`,\n  {\n    value: null,\n    reduce: () => {\n      let title = `${select_clazz}[${授课课程}]授课计划时间表`;\n      exportCsv(\n        title,\n        title +\n          \"\\r\\n\" +\n          ConvertToCSV(\n            授课时间列表\n          )\n      );\n    },\n  }\n)",
+     "pinCode": false,
+     "dname": "ada15fc8-d208-4683-9982-c85305ebe888",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "Inputs.table(授课时间列表)",
+     "pinCode": false,
+     "dname": "10070245-b5b4-449c-81e9-0b706c9e5d3b",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "授课时间列表 = {\n  let arr = [];\n  arr.columns = [\"周次\", \"课次\", \"日期\"];\n  for (let i = 0; i < 18; i++) {\n    if (exp && ~exp.indexOf(i + 1)) {\n      continue;\n    }\n    let zhouCi = i + 1;\n    let fm = \"MM月DD日\"\n    for (let j = 0; j < 授课天列表.length; j++) {\n      let shouKe = 授课天列表[j];\n      let zhouJi = shouKe.substring(0, 1);\n      let obj = { 周次: zhouCi + \" \" + shouKe, 课次: arr.length + 1 };\n      switch (zhouJi) {\n        case \"一\":\n          obj.日期 = moment(\n            new Date(onejan.getTime() + 86400000 * (7 * i + 0))\n          ).format(fm);\n          break;\n        case \"二\":\n          obj.日期 = moment(\n            new Date(onejan.getTime() + 86400000 * (7 * i + 1))\n          ).format(fm);\n          break;\n        case \"三\":\n          obj.日期 = moment(\n            new Date(onejan.getTime() + 86400000 * (7 * i + 2))\n          ).format(fm);\n          break;\n        case \"四\":\n          obj.日期 = moment(\n            new Date(onejan.getTime() + 86400000 * (7 * i + 3))\n          ).format(fm);\n          break;\n        case \"五\":\n          obj.日期 = moment(\n            new Date(onejan.getTime() + 86400000 * (7 * i + 4))\n          ).format(fm);\n          break;\n      }\n      if (!~expDate.indexOf(obj.日期)) {\n        if(~_.keys(switchDate).indexOf(obj.日期)){\n          obj.日期=displaySw? ` ${obj.日期}->${switchDate[obj.日期]} `:` ${switchDate[obj.日期]} `\n        }else{\n        \tobj.日期= ` ${obj.日期} `\n        }\n        arr.push(obj);\n      }\n    }\n  }\n  return arr;\n}",
+     "pinCode": false,
+     "dname": "83c19d4f-0faa-4a34-9e6d-1705c4499b02",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "授课班级列表 = Array.from( _.reduce(shouKeInfos,(prev,shouKeInfo)=>{\n  if(shouKeInfo.lecture === 授课课程){\n  \tprev.add(shouKeInfo.clazz)\n  }\n  return prev;\n},new Set()))",
+     "pinCode": false,
+     "dname": "12a3c60a-4ab0-4c12-8bef-1824954f9503",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "授课天列表 = {\n  let set = Array.from(\n    _.reduce(\n      shouKeInfos,\n      (prev, shouKeInfo) => {\n        if (shouKeInfo.lecture === 授课课程 && shouKeInfo.clazz === select_clazz) {\n          prev.add(shouKeInfo.time);\n        }\n        return prev;\n      },\n      new Set()\n    )\n  );\n  return set;\n}",
+     "pinCode": false,
+     "dname": "7dde533d-731a-46e9-8f39-f877f5e2d146",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "shouKeInfos =  getTeacherLectures(selectTc).infos ",
+     "pinCode": false,
+     "dname": "1caaf3d4-e505-4e02-bb21-e8b4fd3dcdbb",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//哪些周次需要排除，劳动周、实训\nexp = {\n  let arr = [];\n  switch (授课课程) {\n//     case \"信息技术\":\n//       arr.splice(0, 0, ...expWeeks);\n//       break;\n    default:\n      arr.splice(0, 0, ...expWeeks);\n      break;\n  }\n  return arr;\n}",
+     "pinCode": false,
+     "dname": "3acc130d-0681-44d2-a6f6-f9f0f34530b1",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "expWeeks = _.reduce(\n  clazzGaikuang(select_clazz),\n  (p, o, i) => {\n    if (o.周次) {\n      p.push(..._.map(o.周次.split(\",\"),(a)=>parseInt(a)));\n    }\n    return p;\n  },\n  []\n)",
+     "pinCode": false,
+     "dname": "9e44daf9-c04a-49a8-8fa4-c4086a40a3b0",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "第一个班课程安排 =Inputs.table(clazzGaikuang(授课班级列表[0]), { rows: 111 })",
+     "pinCode": false,
+     "dname": "d75f6ab5-ab0a-4a96-a947-74d50da987da",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "第二个班课程安排 = Inputs.table(clazzGaikuang(授课班级列表[1]), { rows: 111 })",
+     "pinCode": false,
+     "dname": "b0a96fd5-c7a2-49e7-91b2-e01f37bdb4b3",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "老师实训列表 = Inputs.table(teachers[selectTc]? teachers[selectTc].sort((a,b)=>a.week-b.week):[],{rows: 24,header:{lecture:\"环节\",clazz:\"班级\",num:\"人数\",week:\"周次\",isOk:\"检查\",teacher:\"教师\",ji:\"机房\"}})",
+     "pinCode": false,
+     "dname": "bddf7e93-0542-4840-9af9-cbbba056c47c",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "xlsx = require('xlsx@0.18.5/dist/xlsx.full.min.js')",
+     "pinCode": false,
+     "dname": "ec773aeb-a56e-439a-9fe3-648ef2ccbe0a",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "file = reserveFile()",
+     "pinCode": false,
+     "dname": "494d094c-ff97-4903-99d9-9691f4fa1bf5",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "wb2 = {\n  let ab2 = await file.arrayBuffer();\n  return xlsx.read(ab2, { type: \"array\" });\n}",
+     "pinCode": false,
+     "dname": "90a1a444-97d1-48f5-92eb-ce53adf031fd",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "///周历中标注的周次说明文字，\narr2 = arr3 || _.reduce(cells2, (prev,cell,index)=> { cell && cell.c && prev.push(cell.c[0].t.replace(\"：\",\"：\").replace(\",\",\"，\")); return prev;},[])",
+     "pinCode": false,
+     "dname": "b5839ea7-54ad-42a4-8931-1848b3848aac",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "///自定义周历中标注的周次说明文字，\narr3 = [\"9.9-9.9：开学\",\"10.1-10.4：国庆节，10.8->9.28\",\"10.6-10.8：中秋节\"]",
+     "pinCode": false,
+     "dname": "f197b96b-f171-409b-9cac-97d449ee3719",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "cells2 = _.filter(wb2.Sheets['周历'],(v,k)=>{return k.length===2 && k.endsWith(\"2\")})",
+     "pinCode": false,
+     "dname": "a7b1c180-af78-4918-8f2a-a3c435261fa6",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//哪些天不用上课\nexpDate = _.reduce(\n  arr2,\n  (prev, t) => {\n    let source = t.split(/：|:/)[0];\n    if(~source.indexOf(\"-\")){\n    \t \n          let sss = source.split(\"-\");\n      \tlet start = sss[0].split(\".\"),end = sss[1].split(\".\");\n          let sdate = new Date();\n          sdate.setMonth(start[0]-1)\n          sdate.setDate(start[1])\n      \t\tlet edate = new Date();\n          edate.setMonth(end[0]-1)\n          edate.setDate(end[1])\n      \tfor(;sdate.getTime()<=edate.getTime();sdate.setDate(sdate.getDate()+1)){\n          let d = moment(sdate).format(\"MM月DD日\");\n          if(!~_.keys(switchDate).indexOf(d)){\n          \tprev.push(d);\n          }\n        }\n          \n        \n    }else{\n      let ss = source.split(\".\");\n      let date = new Date();\n      date.setMonth(ss[0]-1)\n      date.setDate(ss[1])\n      let d = moment(date).format(\"MM月DD日\");\n      if(!~_.keys(switchDate).indexOf(d)){\n        prev.push(d);\n      }\n    }\n    return prev;\n  },\n  []\n)",
+     "pinCode": false,
+     "dname": "4f55c2f4-3f90-45cc-bc2a-ac79f019f1eb",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "\"a,b，c\".split(/,|，/)",
+     "pinCode": false,
+     "dname": "f5ff5c13-870c-4eee-ab6c-486e4d1c447f",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "//需要交换的日期\nswitchDate = _.reduce(\n  arr2,\n  (prev, t) => {\n    let swStr = t.split(/:|：/)[1].split(/,|，/);\n    if(!swStr[1])return prev;\n    let ss = swStr[1].split(\"、\");\n//     debugger\n    for(let i=0;i<ss.length;i++){\n      let yy = ss[i].split(\"->\");\n      let zz = yy[0].split(\".\");\n      let date = new Date();\n      date.setMonth(zz[0]-1);\n      date.setDate(zz[1]);\n      let zz1 = yy[1].split(\".\");\n      let date1 = new Date();\n      date1.setMonth(zz1[0]-1)\n      date1.setDate(zz1[1])\n      prev[formatDate(date)] = formatDate(date1); \n    }\n    return prev;\n  },\n  {}\n)",
+     "pinCode": false,
+     "dname": "9ed2fa75-c59f-46f2-a7c6-afac737d4670",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "formatDate = function (date){return  moment(date).format(\"MM月DD日\")}",
+     "pinCode": false,
+     "dname": "a419bb27-d05e-4ffe-8b8e-fc1b4beb4fd2",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "# Dependencies",
+     "pinCode": false,
+     "dname": "3b74c9b1-1a92-4187-83b5-30678d815759",
+     "codeMode": "markdown"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "import {jsx, render, useState, component, useEffect, Fragment } from \"https://grove-help.graphxr.com/react/react\"",
+     "pinCode": false,
+     "dname": "bbde386e-f952-42d3-baa5-f7422bada2e0",
+     "codeMode": "javascript2"
+    }
+   }
+  },
+  {
+   "type": "codeTool",
+   "data": {
+    "codeData": {
+     "value": "import {\n  partial,\n  checks,\n  jfs,\n  sparkbar,\n  pySort,\n  getTeacherLectures,\n  clazzGaikuang,\n  clazzConfigs,\n  khCol,\n  tcCol,\n  jiCol,\n  ConvertToCSV,\n  exportCsv,\n  roomConfigs,\n  teacherList,\n  lectureTeachers,\n  reduce,\n  reserveFile,\n  ShixunType,\n} with { month } from \"./excel.json\";",
+     "pinCode": false,
+     "dname": "b1489b01-59a7-418f-b74b-f336a71537b0",
+     "codeMode": "javascript2"
+    }
+   }
+  }
+ ],
+ "version": "2.19.1"
+}
